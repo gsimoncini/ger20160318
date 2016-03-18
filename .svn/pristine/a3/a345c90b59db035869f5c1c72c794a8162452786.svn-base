@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<GridEXLayoutFile LayoutType="Janus.Windows.GridEX.GridEX" LayoutVersion="1.1">
+    <RootTable>
+        <Columns Collection="true">
+            <Column0 ID="IdMovimiento">
+                <Caption>IdMovimiento</Caption>
+                <DataMember>IdMovimiento</DataMember>
+                <Key>IdMovimiento</Key>
+                <Position>0</Position>
+                <Visible>False</Visible>
+            </Column0>
+            <Column1 ID="Caja">
+                <Caption>Caja</Caption>
+                <DataMember>Caja</DataMember>
+                <Key>Caja</Key>
+                <Position>1</Position>
+                <Width>150</Width>
+            </Column1>
+            <Column2 ID="Fecha">
+                <Caption>Fecha</Caption>
+                <DataMember>Fecha</DataMember>
+                <Key>Fecha</Key>
+                <Position>5</Position>
+                <Width>80</Width>
+            </Column2>
+            <Column3 ID="Descripcion">
+                <Caption>Cuenta</Caption>
+                <DataMember>Descripcion</DataMember>
+                <Key>Descripcion</Key>
+                <Position>2</Position>
+                <Width>150</Width>
+            </Column3>
+            <Column4 ID="Subtipo">
+                <Caption>SubCuenta</Caption>
+                <DataMember>Subtipo</DataMember>
+                <Key>Subtipo</Key>
+                <Position>4</Position>
+                <Width>112</Width>
+            </Column4>
+            <Column5 ID="TipoComprobante">
+                <Caption>Comprobante</Caption>
+                <DataMember>TipoComprobante</DataMember>
+                <Key>TipoComprobante</Key>
+                <Position>6</Position>
+                <Width>171</Width>
+            </Column5>
+            <Column6 ID="Numero">
+                <Caption>Número</Caption>
+                <DataMember>Numero</DataMember>
+                <Key>Numero</Key>
+                <Position>7</Position>
+            </Column6>
+            <Column7 ID="Medio">
+                <Caption>Medio de Pago</Caption>
+                <DataMember>Medio</DataMember>
+                <Key>Medio</Key>
+                <Position>8</Position>
+            </Column7>
+            <Column8 ID="Importe">
+                <AggregateFunction>Sum</AggregateFunction>
+                <Caption>Importe</Caption>
+                <DataMember>Importe</DataMember>
+                <FormatString>0.00</FormatString>
+                <Key>Importe</Key>
+                <Position>3</Position>
+                <Width>80</Width>
+                <CellStyle>
+                    <TextAlignment>Far</TextAlignment>
+                </CellStyle>
+            </Column8>
+            <Column9 ID="Moneda">
+                <Caption>Moneda</Caption>
+                <DataMember>Moneda</DataMember>
+                <Key>Moneda</Key>
+                <Position>9</Position>
+                <Width>60</Width>
+            </Column9>
+            <Column10 ID="Codigo">
+                <Caption>Código</Caption>
+                <DataMember>Codigo</DataMember>
+                <Key>Codigo</Key>
+                <Position>10</Position>
+                <Width>50</Width>
+            </Column10>
+            <Column11 ID="Cliente">
+                <Caption>Cliente</Caption>
+                <DataMember>Cliente</DataMember>
+                <Key>Cliente</Key>
+                <Position>11</Position>
+            </Column11>
+            <Column12 ID="Observaciones">
+                <Caption>Observaciones</Caption>
+                <DataMember>Observaciones</DataMember>
+                <Key>Observaciones</Key>
+                <Position>12</Position>
+                <Width>222</Width>
+            </Column12>
+            <Column13 ID="Apertura">
+                <Caption>F.Apertura Caja</Caption>
+                <DataMember>Apertura</DataMember>
+                <Key>Apertura</Key>
+                <Position>13</Position>
+                <Width>80</Width>
+            </Column13>
+            <Column14 ID="Cierre">
+                <Caption>F.Cierre Caja</Caption>
+                <DataMember>Cierre</DataMember>
+                <Key>Cierre</Key>
+                <Position>14</Position>
+                <Width>60</Width>
+            </Column14>
+        </Columns>
+        <GroupCondition ID="" />
+        <Groups Collection="true">
+            <Group0 ID="Group0">
+                <ColIndex>1</ColIndex>
+            </Group0>
+            <Group1 ID="Group1">
+                <ColIndex>9</ColIndex>
+            </Group1>
+        </Groups>
+    </RootTable>
+    <HeaderFormatStyle>
+        <Appearance>Empty</Appearance>
+        <BackColor>Transparent</BackColor>
+        <PredefinedStyle>HeaderFormatStyle</PredefinedStyle>
+    </HeaderFormatStyle>
+    <WatermarkImage />
+    <ThemedAreas>ScrollBars, EditControls, Headers, TreeGliphs, ControlBorder</ThemedAreas>
+    <Font>Microsoft Sans Serif, 8.25pt</Font>
+    <ControlStyle />
+    <ShowErrors>False</ShowErrors>
+    <AllowEdit>False</AllowEdit>
+    <FilterMode>Automatic</FilterMode>
+    <GroupTotals>Always</GroupTotals>
+</GridEXLayoutFile>

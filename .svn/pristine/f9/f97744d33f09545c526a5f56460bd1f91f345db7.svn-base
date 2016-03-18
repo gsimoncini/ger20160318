@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10440" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1454" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox38" DataField="Caja" MOD="4" Left="684.0001" Top="504" Width="3510" Height="270" Text="Caja" Style="font-style: italic; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="126" Top="504" Width="540" Height="270" Caption="Caja" Style="font-weight: bold; font-style: italic; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox26" DataField="Apertura" MOD="4" Left="7812" Top="504" Width="2250" Height="270" Text="Apertura" OutputFormat="" Style="text-align: left; font-style: italic; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="6372" Top="504" Width="1440" Height="270" Caption="Apertura de Caja" Style="font-weight: bold; font-style: italic; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="1440" Top="1164" Width="4230" Height="270" Caption="Forma de Pago" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label35" MOD="4" Left="9630" Top="1164" Width="630" Height="270" Caption="Importe" Style="ddo-char-set: 1; text-align: right; font-weight: bold; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="8460" Top="1164" Width="900" Height="270" Caption="Moneda" Style="ddo-char-set: 1; text-align: left; font-weight: bold; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="10" Y1="1090.64" X2="10440" Y2="1090" />
+      <Control Type="AR.Field" Name="TextBox27" MOD="4" Left="90" Top="90" Width="5400" Height="270" Text="Detalle de Cierre de Caja" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 12pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="5760" Top="1164" Width="2070" Height="270" Caption="En Concepto de" Style="ddo-char-set: 1; text-align: left; font-weight: bold; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="90" Top="1164" Width="1260" Height="270" Caption="Fecha" Style="ddo-char-set: 1; text-align: left; font-weight: bold; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="fechaEmision" DataField="Fecha" MOD="4" Left="8010" Top="90" Width="2340" Height="288" Text="fecha" OutputFormat="M/d/yyyy h:mm" Style="ddo-char-set: 1; text-align: right; font-size: 10pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label13" MOD="4" Left="6300" Top="90" Width="1710" Height="270" Caption="Fecha de emisión" Style="font-weight: normal; font-size: 10pt; font-family: Arial; " />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="10" Y1="460.6401" X2="10440" Y2="460" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="10" Y1="1444" X2="10450" Y2="1444" />
+      <Control Type="AR.Label" Name="Label39" MOD="4" Left="90" Top="810" Width="1080" Height="270" Caption="Responsable" Style="font-weight: bold; font-style: italic; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox41" DataField="nombre" MOD="4" Left="1260" Top="810" Width="6750" Height="288" Text="nombre" Style="font-style: italic; font-size: 8pt; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="270" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox4" DataField="Tipo de Comprobante" MOD="4" Left="1440" Top="0" Width="4320" Height="288" Text="Tipo de Comprobante" Style="ddo-char-set: 1; text-align: left; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox5" DataField="Moneda" MOD="4" Left="8475" Top="0" Width="900" Height="288" Text="Moneda" OutputFormat="" Style="ddo-char-set: 1; text-align: left; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox6" DataField="Neto" MOD="4" Left="9480" Top="0" Width="869.9999" Height="288" Text="Neto" OutputFormat="$#,##0.00" Style="ddo-char-set: 1; text-align: right; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox13" DataField="Concepto" MOD="4" Left="5760" Top="0" Width="2790" Height="288" Text="Concepto" Style="ddo-char-set: 1; text-align: left; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox15" DataField="Fecha" MOD="4" Left="90" Top="0" Width="1710" Height="288" Text="Fecha" OutputFormat="M/d/yy h:mm" Style="ddo-char-set: 1; text-align: left; font-size: 8pt; font-family: Arial; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="675" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox7" MOD="4" Left="9540" Top="360" Width="390.0002" Height="270" Text="TextBox7" Style="text-align: right; font-weight: normal; font-family: Arial; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="8640" Top="360" Width="810" Height="285" Caption="Página" Style="font-weight: bold; font-size: 10pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="txtNombreEmpresa" MOD="4" Left="0" Top="360" Width="2790" Height="270" Text="txtEmpresa" Style="font-weight: bold; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="txtTotal" MOD="4" Left="8730" Top="0" Width="1530" Height="288" Text="Total Caja" OutputFormat="$ #,##0.00;($ #,##0.00)" Style="text-align: right; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="7830" Top="0" Width="1260" Height="270" Caption="Total: " Style="text-align: center; font-weight: bold; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="10.00002" Y1="298" X2="10540" Y2="298" />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="8820" Top="0" Width="270" Height="288" Caption="$" Style="ddo-char-set: 1; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox28" MOD="4" Left="9990" Top="360" Width="450" Height="270" Text="TextBox28" Style="text-align: left; font-weight: normal; font-family: Arial; " SummaryType="4" />
+      <Control Type="AR.Label" Name="Label38" MOD="4" Left="9900" Top="360" Width="90" Height="270" Caption="/" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="sMEcagZJQNqtnQUt/YPNHSKDeoGnO0Q3bNulvd7pwoZj0M5A54AAj+Ad80okYbtc8zxcooTIyQU9+FTHKhGKuh4pESnA4IxQuFQGvqMtJB09uYVyurUTzqjV3+hXcouIO6sXsDSv4igjTGJBY3l1aw==" SQL="exec Pr_tfi_InstanciasCaja_CierreCaja_Reporte null, null, null&#xD;&#xA;" />
+  </DataSources>
+  <Script><![CDATA[decimal total = 0;
+
+public void PageFooter_Format()
+{
+
+DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["txtNombreEmpresa"];
+text.Text = Empresa;
+DataDynamics.ActiveReports.TextBox textTotal = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["txtTotal"];
+textTotal.Text = System.Convert.ToString(total);
+
+}
+
+
+bool m_color = true;
+public void Detail_Format(){
+
+if(m_color)
+	{
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+
+	}
+
+}
+public void ActiveReport_ReportStart()
+{
+  rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+    rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+    rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+    rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+
+
+
+  rpt.StyleSheet.Add("MyStyle");
+  
+  rpt.StyleSheet["MyStyle"].FontName = "Arial";
+   rpt.StyleSheet["MyStyle"].FontSize =null;
+   rpt.StyleSheet["MyStyle"].FontStrikeThrough = false;
+    rpt.StyleSheet["MyStyle"].FontUnderline = false;
+ rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+    rpt.StyleSheet["MyStyle"].VerticalAlignment = VerticalTextAlignment.Middle;
+	
+int cant = rpt.Sections["Detail"].Controls.Count;
+for (int i = 0; i < cant; i++)  
+((TextBox)rpt.Sections["Detail"].Controls[i]).ClassName="MyStyle";	
+			
+}
+public bool ActiveReport_FetchData(bool eof)
+{
+
+if(! eof)
+{
+decimal neto = System.Convert.ToDecimal(rpt.Fields["Neto"].Value);
+
+int signo = System.Convert.ToInt32(rpt.Fields["Signo"].Value);
+if(signo == -1)
+m_color = true;
+else m_color = false;
+total = total + neto * signo;
+total = decimal.Round(total, 2);
+}
+return eof;
+
+}
+
+public void PageHeader_Format()
+{
+
+DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["fechaEmision"];
+text.Text = System.DateTime.Now.ToString();
+}
+]]></Script>
+  <PageSettings PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" />
+</ActiveReportsLayout>

@@ -1,0 +1,1192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96019240-B19D-4587-B5B8-D442496DF5C8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>mz.erp.dataaccess</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mz.erp.dataaccess</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/mz.erp.dataaccess/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mz.erp.security.dll">
+      <HintPath>..\mz.erp.security.dll\bin\mz.erp.security.dll.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\mz.erp.commontypes.dll\mz.erp.commontypes.dll.csproj">
+      <Name>mz.erp.commontypes.dll</Name>
+      <Project>{23B55F01-BF06-4AA8-878D-FB579246D04B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.dbhelper\mz.erp.dbhelper.dll.csproj">
+      <Name>mz.erp.dbhelper.dll</Name>
+      <Project>{8B4A211F-FE26-4E55-98CA-F37A95D39EAA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.systemframework.dll\mz.erp.systemframework.dll.csproj">
+      <Name>mz.erp.systemframework.dll</Name>
+      <Project>{9D3E8AE6-DD14-46A8-9395-DFDD6CE2C6A5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OpcionDeMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PoolTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\GenericReports.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ConsultarComprobantesDeCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ConsultarStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ConsultarValorizacionDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_DetalleListadoDeComprasPorArt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoCitiVentas.cs" />
+    <Compile Include="reportes\rep_ListadoComprasListaDePrecios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeAjustesDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeArtDesacConStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeArticulosPendienteDePreparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeComprasPorArt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeIngreso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeMovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDePercepcionDeIngresosBrutos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeRentabilidadPorGruposUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeRetencionDeIngresosBrutos.cs" />
+    <Compile Include="reportes\rep_ListadoDeValorizacionDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoDeVentasPorProducto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoListaDePreciosProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoProductosNumerosDeSerie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoSeguimientoDeArticulos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoStockNDias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ListadoStockValorizado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\rep_ProductosDebajoStockMinimo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\Temporal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\tfi_ReporteCierreCaja.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\tlg_ReporteDetalleComprobantesDeEntrega.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\tsa_ReporteComprobantesDeVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\tsa_ReporteDetalleComprobantesDeVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\tsa_ReporteImpuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\tsh_ReporteActualizacionPrecios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistema.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_Equipo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_EstadisticaOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_EstadisticaOrdenReparacionDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_EstadisticaOrdenReparacionModificacionTecnico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_EstadisticaOrdenReparacionMotivoOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_EstadisticaOrdenReparacionMotivoOrdenReparacionDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_EstadoOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_Falla.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_InstanciaOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_ListaDePreciosTarea.cs" />
+    <Compile Include="st_OrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_OrdenReparacionMovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_RecepcionCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_RepuestoOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_Servicio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_ServicioTareas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_Tarea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_Tecnico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="st_TipoEquipoFalla.cs" />
+    <Compile Include="sy_AgrupVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_AuxiliarVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_BarrasHerramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_BarrasHerramientasHerramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Conexion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_ConfiguracionesReglas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Empresas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Excepciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Funcionalidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Grupos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_GruposVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Herramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_HerramientasEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_HerramientasRecursosIdiomas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Idiomas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_JerarquiaAgrupVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Perfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_PerfilesFuncionalidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_PerfilesHerramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_PerfilesUsuariosEmpresas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Puestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Recursos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Reglas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_SentenciasReplicacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Sucesos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Sucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_TiposRecursos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_TiposSucesos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_TiposVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Usuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_UsuariosEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Validaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_Variables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_VariablesEmpresas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_VariablesPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_VariablesPuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_VariablesReglas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_VariablesSucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sy_VariablesUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcs_Cargos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcs_Domicilios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcs_DomiciliosCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcs_DomiciliosPersonas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcs_TiposContactos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcs_TiposDomicilios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcs_Tratamiento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_AgrupTDCompTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_AuditoriaControlCajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_AuditoriaControlCajasDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_AuditoriaControlCajasDetalleBilletes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_AuditoriaControlCajasEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_Banco.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_Cajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_Chequera.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_ControlDeCajasFamiliasComprobanteTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_CotizacionesMonedas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_CuentaBancaria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_Entidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_EstadoCheques.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_FormasDePago.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_FormasDePagoEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_FuentesDeCambio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_InstanciasCaja.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_InstanciasCajaCierres.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_JerarquiaAgrupTDCompTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_Monedas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_MovimientoBancario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_MovimientosDeCaja.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_MovimientosDeCajaAjustes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_MovimientosDeCajaEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_PagosMovimientosCajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_ResponsablesCajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_TDCompTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_TDCompTesoreriasMonedasRecargos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_TDCompTesoreria_CondicionesDeVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_TDCompTesoreria_Entidadescs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_TDCompTesoreria_TipoMovimiento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_TiposMovimientos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_Valores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_ValoresDatosAuxiliares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_ValoresEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tfi_ValorizacionStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_Comprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_ComprobantesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_Depositos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_EstadosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_Flete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_MovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_MovimientosDeStockAjustes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_MovimientosDeStockAjustesDatosAuxiliares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_MovimientosDeStockNumerosDeSerie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_ResponsablesDepositosSecciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_Secciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_Stock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_StockNumerosDeSerie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_StockSucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_TiposComprobantesOrigenDestino.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_TiposDeAjuste.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_TransicionesDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_Transportes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_VisualizacionDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_VisualizacionDeStockDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tlg_Zonas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpr_Objetos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpr_ObjetosCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_AgrupProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_AplicacionPagos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobanteDetalleDePagos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobanteDetalleDeuda.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobanteDetalleDeValores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_Comprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesDeCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesDeCompraConfirmacionDePrecios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesDeCompraDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesDeCompraDetConfirmacionDePrecios.cs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesImpuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesMovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesPago.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ComprobantesRelacionOrigenDestino.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_CondicionesDeCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ContactosProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_CotizCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_CotizOrdenesCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_CuentaCorriente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_DevolucionesCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_JerarquiaAgrupProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_Lotes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_MotivosDevoluciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_Netos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_NetosImpuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_OrdenesCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_OrdenesCompraDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_OrdenesDeComprasRemitos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_OrdenesRemitosCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProductoProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProductosProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_Proveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresCodigosProductos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresCondicionesImpuestoGanancias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresDetallePagoImpuestoGanancias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresEstados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresJerarquias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresObservaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresObservacionesEstados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresObservacionesTipos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_ProveedoresPadronesARBA.cs" />
+    <Compile Include="tpu_ProveedoresProductosAuxiliares.cs" />
+    <Compile Include="tpu_RemitosCompComprasDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_RemitosCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_RemitosComprasDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_Retenciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_RetencionesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_RetencionesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tpu_SeguimientoDevoluciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_AgrupCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_AplicacionPagos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_Bonificaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_BonificacionesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_BonificacionesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CargoAdicionalEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CierresFiscales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_Comisiones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComisionesCotasVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobanteCargoAdicional.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobanteDetalleDePagos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobanteDetalleDescripcionAdicional.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobanteDetalleDeuda.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobanteDetalleEstadoItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobanteDetalleImpuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobanteDetalleOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_Comprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesAutorizaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesDetAuxiliares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesEFactura.cs" />
+    <Compile Include="tsa_ComprobantesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesMovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesRelacionOrigenDestino.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_ComprobantesReservasRelacion.cs" />
+    <Compile Include="tsa_ComprobanteValoresVarAux.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CondicionesDeVentaDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CondicionesDeVentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CondicionesDeVentasEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentaCorriente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_Cuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentasCondicionesDeVenta_TDCompTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentasEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentasJerarquias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentasObservaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentasObservacionesEstados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentasObservacionesTipos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_CuentasPadronesARBA.cs" />
+    <Compile Include="tsa_FacturasImpagas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_JerarquiaAgrupCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsa_VariantesStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Aceptacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_AgrupProductos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_AsociacionCodigos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Autorizaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_CoeficientesCostosIndirectos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_CombosDet.cs" />
+    <Compile Include="tsh_CombosDetListasDePrecios.cs" />
+    <Compile Include="tsh_Contactos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Conversiones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ConversionesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_DetalleConversiones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Documentos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_DocumentosPersonas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_GruposProductos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_JerarquiaAgrupProd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_JerarquiasListasDePreciosAplicadas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ListasDePrecios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ListasDePreciosEx.cs" />
+    <Compile Include="tsh_Localidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_MovimientosStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_MovimientosStockDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_PadronesARBA.cs" />
+    <Compile Include="tsh_Paises.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_PaisesProvincias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Personas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Productos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosAuxiliares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosCoeficientesAplicados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosJerarquias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosListasDePrecios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosListasDePreciosAplicadas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosListasDePreciosCategoriasCuentas.cs" />
+    <Compile Include="tsh_ProductosPedidosPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosSucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProductosValoresCampoAuxiliarBusqueda.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Provincias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_ProvinciasLocalidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_RecursosHumanos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_TipoAceptacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsh_Unidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_AfipTiposDeComprobantes.cs" />
+    <Compile Include="tsy_AfipTiposDeComprobantesRelacionados.cs" />
+    <Compile Include="tsy_AfipTiposDeDocumentos.cs" />
+    <Compile Include="tsy_AfipTiposDeDocumentosRelacionados.cs" />
+    <Compile Include="tsy_AfipTiposDeImpuestosIVA.cs" />
+    <Compile Include="tsy_AfipTiposDeImpuestosIVARelacionados.cs" />
+    <Compile Include="tsy_AfipTiposDeImpuestosTributo.cs" />
+    <Compile Include="tsy_AfipTiposDeImpuestosTributoRelacionados.cs" />
+    <Compile Include="tsy_CategoriasIva.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_ClaseDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_ConceptosImpuestosGanancias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_ConcpetosRetencionIIBB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_Impuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_ImpuestosCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_ImpuestosEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_ImpuestosProductos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_MotivoOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_MotivosDiferenciasCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_SubTipoMovimiento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_TipoProducto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_TiposBilletes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_TiposDeComprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_TiposDeComprobantesCategoriaIva.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tsy_TiposDeComprobantes_CondicionesDeVenta_TDCompTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_TiposDeRetenciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_TiposDocumentos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsy_TiposMovimientos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionFamiliaFDPEntidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionFormasDePago.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstiloAplicado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstiloAplicadoPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstiloAplicadoUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesModificables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesModificablesPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesModificablesUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesPerfilesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosAplicablesUsuariosEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesDetEstilosAplicados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesDetEstilosAplicadosPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesDetEstilosAplicadosUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesDetPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesDetUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillaEstilosCondicionalesUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillasPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tui_ConfiguracionGrillasUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_Caminos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_ClaseTarea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_ControllerTarea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_Dependencias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_Procesos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_ProcesosHerramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_ProcesosTareas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_ProcesosTareasValidaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_Tareas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twf_TareasTiposDeComprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Variables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Workflow\Workflow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Sistema.cs.qopt">
+      <DependentUpon>Sistema.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

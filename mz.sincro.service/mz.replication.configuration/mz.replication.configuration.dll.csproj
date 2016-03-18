@@ -1,0 +1,303 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{C423B89A-BFD7-4D8E-9D87-A22C400DE9E4}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "mz.replication.configuration"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "mz.replication.configuration"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "Xceed.Chart.Core"
+                    AssemblyName = "Xceed.Chart.Core"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Chart.Core.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Chart.DataManipulation"
+                    AssemblyName = "Xceed.Chart.DataManipulation"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Chart.DataManipulation.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Chart"
+                    AssemblyName = "Xceed.Chart"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Chart.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Chart.Server"
+                    AssemblyName = "Xceed.Chart.Server"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Chart.Server.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Chart.Standard"
+                    AssemblyName = "Xceed.Chart.Standard"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Chart.Standard.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Chart.Utilities"
+                    AssemblyName = "Xceed.Chart.Utilities"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Chart.Utilities.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Chart.GLCore"
+                    AssemblyName = "Xceed.Chart.GLCore"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Chart.GLCore.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Compression"
+                    AssemblyName = "Xceed.Compression"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Compression.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Editors.Design"
+                    AssemblyName = "Xceed.Editors.Design"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Editors.Design.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Editors"
+                    AssemblyName = "Xceed.Editors"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Editors.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.FileSystem"
+                    AssemblyName = "Xceed.FileSystem"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.FileSystem.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Ftp"
+                    AssemblyName = "Xceed.Ftp"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Ftp.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Grid"
+                    AssemblyName = "Xceed.Grid"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Grid.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Grid.Design"
+                    AssemblyName = "Xceed.Grid.Design"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Grid.Design.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Validation"
+                    AssemblyName = "Xceed.Validation"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Validation.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Validation.Design"
+                    AssemblyName = "Xceed.Validation.Design"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Validation.Design.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.SmartUI"
+                    AssemblyName = "Xceed.SmartUI"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.SmartUI.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.SmartUI.Controls"
+                    AssemblyName = "Xceed.SmartUI.Controls"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.SmartUI.Controls.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.SmartUI.Design"
+                    AssemblyName = "Xceed.SmartUI.Design"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.SmartUI.Design.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.SmartUI.UIStyle"
+                    AssemblyName = "Xceed.SmartUI.UIStyle"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.SmartUI.UIStyle.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.SmartUI.UIStyle.WindowsXP.Blue"
+                    AssemblyName = "Xceed.SmartUI.UIStyle.WindowsXP.Blue"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.SmartUI.UIStyle.WindowsXP.Blue.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.SmartUI.UIStyle.WindowsXP.OliveGreen"
+                    AssemblyName = "Xceed.SmartUI.UIStyle.WindowsXP.OliveGreen"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.SmartUI.UIStyle.WindowsXP.OliveGreen.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.SmartUI.UIStyle.WindowsXP.Silver"
+                    AssemblyName = "Xceed.SmartUI.UIStyle.WindowsXP.Silver"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.SmartUI.UIStyle.WindowsXP.Silver.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Compression.Formats"
+                    AssemblyName = "Xceed.Compression.Formats"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Compression.Formats.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.UI"
+                    AssemblyName = "Xceed.UI"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.UI.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.UI.WindowsXP.Blue"
+                    AssemblyName = "Xceed.UI.WindowsXP.Blue"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.UI.WindowsXP.Blue.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.UI.WindowsXP.OliveGreen"
+                    AssemblyName = "Xceed.UI.WindowsXP.OliveGreen"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.UI.WindowsXP.OliveGreen.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.UI.WindowsXP.Silver"
+                    AssemblyName = "Xceed.UI.WindowsXP.Silver"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.UI.WindowsXP.Silver.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Zip"
+                    AssemblyName = "Xceed.Zip"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Zip.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+                <Reference
+                    Name = "Xceed.Interop.SHDocVw"
+                    AssemblyName = "Xceed.Interop.SHDocVw"
+                    HintPath = "..\..\..\..\..\Archivos de programa\Xceed Components\Bin\.NET\Xceed.Interop.SHDocVw.dll"
+                    AssemblyFolderKey = "hklm\xceed components"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConfigInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Job.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "JobItem.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ZipUtil.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tsa_CondicionesDeVentasDataset" targetNamespace="http://tempuri.org/tsa_CondicionesDeVentas.xsd" xmlns:mstns="http://tempuri.org/tsa_CondicionesDeVentas.xsd" xmlns="http://tempuri.org/tsa_CondicionesDeVentas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tsa_CondicionesDeVentasDataset" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="tsa_CondicionesDeVentasDataset" msprop:Generator_DataSetName="tsa_CondicionesDeVentasDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tsa_CondicionesDeVentas" msprop:Generator_UserTableName="tsa_CondicionesDeVentas" msprop:Generator_RowDeletedName="tsa_CondicionesDeVentasRowDeleted" msprop:Generator_TableClassName="tsa_CondicionesDeVentasDataTable" msprop:Generator_RowChangedName="tsa_CondicionesDeVentasRowChanged" msprop:Generator_RowClassName="tsa_CondicionesDeVentasRow" msprop:Generator_RowChangingName="tsa_CondicionesDeVentasRowChanging" msprop:Generator_RowEvArgName="tsa_CondicionesDeVentasRowChangeEvent" msprop:Generator_RowEvHandlerName="tsa_CondicionesDeVentasRowChangeEventHandler" msprop:Generator_TablePropName="tsa_CondicionesDeVentas" msprop:Generator_TableVarName="tabletsa_CondicionesDeVentas" msprop:Generator_RowDeletingName="tsa_CondicionesDeVentasRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdCondicionDeVenta" msprop:Generator_UserColumnName="IdCondicionDeVenta" msprop:Generator_ColumnPropNameInRow="IdCondicionDeVenta" msprop:Generator_ColumnVarNameInTable="columnIdCondicionDeVenta" msprop:Generator_ColumnPropNameInTable="IdCondicionDeVentaColumn" type="xs:string" />
+              <xs:element name="Descripcion" msprop:Generator_UserColumnName="Descripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Activo" msprop:Generator_UserColumnName="Activo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FechaCreacion" msprop:Generator_UserColumnName="FechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdConexionCreacion" msprop:Generator_UserColumnName="IdConexionCreacion" msprop:Generator_ColumnPropNameInRow="IdConexionCreacion" msprop:Generator_ColumnVarNameInTable="columnIdConexionCreacion" msprop:Generator_ColumnPropNameInTable="IdConexionCreacionColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="UltimaModificacion" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UltimaModificacion" msprop:Generator_ColumnPropNameInRow="UltimaModificacion" msprop:Generator_ColumnVarNameInTable="columnUltimaModificacion" msprop:Generator_ColumnPropNameInTable="UltimaModificacionColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="IdConexionUltimaModificacion" msprop:Generator_UserColumnName="IdConexionUltimaModificacion" msprop:Generator_ColumnPropNameInRow="IdConexionUltimaModificacion" msprop:Generator_ColumnVarNameInTable="columnIdConexionUltimaModificacion" msprop:Generator_ColumnPropNameInTable="IdConexionUltimaModificacionColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="IdReservado" msprop:Generator_UserColumnName="IdReservado" msprop:Generator_ColumnPropNameInRow="IdReservado" msprop:Generator_ColumnVarNameInTable="columnIdReservado" msprop:Generator_ColumnPropNameInTable="IdReservadoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="RowId" msprop:Generator_ColumnPropNameInRow="RowId" msprop:Generator_ColumnVarNameInTable="columnRowId" msprop:Generator_ColumnPropNameInTable="RowIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IdEmpresa" msprop:Generator_UserColumnName="IdEmpresa" msprop:Generator_ColumnPropNameInRow="IdEmpresa" msprop:Generator_ColumnVarNameInTable="columnIdEmpresa" msprop:Generator_ColumnPropNameInTable="IdEmpresaColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Recargo" msprop:Generator_UserColumnName="Recargo" msprop:Generator_ColumnPropNameInRow="Recargo" msprop:Generator_ColumnVarNameInTable="columnRecargo" msprop:Generator_ColumnPropNameInTable="RecargoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Orden" msprop:Generator_UserColumnName="Orden" msprop:Generator_ColumnPropNameInRow="Orden" msprop:Generator_ColumnVarNameInTable="columnOrden" msprop:Generator_ColumnPropNameInTable="OrdenColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="tsa_CondicionesDeVentasDatasetKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tsa_CondicionesDeVentas" />
+      <xs:field xpath="mstns:IdCondicionDeVenta" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

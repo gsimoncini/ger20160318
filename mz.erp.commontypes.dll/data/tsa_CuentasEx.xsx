@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-6847" viewPortTop="-1185" zoom="100">
+    <tsa_Cuentas_XmlElement left="-5847" top="-185" width="11853" height="11430" selected="0" zOrder="1" index="0" expanded="1" />
+    <tcs_DomiciliosCuentas_XmlElement left="9525" top="9261" width="8573" height="3387" selected="0" zOrder="2" index="1" expanded="1" />
+    <tsy_ImpuestosCuentas_XmlElement left="12169" top="254" width="5292" height="3387" selected="0" zOrder="4" index="2" expanded="1" />
+    <tsa_AgrupCuentas_XmlElement left="18095" top="254" width="5292" height="3387" selected="0" zOrder="19" index="3" expanded="1" />
+    <tsa_CuentasJerarquias_XmlElement left="24021" top="254" width="5292" height="3387" selected="0" zOrder="24" index="4" expanded="1" />
+    <tsh_Contactos_XmlElement left="25635" top="8218" width="5292" height="3387" selected="0" zOrder="29" index="5" expanded="1" />
+    <tsh_Personas_XmlElement left="35873" top="254" width="5292" height="3387" selected="0" zOrder="34" index="6" expanded="1" />
+    <tcs_Domicilios_XmlElement left="14414" top="14322" width="5292" height="3281" selected="0" zOrder="6" index="7" expanded="1" />
+    <tcs_Domiciliostsa_Cuentas_XmlKeyref left="6218" top="13391" width="503" height="503" selected="0" zOrder="39" />
+    <tsa_Cuentastsh_Contactos_XmlKeyref left="17527" top="4317" width="503" height="503" selected="0" zOrder="30" />
+    <tsa_Cuentastsa_AgrupCuentas_XmlKeyref left="11601" top="4317" width="503" height="503" selected="0" zOrder="20" />
+    <tcs_Domiciliostcs_DomiciliosCuentas_XmlKeyref left="26416" top="4317" width="503" height="503" selected="0" zOrder="7" />
+    <tsa_Cuentastsy_ImpuestosCuentas_XmlKeyref left="8638" top="4317" width="503" height="503" selected="0" zOrder="15" />
+    <tsa_Cuentastcs_DomiciliosCuentas_XmlKeyref left="5675" top="4317" width="503" height="503" selected="0" zOrder="11" />
+    <tsh_Personastsh_Contactos_XmlKeyref left="35305" top="4317" width="503" height="503" selected="0" zOrder="35" />
+    <tsa_Cuentastsa_CuentasJerarquias_XmlKeyref left="14564" top="4317" width="503" height="503" selected="0" zOrder="25" />
+</XSDDesignerLayout>

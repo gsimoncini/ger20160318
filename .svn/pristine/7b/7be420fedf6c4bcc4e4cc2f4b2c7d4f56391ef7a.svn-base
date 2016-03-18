@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tpu_ComprobantesDeCompra" targetNamespace="http://tempuri.org/tpu_ComprobantesDeCompra.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tpu_ComprobantesDeCompra.xsd"
+	xmlns:mstns="http://tempuri.org/tpu_ComprobantesDeCompra.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tpu_ComprobantesDeCompraDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tpu_ComprobantesDeCompra">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdComprobante" type="xs:string" />
+							<xs:element name="IdTipoDeComprobante" type="xs:string" />
+							<xs:element name="Numero" type="xs:string" />
+							<xs:element name="Fecha" type="xs:dateTime" />
+							<xs:element name="IdProveedor" type="xs:string" />
+							<xs:element name="IdResponsable" type="xs:string" />
+							<xs:element name="IdMonedaCierre" type="xs:string" />
+							<xs:element name="FechaDeRegistracion" type="xs:dateTime" />
+							<xs:element name="ValorCotizacionProveedor" type="xs:decimal" />
+							<xs:element name="IdTipoMovimiento" type="xs:string" />
+							<xs:element name="IdSubtipoMovimiento" type="xs:string" nillable="true" />
+							<xs:element name="FechaVencimiento" type="xs:dateTime" />
+							<xs:element name="FechaProximoVencimiento" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MesImputacion" type="xs:long" />
+							<xs:element name="CAI" type="xs:string" />
+							<xs:element name="Leyenda" type="xs:string" />
+							<xs:element name="NetoBruto" type="xs:decimal" />
+							<xs:element name="Descuento" type="xs:decimal" />
+							<xs:element name="SubtotalNeto" type="xs:decimal" />
+							<xs:element name="NetoGravado" type="xs:decimal" />
+							<xs:element name="GastoGravado" type="xs:decimal" />
+							<xs:element name="ServicioGravado" type="xs:decimal" />
+							<xs:element name="MontoNoGravado" type="xs:decimal" />
+							<xs:element name="IvaInscripto1" type="xs:decimal" />
+							<xs:element name="PercepcionIB" type="xs:decimal" />
+							<xs:element name="PercepcionGanancias" type="xs:decimal" />
+							<xs:element name="PercepcionIVA" type="xs:decimal" />
+							<xs:element name="ImpuestosInternos" type="xs:decimal" />
+							<xs:element name="TotalGeneral" type="xs:decimal" />
+							<xs:element name="DescuentoGeneral" type="xs:decimal" />
+							<xs:element name="Total" type="xs:decimal" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" />
+							<xs:element name="IdEmpresa" type="xs:long" />
+							<xs:element name="IvaInscripto2" type="xs:decimal"></xs:element>
+							<xs:element name="IvaInscripto3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AñoImputacion" type="xs:long" minOccurs="0" />
+							<xs:element name="AñoDevengamiento" type="xs:long" minOccurs="0" />
+							<xs:element name="MesDevengamiento" type="xs:long" minOccurs="0" />
+							<xs:element name="Autorizada" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tpu_ComprobantesDeCompraKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tpu_ComprobantesDeCompra" />
+			<xs:field xpath="mstns:IdComprobante" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Pr_tfi_VariablesAuxiliaresWithValor_GetList_By_IdValor" targetNamespace="http://tempuri.org/Pr_tfi_VariablesAuxiliaresWithValor_GetList_By_IdValor.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/Pr_tfi_VariablesAuxiliaresWithValor_GetList_By_IdValor.xsd" xmlns:mstns="http://tempuri.org/Pr_tfi_VariablesAuxiliaresWithValor_GetList_By_IdValor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Pr_tfi_VariablesAuxiliaresWithValor_GetList_By_IdValorDataset" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="Pr_tfi_VariablesAuxiliaresWithValor_GetList_By_IdValor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IdVariableAuxiliarTDCompTesoreria" type="xs:string" />
+                            <xs:element name="DescrpcionComprobante" type="xs:string" minOccurs="0" />
+                            <xs:element name="DescripcionVariable" type="xs:string" minOccurs="0" />
+                            <xs:element name="Valor" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

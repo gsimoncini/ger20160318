@@ -1,0 +1,5 @@
+1 - Limpiar solucion
+2 - Compilar por capas.
+3 - En erp.ui.dll quitar todas las lineas del licenses.licx en la carpeta properties.
+4 - Para instalar Janus en Windows 7 es necesario bajar las politicas de seguridad de cuentas de usuarios al minimo.
+Para ello ir: Panel de Control / Cuentas de Usuario / Cambiar configuracion de Control de Cuentas de Usuario

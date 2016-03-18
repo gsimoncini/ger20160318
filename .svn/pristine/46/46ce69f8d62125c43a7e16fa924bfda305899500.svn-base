@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-3000" viewPortTop="2802" zoom="100">
+    <tsy_TiposDeComprobantes_XmlElement left="-2142" top="10002" width="9155" height="7197" selected="0" zOrder="1" index="0" expanded="1" />
+    <twf_Tareas_XmlElement left="12092" top="3016" width="8520" height="5080" selected="0" zOrder="7" index="1" expanded="1" />
+    <twf_TareasTiposDeComprobantes_XmlElement left="11032" top="11035" width="8573" height="5080" selected="0" zOrder="2" index="2" expanded="1" />
+    <twf_Tareastwf_TareasTiposDeComprobantes_XmlKeyref left="10045" top="5307" width="503" height="503" selected="0" zOrder="8" />
+    <tsy_TiposDeComprobantestwf_TareasTiposDeComprobantes_XmlKeyref left="8759" top="13354" width="503" height="503" selected="0" zOrder="3" />
+</XSDDesignerLayout>

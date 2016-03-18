@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RecursosElementosNavegacionIdiomasDataset" targetNamespace="http://tempuri.org/RecursosElementosNavegacionIdiomasDataset.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/RecursosElementosNavegacionIdiomasDataset.xsd"
+	xmlns:mstns="http://tempuri.org/RecursosElementosNavegacionIdiomasDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RecursosElementosNavegacionIdiomasDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RecursosElementosNavegacionIdiomas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="idElementoNavegacion" type="xs:long" />
+							<xs:element name="idIdioma" type="xs:long" />
+							<xs:element name="idTipoRecurso" type="xs:long" />
+							<xs:element name="Valor" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="RecursosElementosNavegacionIdiomasDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RecursosElementosNavegacionIdiomas" />
+			<xs:field xpath="mstns:idElementoNavegacion" />
+			<xs:field xpath="mstns:idIdioma" />
+			<xs:field xpath="mstns:idTipoRecurso" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

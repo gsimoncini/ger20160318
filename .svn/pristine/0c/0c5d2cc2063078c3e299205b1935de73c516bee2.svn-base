@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataConfiguration>
+  <xmlSerializerSection type="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data">
+    <enterpriseLibrary.databaseSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultInstance="mz.replication.dataaccess" xmlns="http://www.microsoft.com/practices/enterpriselibrary/08-31-2004/data">
+      <databaseTypes>
+        <databaseType name="Sql Server" type="Microsoft.Practices.EnterpriseLibrary.Data.Sql.SqlDatabase, Microsoft.Practices.EnterpriseLibrary.Data" />
+      </databaseTypes>
+      <instances>
+        <instance name="mz.replication.dataaccess" type="Sql Server" connectionString="ErpPrincipal" />
+      </instances>
+      <connectionStrings>
+        <connectionString name="ErpPrincipal">
+          <parameters>
+            <parameter name="data source" value="ssistemas" isSensitive="false" />
+            <parameter name="initial catalog" value="erpprincipal" isSensitive="false" />
+            <parameter name="user id" value="invitado" isSensitive="false" />
+            <parameter name="password" value="bienvenido" isSensitive="false" />
+          </parameters>
+        </connectionString>
+      </connectionStrings>
+    </enterpriseLibrary.databaseSettings>
+  </xmlSerializerSection>
+</dataConfiguration>

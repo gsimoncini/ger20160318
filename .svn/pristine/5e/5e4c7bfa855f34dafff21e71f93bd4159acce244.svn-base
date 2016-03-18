@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="mz.erp.commontypes.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ErpPrincipalConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=SSERVIDOR;Initial Catalog=ErpPrincipal;User ID=sa;Password=gosp&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=SSERVIDOR;Initial Catalog=ErpPrincipal;User ID=sa;Password=gosp</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalMZConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=10.1.254.102;Initial Catalog=ErpPrincipalMZ;Persist Security Info=True;User ID=sa;Password=silvinagerman2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.1.254.102;Initial Catalog=ErpPrincipalMZ;Persist Security Info=True;User ID=sa;Password=silvinagerman2010</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalSP18ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=SABRINA-PC\SQLEXPRESS;Initial Catalog=ErpPrincipalSP18;User ID=sa;Password=gosp&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=SABRINA-PC\SQLEXPRESS;Initial Catalog=ErpPrincipalSP18;User ID=sa;Password=gosp</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalServiGardenConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=10.1.254.102;Initial Catalog=ErpPrincipalServiGarden;Persist Security Info=True;User ID=sa;Password=silvinagerman2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.1.254.102;Initial Catalog=ErpPrincipalServiGarden;Persist Security Info=True;User ID=sa;Password=silvinagerman2010</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalBrandHouseReservasConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=10.1.254.102;Initial Catalog=ErpPrincipalBrandHouseReservas;User ID=sa;Password=silvinagerman2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.1.254.102;Initial Catalog=ErpPrincipalBrandHouseReservas;User ID=sa;Password=silvinagerman2010</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalServiGardenConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=PANDA\SQLEXPRESS;Initial Catalog=ErpPrincipalServiGarden;Persist Security Info=True;User ID=sa;Password=03461441874&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=PANDA\SQLEXPRESS;Initial Catalog=ErpPrincipalServiGarden;Persist Security Info=True;User ID=sa;Password=03461441874</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalSP18ConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=NET35;Initial Catalog=ErpPrincipalSP18;Persist Security Info=True;User ID=sa;Password=silvinagerman2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=NET35;Initial Catalog=ErpPrincipalSP18;Persist Security Info=True;User ID=sa;Password=silvinagerman2010</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalSP19ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=NET35;Initial Catalog=ErpPrincipalSP19;Persist Security Info=True;User ID=sa;Password=silvinagerman2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=NET35;Initial Catalog=ErpPrincipalSP19;Persist Security Info=True;User ID=sa;Password=silvinagerman2010</Value>
+    </Setting>
+    <Setting Name="ErpPrincipalCorporativaConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=net35;Initial Catalog=ErpPrincipalCorporativa;Persist Security Info=True;User ID=sa;Password=silvinagerman2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=net35;Initial Catalog=ErpPrincipalCorporativa;Persist Security Info=True;User ID=sa;Password=silvinagerman2010</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

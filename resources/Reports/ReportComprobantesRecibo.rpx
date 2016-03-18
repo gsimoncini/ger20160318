@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10515" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="4020" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="90" Y1="1440" X2="10440" Y2="1440" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="90" Y1="2250" X2="10440" Y2="2250" />
+      <Control Type="AR.Field" Name="TextBox18" MOD="4" Left="90" Top="2340" Width="2070" Height="360" Text="Recibí la suma de:" Style="font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBox45" MOD="4" Left="90" Top="3060" Width="2070" Height="360" Text="En concepto de:" Style="font-size: 12pt; " />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="90" Top="3510" Width="10350" Height="450" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label43" MOD="4" Left="9180" Top="3600" Width="720" Height="270" Caption="Pago" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label42" MOD="4" Left="7740" Top="3600" Width="720" Height="270" Caption="Saldo" />
+      <Control Type="AR.Label" Name="Label41" MOD="4" Left="6480" Top="3600" Width="630" Height="270" Caption="Total" />
+      <Control Type="AR.Label" Name="Label40" MOD="4" Left="4500" Top="3600" Width="990" Height="270" Caption="Numero" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label39" MOD="4" Left="2250" Top="3600" Width="720" Height="270" Caption="Tipo" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label38" MOD="4" Left="450" Top="3600" Width="720" Height="270" Caption="Fecha" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox49" DataField="Total" MOD="4" Left="2250" Top="2340" Width="2610" Height="378.0001" Text="Total" OutputFormat="#,##0.00" Style="font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBox50" DataField="TextoTotal" MOD="4" Left="2250" Top="2790" Width="8190" Height="288" Text="TextoTotal" />
+      <Control Type="AR.Field" Name="TextBox9" MOD="4" Left="90" Top="1530" Width="810" Height="270" Text="Cliente:" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox51" MOD="4" Left="90" Top="1890" Width="1260" Height="270" Text="Domicilio:" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox52" DataField="Nombre" MOD="4" Left="990" Top="1530" Width="9450" Height="288" Text="Nombre" />
+      <Control Type="AR.Field" Name="TextBox53" DataField="Domicilio" MOD="4" Left="1440" Top="1890" Width="9000" Height="288" Text="Domicilio" />
+      <Control Type="AR.Field" Name="TextBox54" DataField="Numero" MOD="4" Left="7200" Top="270" Width="2880" Height="360" Text="Numero" Style="font-size: 16pt; " />
+      <Control Type="AR.Field" Name="TextBox55" DataField="Fecha" MOD="4" Left="7200" Top="810" Width="2880" Height="360" Text="Fecha" OutputFormat="dd/MM/yyyy" Style="font-size: 14pt; " />
+      <Control Type="AR.Field" Name="TextBox56" MOD="4" Left="4680" Top="270" Width="2430" Height="360" Text="Comprobante Nº" Style="font-size: 16pt; " />
+      <Control Type="AR.Field" Name="TextBox57" MOD="4" Left="4680" Top="810" Width="2430" Height="360" Text="Fecha:" Style="text-align: right; font-size: 16pt; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="464" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox1" DataField="NumeroFactura" MOD="4" Left="4140" Top="90" Width="1890" Height="288" Text="NumeroFactura" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox2" DataField="TotalFactura" MOD="4" Left="6120" Top="90" Width="1260" Height="288" Text="TotalFactura" OutputFormat="#,##0.00" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox3" DataField="SaldoFactura" MOD="4" Left="7470" Top="90" Width="1350" Height="288" Text="SaldoFactura" OutputFormat="#,##0.00" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox46" DataField="MontoPago" MOD="4" Left="8910" Top="90" Width="1350" Height="288" Text="MontoPago" OutputFormat="#,##0.00" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox47" DataField="TipoComprobanteFactura" MOD="4" Left="1620" Top="90" Width="2430" Height="288" Text="TipoComprobanteFactura" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox48" DataField="FechaFactura" MOD="4" Left="90" Top="90" Width="1440" Height="288" Text="FechaFactura" OutputFormat="dd/MM/yyyy" Style="text-align: center; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="4545" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="6500" Y1="3260" X2="9110.001" Y2="3260" />
+      <Control Type="AR.Field" Name="TextBox30" MOD="4" Left="6490" Top="3340" Width="2610" Height="360" Text="Aclaración" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox29" MOD="4" Left="1720" Top="3340" Width="2610" Height="360" Text="Firma" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line21" MOD="4" X1="1710" Y1="3240" X2="4320" Y2="3240" />
+      <Control Type="AR.Field" Name="TextBox28" MOD="4" Left="4140" Top="270" Width="1530" Height="270" Text="Forma de Pago:" />
+      <Control Type="AR.Field" Name="TextBox25" MOD="4" Left="540" Top="180" Width="1080" Height="360" Text="Total:" Style="font-weight: normal; font-size: 14pt; " />
+      <Control Type="AR.Line" Name="Line20" MOD="4" X1="10530" Y1="1800" X2="90" Y2="1800" />
+      <Control Type="AR.Field" Name="TextBox31" DataField="Total" MOD="4" Left="1710" Top="180" Width="2070" Height="360" Text="Total" OutputFormat="#,##0.00" Style="font-size: 14pt; " />
+      <Control Type="AR.Field" Name="TextBox32" DataField="FormasDePagos" MOD="4" Left="5850" Top="270" Width="4500" Height="1440" Text="FormasDePagos" />
+      <Control Type="AR.Line" Name="Line23" MOD="4" X1="10440" Y1="90" X2="90" Y2="90" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="Htw5uG+bcXYv4oXIvCR45+b9lTwK5kNfk+CyR2mREoK8YWLNWmC5CY05g17H4OJHIA2A6Jidefhbx1q46Ns7s7ycuqcktcO81HoMopT9VM8iPu+C40eKCL87QWp7hDgU" SQL="exec Pr_Tsa_ComprobanteDePago_View '00001000010000001582'" />
+  </DataSources>
+  <Script><![CDATA[public void ActiveReport_ReportStart()
+{
+System.Console.WriteLine("-------- Report Start -------"  );
+ rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+System.Console.WriteLine("----------eND ReportStart------------");
+
+}]]></Script>
+  <PageSettings PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" />
+</ActiveReportsLayout>

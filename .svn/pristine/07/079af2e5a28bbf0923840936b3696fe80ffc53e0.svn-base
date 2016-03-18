@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="sy_TablaXML" targetNamespace="http://tempuri.org/sy_TablaXML.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/sy_TablaXML.xsd" xmlns:mstns="http://tempuri.org/sy_TablaXML.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="sy_TablaXMLDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="sy_TablaXML">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="idimagen" type="xs:int" />
+							<xs:element name="imagen" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="fechaCreacion" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="sy_TablaXMLDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:sy_TablaXML" />
+			<xs:field xpath="mstns:idimagen" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

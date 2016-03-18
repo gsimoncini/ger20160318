@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="15660" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="945" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="180" Top="555" Width="990" Height="270" Caption="Código" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="1320" Top="555" Width="2820" Height="270" Caption="Cliente" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="4260" Top="555" Width="2700" Height="270" Caption="Domicilio" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="6930" Top="555" Width="2160" Height="240" Caption="Teléfonos" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="9180" Top="555" Width="2790" Height="240" Caption="Email" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="11970" Top="555" Width="1530" Height="240" Caption="Tipo de Documento" Style="text-align: center; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label13" MOD="4" Left="14542.5" Top="555" Width="1260" Height="240" Caption="Documento" Style="text-align: center; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="13590" Top="555" Width="900" Height="270" Caption="IVA" Style="text-align: center; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="10" Y1="895" X2="15870" Y2="905.08" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="10" Y1="460" X2="15770" Y2="460.08" />
+      <Control Type="AR.Label" Name="Label25" MOD="4" Left="90" Top="90" Width="3780" Height="270" Caption="Reporte de Clientes" Style="text-align: left; font-weight: bold; font-size: 10pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label26" MOD="4" Left="11430" Top="90" Width="1710" Height="270" Caption="Fecha de Emisión" Style="font-weight: normal; font-size: 10pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="fechaEmision" MOD="4" Left="13140" Top="90" Width="2430" Height="270" Text="getDate()" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox1" DataField="Codigo" MOD="4" Left="180" Top="0" Width="959.9999" Height="288" Text="Codigo" CanShrink="1" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox2" DataField="Nombre" MOD="4" Left="1320" Top="0" Width="2820" Height="288" Text="Nombre" CanShrink="1" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox3" DataField="Domicilio" MOD="4" Left="4260" Top="0" Width="2625" Height="288" Text="" CanShrink="1" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox4" DataField="Telefonos" MOD="4" Left="6930" Top="0" Width="2205" Height="288" Text="" CanShrink="1" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox5" DataField="Email" MOD="4" Left="9180" Top="0" Width="3479.999" Height="288" Text="" CanShrink="1" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox6" DataField="idTipoDocumento" MOD="4" Left="12420" Top="0" Width="990" Height="288" Text="Tipo de Documento" CanShrink="1" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox29" DataField="Documento" MOD="4" Left="13410" Top="0" Width="1335.001" Height="288" Text="Documento" CanShrink="1" Style="text-align: center; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="IdCategoriaIva" MOD="4" Left="14760" Top="0" Width="810" Height="288" Text="IdCategoriaIva" CanShrink="1" Style="text-align: center; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="570" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="14490" Top="180" Width="450" Height="270" Text="TextBox24" Style="text-align: right; font-weight: normal; font-size: 10pt; font-family: Arial; " SummaryType="4" SummaryRunning="1" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="13860" Top="180" Width="720" Height="270" Caption="Página" Style="font-weight: normal; font-size: 10pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="txtNombreEmpresa" MOD="4" Left="0" Top="0" Width="2790" Height="360" Text="txtEmpresa" Style="font-weight: normal; font-size: 10pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox31" MOD="4" Left="15120" Top="180" Width="450" Height="270" Text="TextBox31" Style="text-align: left; font-weight: normal; font-size: 10pt; font-family: Arial; " SummaryType="2" SummaryRunning="1" />
+      <Control Type="AR.Label" Name="Label24" MOD="4" Left="14940" Top="180" Width="180" Height="270" Caption="/" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="GJCfM0gZrKNpba3KmUgXSAcA0kAYFIMR3YmUU/66wpmKICZ5/R8kFPYpPOwixaepVbaY4ait7AxkF+bjcT0eW/5KwSKpnow5e99b3OKB4p7ka4Foynvzylc15dqRglWhVHCN8LJjtbdZPEPbN9gAUw==" SQL="Select * from  vw_tsa_Cuentas" />
+  </DataSources>
+  <Script><![CDATA[
+
+
+bool m_color = false;
+public void Detail_Format()
+{
+int count = rpt.Sections["Detail"].Controls.Count;
+for (int i = 0; i < count; i++)  
+((TextBox)rpt.Sections["Detail"].Controls[i]).ClassName="MyStyle";	
+
+if(m_color)
+	{	
+		m_color =false;
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.White;
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+		m_color = true;	
+	}
+}
+
+
+
+public void ActiveReport_ReportStart()
+{
+  
+ rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+    rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+    rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+    rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+
+rpt.StyleSheet.Add("MyStyle");
+  
+  rpt.StyleSheet["MyStyle"].FontName = "Arial";
+   rpt.StyleSheet["MyStyle"].FontSize =null;
+   rpt.StyleSheet["MyStyle"].FontStrikeThrough = false;
+    rpt.StyleSheet["MyStyle"].FontUnderline = false;
+ rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+    rpt.StyleSheet["MyStyle"].VerticalAlignment = VerticalTextAlignment.Middle;
+}
+
+public void PageFooter_Format()
+{
+DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["txtNombreEmpresa"];
+text.Text = Empresa;
+}
+
+]]></Script>
+  <PageSettings Orientation="2" />
+</ActiveReportsLayout>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="15315" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; color: Black; font-size: 12pt; font-weight: bold; vertical-align: top; text-align: right; " />
+    <Style Name="Titulo" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; text-align: left; " />
+    <Style Name="Filtro_descripcion" Value="font-family: Arial; text-decoration: none; color: Black; vertical-align: top; font-weight: normal; font-style: italic; font-size: 10pt; text-align: left; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1019" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="0" Top="0" Width="2430" Height="360" Caption="Cobranzas y Pagos" Style="text-align: left; font-weight: bold; font-size: 12pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBoxFecha" MOD="4" Left="12975" Top="0" Width="2340" Height="270" Text="fecha" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; font-weight: normal; font-size: 10pt; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="11160" Top="0" Width="1800" Height="270" Caption="Fecha de Emisión" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="0" Top="450" Width="1260" Height="270" Caption="Usuario:" Style="text-align: left; font-weight: bold; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="4770" Top="720" Width="2070" Height="270" Caption="Movimiento" Style="text-align: left; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label40" MOD="4" Left="11160" Top="720" Width="810" Height="270" Caption="Moneda" Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="10" Y1="370" X2="15310" Y2="370" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="0" Y1="705" X2="15300" Y2="705" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="0" Y1="1005" X2="15300" Y2="1005" />
+      <Control Type="AR.Label" Name="Label41" MOD="4" Left="0" Top="720" Width="1170" Height="270" Caption="Caja" Style="text-align: left; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label42" MOD="4" Left="7560" Top="720" Width="1530" Height="270" Caption="Número" Style="text-align: left; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label43" MOD="4" Left="9630" Top="720" Width="1170" Height="270" Caption="Importe" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label45" MOD="4" Left="2430" Top="720" Width="1170" Height="270" Caption="Fecha" Style="text-align: left; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label46" MOD="4" Left="12150" Top="720" Width="3060" Height="270" Caption="Observaciones" Style="text-align: left; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="TextBoxFiltro" MOD="4" Left="1350" Top="450" Width="9090" Height="270" Text="TextBox14" Style="text-align: left; font-weight: normal; font-style: italic; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="288" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox5" DataField="Caja" MOD="4" Left="90" Top="0" Width="2250" Height="288" Text="Caja" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Importe" MOD="4" Left="9675" Top="0" Width="1185" Height="288" Text="Importe" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="Moneda" MOD="4" Left="11160" Top="0" Width="810" Height="288" Text="Moneda" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="Descripcion" MOD="4" Left="4770" Top="0" Width="2700" Height="288" Text="Descripcion" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox11" DataField="Numero" MOD="4" Left="7560" Top="0" Width="2070" Height="288" Text="Numero" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="Fecha" MOD="4" Left="2475" Top="0" Width="2250" Height="288" Text="Fecha" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox13" DataField="Observaciones" MOD="4" Left="12150" Top="0" Width="3150" Height="288" Text="Observaciones" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="599" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="14850" Top="0" Width="90" Height="270" Caption="/" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox3" MOD="4" Left="14940" Top="0" Width="270" Height="270" Text="TextBox3" Style="text-align: left; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " SummaryType="4" />
+      <Control Type="AR.Field" Name="TextBox4" MOD="4" Left="14490" Top="0" Width="360" Height="270" Text="TextBox4" Style="text-align: right; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="13680" Top="0" Width="810" Height="270" Caption="Página:" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBoxEmpresa" MOD="4" Left="0" Top="10" Width="2070" Height="270" Text="TextBox9" Style="text-align: left; font-weight: normal; font-size: 10pt; " />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="10" Y1="10" X2="15310" Y2="10" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="0" Top="270" Width="15570" Height="540" BackStyle="1" LineColor="16777215" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="sMEcagZJQNqtnQUt/YPNHSKDeoGnO0Q3bNulvd7pwoZj0M5A54AAj+Ad80okYbtcVZqdV2VVtC1gRZMsiefhNCsNr8B99bX5hapfRF/NHpj/ef6MYsSC/XMOIOwW0apt6/jx15qOLvBxTYrU8aqswg==" SQL="exec dbo.Pr_tfi_Cajas_CobranzasYPagos&#xD;&#xA;" />
+  </DataSources>
+  <Script><![CDATA[public void PageFooter_Format()
+{
+	//setea el nombre de la empresa
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["TextBoxEmpresa"];
+	text.Text = Empresa;
+	
+}
+
+
+bool m_color = true;
+public void Detail_Format(){
+	//modifico los colores del campo de detalle
+	if(m_color)
+	{
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+		m_color = false;
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+		m_color = true;
+	}
+}
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["TextBoxFecha"];
+	text.Text = System.DateTime.Now.ToString();
+
+	//setea el nombre del usuario
+	DataDynamics.ActiveReports.TextBox text2 = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["TextBoxFiltro"];
+	text2.Text = Usuario;
+}
+]]></Script>
+  <PageSettings LeftMargin="720" RightMargin="720" TopMargin="720" BottomMargin="0" PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" Orientation="2" />
+</ActiveReportsLayout>

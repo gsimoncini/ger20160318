@@ -1,0 +1,201 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{C04365C7-F5B4-40CE-A065-DDFCE3883A8C}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "mz.replication.filetransfer.ui"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "mz.replication.filetransfer.ui"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinExplorerBar.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinExplorerBar.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinExplorerBar.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.v3.2"
+                    AssemblyName = "Infragistics.Win.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Shared.v3.2"
+                    AssemblyName = "Infragistics.Shared.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Shared.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "System.Runtime.Serialization.Formatters.Soap"
+                    AssemblyName = "System.Runtime.Serialization.Formatters.Soap"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Runtime.Serialization.Formatters.Soap.dll"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinListBar.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinListBar.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinListBar.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinGrid.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinGrid.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinGrid.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "janus.windows.gridex"
+                    AssemblyName = "Janus.Windows.GridEX"
+                    HintPath = "..\..\..\..\archivos de programa\janus systems\controls for microsoft .net\windows forms controls\bin\v1.0.2500\janus.windows.gridex.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                />
+                <Reference
+                    Name = "Janus.Windows.Common"
+                    AssemblyName = "Janus.Windows.Common"
+                    HintPath = "..\..\..\..\Archivos de programa\Janus Systems\Controls for Microsoft .NET\Windows Forms Controls\Bin\v1.0.2500\Janus.Windows.Common.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                />
+                <Reference
+                    Name = "SHDocVw"
+                    Guid = "{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxSHDocVw"
+                    Guid = "{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FormMain.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FormMain.resx"
+                    DependentUpon = "FormMain.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "licenses.licx"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

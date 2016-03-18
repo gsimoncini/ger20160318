@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9360" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="6105" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="2430" Top="360" Width="4050" Height="270" Caption="INGRESOS BRUTOS" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 12pt; " />
+      <Control Type="AR.Label" Name="Label25" MOD="4" Left="1800" Top="630" Width="5940" Height="270" Caption="DISPOSICION NORMATIVA SERIE 'B' 1/2004" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 12pt; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="0" Y1="1080" X2="9360" Y2="1080" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="0" Y1="1170" X2="9360" Y2="1170" LineStyle="4" />
+      <Control Type="AR.Label" Name="Label26" MOD="4" Left="0" Top="1260" Width="2700" Height="270" Caption="Numero de Comprobante:   " Style="ddo-char-set: 0; text-align: left; font-weight: normal; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="NumeroRetencion" MOD="4" Left="2700" Top="1260" Width="3240" Height="288" Text="NumeroRetencion" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox11" DataField="FechaRetencion" MOD="4" Left="5940" Top="1260" Width="3330" Height="288" Text="FechaRetencion" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="0" Y1="1620" X2="9270" Y2="1620" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="0" Y1="1710" X2="9270" Y2="1710" LineStyle="4" />
+      <Control Type="AR.Label" Name="Label27" MOD="4" Left="90" Top="1800" Width="3060" Height="288" Caption="AGENTE DE RETENCION" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label28" MOD="4" Left="90" Top="2160" Width="1620" Height="288" Caption="Nombre: " Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="NombreEmpresa" MOD="4" Left="1710" Top="2160" Width="7560" Height="288" Text="NombreEmpresa" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox13" DataField="DomicilioEmpresa" MOD="4" Left="1710" Top="2430" Width="7560" Height="288" Text="Domicilio" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label29" MOD="4" Left="90" Top="2430" Width="1620" Height="288" Caption="Domicilio:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label30" MOD="4" Left="90" Top="2700" Width="1620" Height="288" Caption="C.U.I.T.:" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox14" DataField="CUITEmpresa" MOD="4" Left="1710" Top="2700" Width="7560" Height="288" Text="CUITEmpresa" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="90" Y1="3060" X2="9270" Y2="3060" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="90" Y1="3150" X2="9360" Y2="3150" LineStyle="4" />
+      <Control Type="AR.Label" Name="Label31" MOD="4" Left="90" Top="3240" Width="4050" Height="288" Caption="SUJETO PASIBLE DE RETENCION" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label32" MOD="4" Left="90" Top="3600" Width="1620" Height="288" Caption="Nombre: " Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox15" DataField="Nombre" MOD="4" Left="1710" Top="3600" Width="7560" Height="288" Text="NombreProveedor" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox16" DataField="Domicilio" MOD="4" Left="1710" Top="3870" Width="7560" Height="288" Text="Domicilio" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label33" MOD="4" Left="90" Top="3870" Width="1620" Height="288" Caption="Domicilio:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label34" DataField="TipoDocumento" MOD="4" Left="90" Top="4140" Width="1620" Height="288" Caption="TipoDocumento" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox17" DataField="Numero" MOD="4" Left="1710" Top="4140" Width="7560" Height="288" Text="Numero" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="90" Y1="4500" X2="9270" Y2="4500" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="90" Y1="4590" X2="9360" Y2="4590" LineStyle="4" />
+      <Control Type="AR.Label" Name="Label35" MOD="4" Left="90" Top="4680" Width="4050" Height="288" Caption="RETENCION EFECTUADA" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label36" MOD="4" Left="90" Top="5040" Width="1620" Height="288" Caption="Importe Gravado:" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="MontoNeto" MOD="4" Left="1710" Top="5040" Width="3870" Height="288" Text="MontoNeto" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox19" DataField="MontoRetencion" MOD="4" Left="1710" Top="5310" Width="3870" Height="288" Text="MontoRetencion" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label37" MOD="4" Left="90" Top="5310" Width="1620" Height="288" Caption="Retencion:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="90" Y1="5670" X2="9360" Y2="5670" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="0" Y1="5760" X2="9270" Y2="5760" LineStyle="4" />
+      <Control Type="AR.Label" Name="Label20" MOD="4" Left="2430" Top="90" Width="4050" Height="270" Caption="COMPROBANTE DE RETENCION " Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 12pt; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="2880" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="sMEcagZJQNqtnQUt/YPNHSKDeoGnO0Q3bNulvd7pwoZj0M5A54AAj+Ad80okYbtc8zxcooTIyQU9+FTHKhGKuh4pESnA4IxQuFQGvqMtJB09uYVyurUTzqjV3+hXcouIO6sXsDSv4igjTGJBY3l1aw==" SQL="exec Pr_tpu_Retenciones_SearchEx '00001000010000000158', 'IIBB'" />
+  </DataSources>
+  <Script><![CDATA[
+]]></Script>
+  <PageSettings PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" />
+</ActiveReportsLayout>

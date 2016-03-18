@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-3198" viewPortTop="-1434" zoom="100">
+    <tpu_Comprobantes_XmlElement left="1720" top="-1112" width="10107" height="2963" selected="0" zOrder="1" index="0" expanded="1" />
+    <tpu_ComprobantesDet_XmlElement left="-820" top="6773" width="11959" height="4657" selected="0" zOrder="2" index="1" expanded="1" />
+    <tlg_MovimientosDeStock_XmlElement left="13388" top="2672" width="8784" height="8890" selected="0" zOrder="4" index="2" expanded="1" />
+    <tpu_ComprobantesRelacionOrigenDestino_XmlElement left="-7752" top="2725" width="18732" height="3810" selected="0" zOrder="6" index="3" expanded="1" />
+    <tpu_Comprobantestpu_ComprobantesDet_XmlKeyref left="12076" top="6762" width="503" height="503" selected="0" zOrder="8" />
+</XSDDesignerLayout>

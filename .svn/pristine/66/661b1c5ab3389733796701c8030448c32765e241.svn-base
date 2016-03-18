@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<SQLType>StoredProcedure</SQLType>
+<SQL>Pr_tsa_Cuentas_Search</SQL>
+<CreatedDateTime>2005-03-21T10:18:42.8739936-03:00</CreatedDateTime>
+<ParametersSQL>
+	<ReportParameterConfig>
+		<Nombre>@Codigo</Nombre>
+		<Descripcion>Representa la Identifcacion de la cuenta</Descripcion>
+		<TipoDeDato>VarChar</TipoDeDato>
+		<ValorPorDefecto>null</ValorPorDefecto>
+		<Orden>1</Orden>
+		<ControlUIType>
+			
+				<LabelText>Codigo</LabelText>
+				<ControlType>System.String</ControlType>
+			
+		</ControlUIType>
+	</ReportParameterConfig>
+
+</ParametersSQL>
+</ReportConfig>

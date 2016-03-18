@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tfi_InstanciasCajaCierres" targetNamespace="http://tempuri.org/tfi_InstanciasCajaCierres.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tfi_InstanciasCajaCierres.xsd"
+	xmlns:mstns="http://tempuri.org/tfi_InstanciasCajaCierres.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tfi_InstanciasCajaCierresDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tfi_InstanciasCajaCierres">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdInstanciaCaja" type="xs:string" />
+							<xs:element name="IdTDCompTesoreria" type="xs:string" />
+							<xs:element name="IdMonedaCierre" type="xs:string" />
+							<xs:element name="Total" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IdCotizacionCierre" type="xs:string" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tfi_InstanciasCajaCierresKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tfi_InstanciasCajaCierres" />
+			<xs:field xpath="mstns:IdInstanciaCaja" />
+			<xs:field xpath="mstns:IdTDCompTesoreria" />
+			<xs:field xpath="mstns:IdMonedaCierre" />
+			<xs:field xpath="mstns:IdCotizacionCierre" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

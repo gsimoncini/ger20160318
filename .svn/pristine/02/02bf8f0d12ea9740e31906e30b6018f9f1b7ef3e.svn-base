@@ -1,0 +1,2462 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{EF4F53FA-1F4D-4292-8F88-4251DFE03043}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "mz.erp.ui"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "mz.erp.ui"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "mz.erp.businessrules.dll"
+                    Project = "{186D09F1-0548-4C3C-A9EF-9E73A1EA49EC}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinStatusBar.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinStatusBar.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinStatusBar.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.v3.2"
+                    AssemblyName = "Infragistics.Win.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Shared.v3.2"
+                    AssemblyName = "Infragistics.Shared.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Shared.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinDock.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinDock.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinDock.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Runtime.Serialization.Formatters.Soap"
+                    AssemblyName = "System.Runtime.Serialization.Formatters.Soap"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Runtime.Serialization.Formatters.Soap.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinToolbars.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinToolbars.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinToolbars.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinExplorerBar.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinExplorerBar.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinExplorerBar.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "mz.erp.systemframework.dll"
+                    Project = "{9D3E8AE6-DD14-46A8-9395-DFDD6CE2C6A5}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinTabbedMdi.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinTabbedMdi.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinTabbedMdi.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Janus.Windows.Common"
+                    AssemblyName = "Janus.Windows.Common"
+                    HintPath = "..\..\..\..\Archivos de programa\Janus Systems\Controls for Microsoft .NET\Windows Forms Controls\Bin\v1.0.2500\Janus.Windows.Common.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinEditors.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinEditors.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinEditors.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinGrid.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinGrid.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinGrid.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.Misc.v3.2"
+                    AssemblyName = "Infragistics.Win.Misc.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.Misc.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "mz.erp.dbhelper.dll"
+                    Project = "{8B4A211F-FE26-4E55-98CA-F37A95D39EAA}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "mz.erp.ui.controls.dll"
+                    Project = "{B5A46127-C620-47FB-8B4A-B2366378A51A}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "janus.windows.schedule"
+                    AssemblyName = "Janus.Windows.Schedule"
+                    HintPath = "..\..\..\archivos de programa\janus systems\controls for microsoft .net\windows forms controls\bin\v1.0.2500\janus.windows.schedule.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinSchedule.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinSchedule.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinSchedule.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SHDocVw"
+                    Guid = "{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "AxSHDocVw"
+                    Guid = "{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinMaskedEdit.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinMaskedEdit.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinMaskedEdit.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "janus.windows.calendarcombo"
+                    AssemblyName = "Janus.Windows.CalendarCombo"
+                    HintPath = "..\..\..\archivos de programa\janus systems\controls for microsoft .net\windows forms controls\bin\v1.0.2500\janus.windows.calendarcombo.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinTree.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinTree.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinTree.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "mz.erp.fiscal.dll"
+                    Project = "{F09EF6FB-187C-4914-B5E8-7E86249BCBDD}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "infragistics.win.ultrawindatasource.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinDataSource.v3.2"
+                    HintPath = "..\..\..\winnt\assembly\gac\infragistics.win.ultrawindatasource.v3.2\3.2.20042.18__7dd5c3163f2cd0cb\infragistics.win.ultrawindatasource.v3.2.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ExceptionManager"
+                    Project = "{101C7640-9970-4AB6-9F25-E4784A583490}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "mz.erp.commontypes.dll"
+                    Project = "{23B55F01-BF06-4AA8-878D-FB579246D04B}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Janus.Windows.GridEX"
+                    AssemblyName = "Janus.Windows.GridEX"
+                    HintPath = "..\..\..\Archivos de programa\Janus Systems\Controls for Microsoft .NET\Windows Forms Controls\Bin\v1.0.2500\Janus.Windows.GridEX.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.Design"
+                    AssemblyName = "ActiveReports.Design"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.Design.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports"
+                    AssemblyName = "ActiveReports"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.HtmlExport"
+                    AssemblyName = "ActiveReports.HtmlExport"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.HtmlExport.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.Interop"
+                    AssemblyName = "ActiveReports.Interop"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.Interop.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.PdfExport"
+                    AssemblyName = "ActiveReports.PdfExport"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.PdfExport.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.RtfExport"
+                    AssemblyName = "ActiveReports.RtfExport"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.RtfExport.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.TextExport"
+                    AssemblyName = "ActiveReports.TextExport"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.TextExport.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.TiffExport"
+                    AssemblyName = "ActiveReports.TiffExport"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.TiffExport.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.Viewer"
+                    AssemblyName = "ActiveReports.Viewer"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.Viewer.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ActiveReports.XlsExport"
+                    AssemblyName = "ActiveReports.XlsExport"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Data Dynamics\ActiveReports for .NET\ActiveReports.XlsExport.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ARVSPackage"
+                    Guid = "{BF8811C3-36FD-4236-B80F-ABEAC6B206DE}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "EPSON_Impresora_Fiscal"
+                    Guid = "{AFD24A52-2823-4FBD-B75D-C282C11E1D98}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxEPSON_Impresora_Fiscal"
+                    Guid = "{AFD24A52-2823-4FBD-B75D-C282C11E1D98}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+                <Reference
+                    Name = "mz.erp.ui.controller.dll"
+                    Project = "{6133DE5B-5AAD-40B0-9620-735228AD2EA6}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Infragistics.Excel.v3.2"
+                    AssemblyName = "Infragistics.Excel.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\ASP.NET\Bin\Infragistics.Excel.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.webassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.UltraChart.Render.ActiveImage.v4.1"
+                    AssemblyName = "Infragistics.UltraChart.Render.ActiveImage.v4.1"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\ASP.NET\Bin\Infragistics.UltraChart.Render.ActiveImage.v4.1.dll"
+                    AssemblyFolderKey = "hklm\infragistics.webassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.UltraChart.Core.v4.1"
+                    AssemblyName = "Infragistics.UltraChart.Core.v4.1"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\ASP.NET\Bin\Infragistics.UltraChart.Core.v4.1.dll"
+                    AssemblyFolderKey = "hklm\infragistics.webassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinChart.v4.1"
+                    AssemblyName = "Infragistics.Win.UltraWinChart.v4.1"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinChart.v4.1.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinDataSource.v3.2.Design"
+                    AssemblyName = "Infragistics.Win.UltraWinDataSource.v3.2.Design"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinDataSource.v3.2.Design.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinGrid.ExcelExport.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinGrid.ExcelExport.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinGrid.ExcelExport.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinGrid.v3.2.Design"
+                    AssemblyName = "Infragistics.Win.UltraWinGrid.v3.2.Design"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinGrid.v3.2.Design.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinInkProvider.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinInkProvider.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinInkProvider.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinListBar.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinListBar.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinListBar.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinTabControl.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinTabControl.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinTabControl.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "System.Drawing.Design"
+                    AssemblyName = "System.Drawing.Design"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.Design.dll"
+                />
+                <Reference
+                    Name = "mz.erp.io.dll"
+                    Project = "{9133E9E5-94BB-480F-8D43-6A7ED1A352A3}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "mz.erp.security.dll"
+                    Project = "{83540CDB-61E2-452F-B494-EB7C5EBAB91F}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "licenses.licx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "mz.erp.ui.localization.resources"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "class\ComprobanteDeCompra.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ComprobantesDeCompraPendientes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ComprobantesDeVenta.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ComprobantesPendientes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ComprobantesPendientesWF.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\DetalleComprobantesDeCompraPendientes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\Errores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\IFormDetail.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\IGridDocument.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\IGridDocumentEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\Impresion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ITaskForm.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ProcessLoader.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ProcessUIManager.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\RelacionComprobanteOrigenDestino.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\ReportsManager.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\Stock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_AuxiliarVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_BarrasHerramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_BarrasHerramientasHerramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Conexion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Empresas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Excepciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Funcionalidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Grupos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_GruposVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Herramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_HerramientasRecursosIdiomas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Idiomas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_JerarquiaAgrupVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Perfiles.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_PerfilesFuncionalidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_PerfilesHerramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_PerfilesUsuariosEmpresas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Puestos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Recursos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_SentenciasReplicacion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Sucesos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Sucursales.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_TiposRecursos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_TiposSucesos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_TiposVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Usuarios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Validaciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Variables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesEmpresas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesPerfiles.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesPuestos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesSucursales.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesUsuarios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_Cargos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_Domicilios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_DomiciliosCuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_DomiciliosPersonas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_TiposContactos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_TiposDomicilios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_Tratamiento.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_Cajas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_CotizacionesMonedas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_Entidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_FormasDePago.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_FormasDePagoEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_FuentesDeCambio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_InstanciasCaja.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_InstanciasCajaCierres.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_Monedas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_MovimientosDeCaja.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_MovimientosDeCajaAjustes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_MovimientosDeCajaEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_PagosMovimientosCajas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_ResponsablesCajas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_TDCompTesoreria.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_TDCompTesoreriasMonedasRecargos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_Valores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_ValoresDatosAuxiliares.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_ValoresEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_ValorizacionStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_Depositos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_EstadosDeStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_MovimientosDeStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_Secciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_TiposDeAjuste.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_Transportes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_Zonas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpr_Objetos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpr_ObjetosCuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpr_ObjetosEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_ComprobantesDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_ContactosProveedores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_CotizCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_CotizOrdenesCompra.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_DevolucionesCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_Lotes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_MotivosDevoluciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_OrdenesCompra.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_OrdenesCompraDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_OrdenesRemitosCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_ProductosProveedores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_Proveedores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_RemitosCompComprasDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_RemitosCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_RemitosComprasDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_AgrupCuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_AplicacionPagos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_BonificacionesDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_BonificacionesEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Comisiones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComisionesCotasVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComprobanteDetalleDePagos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComprobanteDetalleDescripcionAdicional.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComprobanteDetalleDeuda.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Comprobantes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComprobantesDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_CondicionesDeVentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_CuentaCorriente.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Cuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_CuentasCondicionesDeVenta.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_JerarquiaAgrupCuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ReporteComprobantesDeVenta.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ReporteDetalleComprobanteDeVenta.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_VariantesStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Aceptacion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_AgrupProductos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_AsociacionCodigos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Autorizaciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Contactos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Conversiones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_DetalleConversiones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Documentos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_DocumentosPersonas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_GruposProductos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_JerarquiaAgrupProd.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Localidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_MovimientosStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_MovimientosStockDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Personas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Productos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_ProductosSucursales.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_ReportesAcutalizacionDePrecios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_TipoAceptacion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Unidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_CategoriasIva.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_ClaseDocumento.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_ImpuestosEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_SubTipoMovimiento.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_TipoProducto.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_TiposDeComprobantes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_TiposDocumentos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_TiposMovimientos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\UsuariosPersonas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controls\HtmlRichTextBox.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controls\HtmlRichTextBox.resx"
+                    DependentUpon = "HtmlRichTextBox.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "controls\InputBox.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controls\InputBox.resx"
+                    DependentUpon = "InputBox.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "controls\mzCuentasControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controls\mzCuentasControl.resx"
+                    DependentUpon = "mzCuentasControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "controls\mzProductosControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controls\mzProductosControl.resx"
+                    DependentUpon = "mzProductosControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\DefaultForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\DefaultForm.resx"
+                    DependentUpon = "DefaultForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\ExportForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\ExportForm.resx"
+                    DependentUpon = "ExportForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FilterDocument.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FilterDocument.resx"
+                    DependentUpon = "FilterDocument.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\Form1.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\Form1.resx"
+                    DependentUpon = "Form1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FormCuentas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FormCuentas.resx"
+                    DependentUpon = "FormCuentas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmBonificacionesEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmBonificacionesEx.resx"
+                    DependentUpon = "FrmAbmBonificacionesEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCajas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCajas.resx"
+                    DependentUpon = "FrmAbmCajas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmABMConversionesEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmABMConversionesEx.resx"
+                    DependentUpon = "FrmABMConversionesEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCotizacionMoneda.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCotizacionMoneda.resx"
+                    DependentUpon = "FrmAbmCotizacionMoneda.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCuentas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCuentas.resx"
+                    DependentUpon = "FrmAbmCuentas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCuentasCondicionesDeVenta.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCuentasCondicionesDeVenta.resx"
+                    DependentUpon = "FrmAbmCuentasCondicionesDeVenta.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCuentasObservaciones.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmCuentasObservaciones.resx"
+                    DependentUpon = "FrmAbmCuentasObservaciones.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmABMDomicilios.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmABMDomicilios.resx"
+                    DependentUpon = "FrmABMDomicilios.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmEntidades.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmEntidades.resx"
+                    DependentUpon = "FrmAbmEntidades.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmABMEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmABMEx.resx"
+                    DependentUpon = "FrmABMEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmExProductos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmExProductos.resx"
+                    DependentUpon = "FrmAbmExProductos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmABMInstanceManager.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmABMInstanceManager.resx"
+                    DependentUpon = "FrmABMInstanceManager.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmJerarquiaAgrupProd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmJerarquiaAgrupProd.resx"
+                    DependentUpon = "FrmAbmJerarquiaAgrupProd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmLocalidades.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmLocalidades.resx"
+                    DependentUpon = "FrmAbmLocalidades.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmObjetos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmObjetos.resx"
+                    DependentUpon = "FrmAbmObjetos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmPersonas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmPersonas.resx"
+                    DependentUpon = "FrmAbmPersonas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductos.resx"
+                    DependentUpon = "FrmAbmProductos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductosPrecios.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductosPrecios.resx"
+                    DependentUpon = "FrmAbmProductosPrecios.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductosSucursales.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductosSucursales.resx"
+                    DependentUpon = "FrmAbmProductosSucursales.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProveedores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProveedores.resx"
+                    DependentUpon = "FrmAbmProveedores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmSucursales.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmSucursales.resx"
+                    DependentUpon = "FrmAbmSucursales.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmTiposDeAjuste.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmTiposDeAjuste.resx"
+                    DependentUpon = "FrmAbmTiposDeAjuste.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmTransportes.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmTransportes.resx"
+                    DependentUpon = "FrmAbmTransportes.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmUsuariosEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmUsuariosEx.resx"
+                    DependentUpon = "FrmAbmUsuariosEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmValores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmValores.resx"
+                    DependentUpon = "FrmAbmValores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmZonas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmZonas.resx"
+                    DependentUpon = "FrmAbmZonas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAceptacion.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAceptacion.resx"
+                    DependentUpon = "FrmAceptacion.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAgrupamientos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAgrupamientos.resx"
+                    DependentUpon = "FrmAgrupamientos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAgrupProductos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAgrupProductos.resx"
+                    DependentUpon = "FrmAgrupProductos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAjusteDeStock.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAjusteDeStock.resx"
+                    DependentUpon = "FrmAjusteDeStock.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAltaRow.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAltaRow.resx"
+                    DependentUpon = "FrmAltaRow.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAMB.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAMB.resx"
+                    DependentUpon = "FrmAMB.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAperturaCaja.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAperturaCaja.resx"
+                    DependentUpon = "FrmAperturaCaja.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAplicacionDePagos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAplicacionDePagos.resx"
+                    DependentUpon = "FrmAplicacionDePagos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAutorizaciones.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAutorizaciones.resx"
+                    DependentUpon = "FrmAutorizaciones.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmCambioDeContraseña.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmCambioDeContraseña.resx"
+                    DependentUpon = "FrmCambioDeContraseña.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmCargosAdicionales.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmCargosAdicionales.resx"
+                    DependentUpon = "FrmCargosAdicionales.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmCierreCaja.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmCierreCaja.resx"
+                    DependentUpon = "FrmCierreCaja.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobanteDeCompraSelectN.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobanteDeCompraSelectN.resx"
+                    DependentUpon = "FrmComprobanteDeCompraSelectN.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantes.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantes.resx"
+                    DependentUpon = "FrmComprobantes.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesABMProductos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesABMProductos.resx"
+                    DependentUpon = "FrmComprobantesABMProductos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesDeCompra.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesDeCompra.resx"
+                    DependentUpon = "FrmComprobantesDeCompra.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesDePago.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesDePago.resx"
+                    DependentUpon = "FrmComprobantesDePago.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesDeVenta.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesDeVenta.resx"
+                    DependentUpon = "FrmComprobantesDeVenta.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesPendientesConsolaEntregas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesPendientesConsolaEntregas.resx"
+                    DependentUpon = "FrmComprobantesPendientesConsolaEntregas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesSelectN.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmComprobantesSelectN.resx"
+                    DependentUpon = "FrmComprobantesSelectN.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConfiguracionMenues.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConfiguracionMenues.resx"
+                    DependentUpon = "FrmConfiguracionMenues.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaArticulos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaArticulos.resx"
+                    DependentUpon = "FrmConsultaArticulos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaCaja.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaCaja.resx"
+                    DependentUpon = "FrmConsultaCaja.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaCajaDetalle.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaCajaDetalle.resx"
+                    DependentUpon = "FrmConsultaCajaDetalle.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaCompras.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaCompras.resx"
+                    DependentUpon = "FrmConsultaCompras.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaMovimientosStock.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConsultaMovimientosStock.resx"
+                    DependentUpon = "FrmConsultaMovimientosStock.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConsultas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConsultas.resx"
+                    DependentUpon = "FrmConsultas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConsultasWF.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConsultasWF.resx"
+                    DependentUpon = "FrmConsultasWF.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmConversiones.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmConversiones.resx"
+                    DependentUpon = "FrmConversiones.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmDetail.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmDetail.resx"
+                    DependentUpon = "FrmDetail.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmDetalleInstanciaCaja.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmDetalleInstanciaCaja.resx"
+                    DependentUpon = "FrmDetalleInstanciaCaja.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmDetalleItem.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmDetalleItem.resx"
+                    DependentUpon = "FrmDetalleItem.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmDetalleValores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmDetalleValores.resx"
+                    DependentUpon = "FrmDetalleValores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmEntregas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmEntregas.resx"
+                    DependentUpon = "FrmEntregas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmEstados.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmEstados.resx"
+                    DependentUpon = "FrmEstados.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmFiscal.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmFiscal.resx"
+                    DependentUpon = "FrmFiscal.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmFormasDePago.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmFormasDePago.resx"
+                    DependentUpon = "FrmFormasDePago.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmHabilitacionOpcionDeMenu.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmHabilitacionOpcionDeMenu.resx"
+                    DependentUpon = "FrmHabilitacionOpcionDeMenu.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmImpresion.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmImpresion.resx"
+                    DependentUpon = "FrmImpresion.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmIngresarPrecioProducto.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmIngresarPrecioProducto.resx"
+                    DependentUpon = "FrmIngresarPrecioProducto.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmIngresoMercParaReposicion.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmIngresoMercParaReposicion.resx"
+                    DependentUpon = "FrmIngresoMercParaReposicion.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmInputType.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmInputType.resx"
+                    DependentUpon = "FrmInputType.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmJerarquiaAgrupProd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmJerarquiaAgrupProd.resx"
+                    DependentUpon = "FrmJerarquiaAgrupProd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmJerarquiaAgrupVariables.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmJerarquiaAgrupVariables.resx"
+                    DependentUpon = "FrmJerarquiaAgrupVariables.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmMostarErrores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmMostarErrores.resx"
+                    DependentUpon = "FrmMostarErrores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmMovimientosAjusteCajaEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmMovimientosAjusteCajaEx.resx"
+                    DependentUpon = "FrmMovimientosAjusteCajaEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmMovimientosCajaEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmMovimientosCajaEx.resx"
+                    DependentUpon = "FrmMovimientosCajaEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmParameterReports.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmParameterReports.resx"
+                    DependentUpon = "FrmParameterReports.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmPorcentajeAdicionalMedidaSugerido.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmPorcentajeAdicionalMedidaSugerido.resx"
+                    DependentUpon = "FrmPorcentajeAdicionalMedidaSugerido.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmPreviewReport.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmPreviewReport.resx"
+                    DependentUpon = "FrmPreviewReport.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmProveedores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmProveedores.resx"
+                    DependentUpon = "FrmProveedores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmPruebas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmPruebas.resx"
+                    DependentUpon = "FrmPruebas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmRegistrarNumerosDeSerie.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmRegistrarNumerosDeSerie.resx"
+                    DependentUpon = "FrmRegistrarNumerosDeSerie.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmReporteImpuestos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmReporteImpuestos.resx"
+                    DependentUpon = "FrmReporteImpuestos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmSearchProductbyJerarquia.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmSearchProductbyJerarquia.resx"
+                    DependentUpon = "FrmSearchProductbyJerarquia.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmSeleccionarInstanciaOrdenReparacion.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmSeleccionarInstanciaOrdenReparacion.resx"
+                    DependentUpon = "FrmSeleccionarInstanciaOrdenReparacion.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmSeleccionEstadoDeItems.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmSeleccionEstadoDeItems.resx"
+                    DependentUpon = "FrmSeleccionEstadoDeItems.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmShowRowError.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmShowRowError.resx"
+                    DependentUpon = "FrmShowRowError.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmShowWarnings.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmShowWarnings.resx"
+                    DependentUpon = "FrmShowWarnings.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmSolicitarAutorizacion.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmSolicitarAutorizacion.resx"
+                    DependentUpon = "FrmSolicitarAutorizacion.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmStockACero.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmStockACero.resx"
+                    DependentUpon = "FrmStockACero.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmStockNDias.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmStockNDias.resx"
+                    DependentUpon = "FrmStockNDias.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\frmTest.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\frmTest.resx"
+                    DependentUpon = "frmTest.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\frmTestFiscal.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\frmTestFiscal.resx"
+                    DependentUpon = "frmTestFiscal.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmTransferenciasValoresCajas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmTransferenciasValoresCajas.resx"
+                    DependentUpon = "FrmTransferenciasValoresCajas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmValores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmValores.resx"
+                    DependentUpon = "FrmValores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmVerAsociaciones.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmVerAsociaciones.resx"
+                    DependentUpon = "FrmVerAsociaciones.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmVisualizacionCuentaCorriente.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmVisualizacionCuentaCorriente.resx"
+                    DependentUpon = "FrmVisualizacionCuentaCorriente.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\GridDocument.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\GridDocument.resx"
+                    DependentUpon = "GridDocument.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\localization.resources"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\LogIn.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\LogIn.resx"
+                    DependentUpon = "LogIn.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\MainForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\MainForm.resx"
+                    DependentUpon = "MainForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\ModalListBox.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\ModalListBox.resx"
+                    DependentUpon = "ModalListBox.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\mzCuentasSearchForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\mzCuentasSearchForm.resx"
+                    DependentUpon = "mzCuentasSearchForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\mzProductosSearchForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\mzProductosSearchForm.resx"
+                    DependentUpon = "mzProductosSearchForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\ReportImpuestos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\Splash.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\Splash.resx"
+                    DependentUpon = "Splash.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\TestFactura.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\TestFactura.resx"
+                    DependentUpon = "TestFactura.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\Usuario.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\Usuario.resx"
+                    DependentUpon = "Usuario.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\EventControlers\MouseEvents.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\FrmReports.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\FrmReports.resx"
+                    DependentUpon = "FrmReports.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reportes\FrmReportsGenericViewer.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\FrmReportsGenericViewer.resx"
+                    DependentUpon = "FrmReportsGenericViewer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reportes\rep_ListadoDeAjustesDeStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\rep_ListadoDeArtDesacConStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\rep_ListadoDeComprasPorArt.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\rep_ListadoDeIngreso.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\rep_ListadoDeMovimientosDeStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\rep_ListadoDeValorizacionDeStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reportes\rep_ListadoDeVentasPorProducto.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "utility\ControlVersion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "utility\Environment.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "utility\ToolsLoader.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "utility\Util.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

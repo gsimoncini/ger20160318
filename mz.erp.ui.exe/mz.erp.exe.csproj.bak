@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF4F53FA-1F4D-4292-8F88-4251DFE03043}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>mz.erp</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>mz.erp</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/mz.erp/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary1, Version=1.1.4190.30019, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExceptionManager\bin\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinDataSource.v3.2.Design, Version=3.2.20042.18, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics.Win.UltraWinDataSource.v3.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid.v3.2.Design, Version=3.2.20042.18, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics.Win.UltraWinGrid.v3.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Shared.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.Misc.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinChart.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinDataSource.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinDock.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinEditors.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinExplorerBar.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinGrid.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinInkProvider.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinInkProvider.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinListBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinListBar.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinMaskedEdit.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinMaskedEdit.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinSchedule.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinStatusBar.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTabbedMdi.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTabControl.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinToolbars.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTree.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.businessrules, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.businessrules.dll\bin\Debug\mz.erp.businessrules.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.commontypes, Version=1.0.4189.20404, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.commontypes.dll\bin\Debug\mz.erp.commontypes.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.dataaccess, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.dataaccess.dll\bin\Debug\mz.erp.dataaccess.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.io.dll, Version=1.0.4189.20757, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.io.dll\bin\Debug\mz.erp.io.dll.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.security.dll, Version=1.0.4185.23796, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.security.dll\bin\mz.erp.security.dll.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.systemframework, Version=1.0.4191.28321, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.systemframework.dll\bin\Debug\mz.erp.systemframework.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.ui, Version=1.0.4189.20762, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.ui.dll\bin\Debug\mz.erp.ui.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.ui.controller.dll, Version=1.0.4189.20758, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.ui.controller.dll\bin\Debug\mz.erp.ui.controller.dll.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssemblyRebinding.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utility\ControlVersion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utility\ToolsLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mz.erp.ui.localization.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+<<<<<<< .mine
+    <PostBuildEvent>MKDIR   "$(TargetDir)"resources\Icons;
+MKDIR  "$(TargetDir)"resources\Reports;
+MKDIR  "$(TargetDir)"resources\Ocx;
+COPY  /Y  "$(SolutionDir)"resources\*.* "$(TargetDir)"resources;
+COPY /Y "$(SolutionDir)"resources\Reports\*.* "$(TargetDir)"resources\Reports;
+COPY /Y "$(SolutionDir)"resources\Icons\*.* "$(TargetDir)"resources\Icons;
+COPY /Y "$(SolutionDir)"resources\Ocx\*.* "$(TargetDir)"resources\Ocx;
+DEL  "$(TargetDir)"*.pdb ;
+DEL  "$(TargetDir)"mz*.xml ;
+DEL  "$(TargetDir)"Janus*.xml ;
+=======
+    <PostBuildEvent>MKDIR   "$(TargetDir)"Configuration ;
+COPY /Y "$(SolutionDir)"script.bat   "$(TargetDir)"Configuration;
+CALL   "$(TargetDir)"Configuration\script.bat "$(SolutionDir)"
+DEL "$(TargetDir)"Configuration\script.bat
+>>>>>>> .r94
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

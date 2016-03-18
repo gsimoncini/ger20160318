@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00A91529-D08D-4FCA-85C9-5197260AC087}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>mz.erp.ui</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mz.erp.ui</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/mz.erp.ui/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Chart">
+      <HintPath>..\lib\ActiveReports for .NET 2.0\ActiveReports.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Design2">
+      <HintPath>..\lib\ActiveReports for .NET 2.0\ActiveReports.Design2.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.HtmlExport, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.HtmlExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Interop, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.PdfExport, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.PdfExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.RtfExport, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.RtfExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.TextExport, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.TextExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.TiffExport, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.TiffExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Viewer, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.Viewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Web, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Web.Design, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.Web.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Wizards.Addin">
+      <HintPath>..\lib\ActiveReports for .NET 2.0\ActiveReports.Wizards.Addin.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.XlsExport, Version=4.3.0.1261, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveReports.XlsExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.UltraChart.v4.1.Design, Version=4.1.20042.36, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics.Win.UltraWinDataSource.v3.2.Design, Version=3.2.20042.18, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics.Win.UltraWinGrid.v3.2.Design, Version=3.2.20042.18, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Shared.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.Misc.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinChart.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinDataSource.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinDock.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinEditors.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinExplorerBar.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinGrid.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinInkProvider.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinInkProvider.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinListBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinListBar.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinMaskedEdit.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinMaskedEdit.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinSchedule.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinStatusBar.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTabbedMdi.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTabControl.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinToolbars.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTree.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.v8.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Janus.Windows.Common, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="mz.erp.security.dll, Version=1.0.4185.23796, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mz.erp.security.dll\bin\mz.erp.security.dll.dll</HintPath>
+    </Reference>
+    <Reference Include="mz.erp.usercontrols">
+      <Name>mz.erp.usercontrols</Name>
+      <HintPath>..\mz.erp.usercontrols.dll\bin\Debug\mz.erp.usercontrols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+    <ProjectReference Include="..\mz.erp.businessrules.dll\mz.erp.businessrules.dll.csproj">
+      <Name>mz.erp.businessrules.dll</Name>
+      <Project>{186D09F1-0548-4C3C-A9EF-9E73A1EA49EC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.commontypes.dll\mz.erp.commontypes.dll.csproj">
+      <Name>mz.erp.commontypes.dll</Name>
+      <Project>{23B55F01-BF06-4AA8-878D-FB579246D04B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.dbhelper\mz.erp.dbhelper.dll.csproj">
+      <Name>mz.erp.dbhelper.dll</Name>
+      <Project>{8B4A211F-FE26-4E55-98CA-F37A95D39EAA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.fiscal.dll\mz.erp.fiscal.dll.csproj">
+      <Name>mz.erp.fiscal.dll</Name>
+      <Project>{F09EF6FB-187C-4914-B5E8-7E86249BCBDD}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.io.dll\mz.erp.io.dll.csproj">
+      <Name>mz.erp.io.dll</Name>
+      <Project>{9133E9E5-94BB-480F-8D43-6A7ED1A352A3}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.systemframework.dll\mz.erp.systemframework.dll.csproj">
+      <Name>mz.erp.systemframework.dll</Name>
+      <Project>{9D3E8AE6-DD14-46A8-9395-DFDD6CE2C6A5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.ui.controller.dll\mz.erp.ui.controller.dll.csproj">
+      <Name>mz.erp.ui.controller.dll</Name>
+      <Project>{6133DE5B-5AAD-40B0-9620-735228AD2EA6}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controls\AcceptButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="controls\ComponenteDocumentos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerViewColumns.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerViewConfigurarStyleGrilla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerViewExportExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerViewLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerViewMark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerViewSaveConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\GridManagerViewSaveConfig.designer.cs">
+      <DependentUpon>GridManagerViewSaveConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\GridManagerViewSortByAgregateColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\HierarchicalSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\HierarchicalSearchControlSimple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\HtmlRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="controls\mzComboEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="controls\mzComboSearchEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzCuentasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzGridConfigPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzHierarchicalSearchPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzMaskTipoNumeroDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzProductosControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzProveedoresControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzSearchPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\mzSearchTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\ToolTipListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\class\ComboItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ComprobanteDeCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ComprobantesDeCompraPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ComprobantesDeVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ComprobantesPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ComprobantesPendientesWF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ContainerManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ControlManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\DetalleComprobantesDeCompraPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\Errores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ExportToCSV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ExportToExcel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\GridLayoutProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\GridManagerJanus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\IFormDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\IGridDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\IGridDocumentEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\IGridManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\IMainForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\Impresion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ITaskForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\KeyDownManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ProcessLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ProcessUIManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\ReportsManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\Stock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_AuxiliarVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_BarrasHerramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_BarrasHerramientasHerramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_BasesDeDatos.cs" />
+    <Compile Include="forms\class\sy_Conexion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Empresas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Excepciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Funcionalidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Grupos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_GruposVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Herramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_HerramientasRecursosIdiomas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Idiomas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_JerarquiaAgrupVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Perfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_PerfilesFuncionalidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_PerfilesHerramientas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_PerfilesUsuariosEmpresas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Puestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Recursos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_SentenciasReplicacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Sucesos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Sucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_TiposRecursos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_TiposSucesos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_TiposVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Usuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Validaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_Variables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_VariablesEmpresas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_VariablesPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_VariablesPuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_VariablesSucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\sy_VariablesUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tcs_Cargos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tcs_Domicilios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tcs_DomiciliosCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tcs_DomiciliosPersonas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tcs_TiposContactos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tcs_TiposDomicilios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tcs_Tratamiento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_Cajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_CotizacionesMonedas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_Entidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_FormasDePago.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_FormasDePagoEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_FuentesDeCambio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_InstanciasCaja.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_InstanciasCajaCierres.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_Monedas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_MovimientosDeCaja.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_MovimientosDeCajaAjustes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_MovimientosDeCajaEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_PagosMovimientosCajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_ResponsablesCajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_TDCompTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_TDCompTesoreriasMonedasRecargos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_Valores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_ValoresDatosAuxiliares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_ValoresEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tfi_ValorizacionStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tlg_Depositos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tlg_EstadosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tlg_MovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tlg_Secciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tlg_TiposDeAjuste.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tlg_Transportes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tlg_Zonas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpr_Objetos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpr_ObjetosCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpr_ObjetosEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_ComprobantesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_CondicionesDeCompras.cs" />
+    <Compile Include="forms\class\tpu_ContactosProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_CotizCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_CotizOrdenesCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_DevolucionesCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_JerarquiaAgrupProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_Lotes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_MotivosDevoluciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_OrdenesCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_OrdenesCompraDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_OrdenesRemitosCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_ProductosProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_Proveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_RemitosCompComprasDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_RemitosCompras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tpu_RemitosComprasDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_AgrupCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_AplicacionPagos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_BonificacionesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_BonificacionesEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_Comisiones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_ComisionesCotasVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_ComprobanteDetalleDePagos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_ComprobanteDetalleDescripcionAdicional.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_ComprobanteDetalleDeuda.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_Comprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_ComprobantesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_CondicionesDeVentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_CuentaCorriente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_Cuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_CuentasCondicionesDeVenta_TDCompTesoreria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_JerarquiaAgrupCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_ReporteComprobantesDeVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_ReporteDetalleComprobanteDeVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsa_VariantesStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Aceptacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_AgrupProductos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_AsociacionCodigos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Autorizaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_CoeficientesCostosIndirectos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Contactos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Conversiones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_DetalleConversiones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Documentos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_DocumentosPersonas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_GruposProductos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_JerarquiaAgrupProd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_ListasDePrecios.cs" />
+    <Compile Include="forms\class\tsh_Localidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_MovimientosStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_MovimientosStockDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Personas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Productos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_ProductosSucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_ReportesAcutalizacionDePrecios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_TipoAceptacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsh_Unidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_CategoriasIva.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_ClaseDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_ImpuestosEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_SubTipoMovimiento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_TipoProducto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_TiposDeComprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_TiposDeRetenciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_TiposDocumentos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tsy_TiposMovimientos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tui_ConfiguracionGrillas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tui_ConfiguracionGrillasPerfiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\tui_ConfiguracionGrillasUsuarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\class\UsuariosPersonas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\DefaultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\EventControlers\MouseEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FilterDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormAbmCondicionesDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmBonificacionesEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmChequeras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMComprobantesCategoriaIva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMCondicionesDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMConversionesEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmCostosIndirectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmCotizacionMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmCuentasCondicionesDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmCuentasObservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmCuentasObservacionesEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmDomicilios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmEntidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmEntidadesW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmExProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMFormasDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMInstanceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmJerarquiaAgrupGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMLocalidadesWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmMotivoOrdenReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmObjetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmProductosPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmProductosSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmTiposDeAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmTiposDeAjusteStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmTiposDeComprobantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmTiposMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmTiposObservacionesCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmTransportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmUsuariosEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmABMVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmVisualizacionDeStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAbmZonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAceptacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAgrupamientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAgrupProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAjusteDeStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAltaRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAMB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAperturaCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAplicacionDePagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAutorizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmAutorizarFacturasCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmCabeceraComprobanteDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmCambioDeContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmCargosAdicionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmCierreCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmCierreMasivoOrdenReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobanteDeAjusteCuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobanteDeCompraSelectN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesABMProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesDeCompraPendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesDePagoCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesPendientesConsolaEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmComprobantesSelectN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConciliacionBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmConfiguracionLayoutGrilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConfiguracionMenues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConfiguracionStyleGrilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConfigurarMenues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConfigurarPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConfigurarVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConfirmarPreciosProductosCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmConnectionString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaCajaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaCajaTDCompTesoreria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaMovimientosDeCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaMovimientosStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarActualizacionAlicuotasIIBB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarActualizacionAlicuotasIIBB.Designer.cs">
+      <DependentUpon>FrmConsultarActualizacionAlicuotasIIBB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmConsultarControlCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarEstadisticaOrdenReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarFacturasImpagas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarLibroIVA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarListasDePrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarProductosConPreciosModificados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarRetencionesProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarSeguimientoCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultarVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultasWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConsultaVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmControlarCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmConversiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmCuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDepositoBancario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDetalleInstanciaCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDetalleItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDetalleValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmEditarComprobanteDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmExportarCitiVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmExportarPercepcionIBClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmFormasDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmGrillasOpcionesSuperiores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmGrillasOpcionesSuperiores.designer.cs">
+      <DependentUpon>FrmGrillasOpcionesSuperiores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmHabilitacionOpcionDeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmImputaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmImputacionesCtaCte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmIngresarCodigoSecundario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmIngresarPadronARBA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmIngresarPadronARBA.Designer.cs">
+      <DependentUpon>FrmIngresarPadronARBA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmIngresarPrecioProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmIngresoMercParaReposicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmInputType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmJerarquiaAgrupGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmJerarquiaAgrupVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmJerarquiaConfigurarVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmListarTareasRealizadasOrdenReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmModificarCuentasMasivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmModificarPreciosMasivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmModificarPreciosMasivoDesdeExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmModificarProductosMasivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmMostarErrores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmMovimientosAjusteCajaEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmMovimientosCajaEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmPagosGastosServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmParameterReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmPorcentajeAdicionalMedidaSugerido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmPreviewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmRegistrarNumerosDeSerie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmReporteImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmSearchProductbyJerarquia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmSeleccionarInstanciaOrdenReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmSeleccionEstadoDeItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmSeleccionJerarquia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmShowErrors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmShowRowError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmShowWarnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmSolicitarAutorizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmSoporteModificarComprobantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmStockACero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmStockNDias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmTestFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmTransferenciasValoresCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmVerAsociaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmVerImputaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmVisualizacionCuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmVisualizacionCuentaCorrienteGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\GridDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ModalListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzComboEditorSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzCuentasObservacionesSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzCuentasSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzHierarchicalSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzPersonasSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzProductosSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzProductosSearchFormWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzProveedoresSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mzSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\FrmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\FrmReportsGenericViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoDeAjustesDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoDeArtDesacConStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoDeComprasPorArt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoDeIngreso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoDeMovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoDeValorizacionDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoDeVentasPorProducto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\reportes\rep_ListadoEstadoCajas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\ReportImpuestos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TestFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utility\Environment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utility\Util.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="controls\AcceptButton.resx">
+      <DependentUpon>AcceptButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\ComponenteDocumentos.resx">
+      <DependentUpon>ComponenteDocumentos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerView.resx">
+      <DependentUpon>GridManagerView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerViewColumns.resx">
+      <DependentUpon>GridManagerViewColumns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerViewConfigurarStyleGrilla.resx">
+      <DependentUpon>GridManagerViewConfigurarStyleGrilla.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerViewExportExcel.resx">
+      <DependentUpon>GridManagerViewExportExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerViewLayout.resx">
+      <DependentUpon>GridManagerViewLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerViewMark.resx">
+      <DependentUpon>GridManagerViewMark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerViewSaveConfig.resx">
+      <DependentUpon>GridManagerViewSaveConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\GridManagerViewSortByAgregateColumn.resx">
+      <DependentUpon>GridManagerViewSortByAgregateColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\HierarchicalSearchControl.resx">
+      <DependentUpon>HierarchicalSearchControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\HierarchicalSearchControlSimple.resx">
+      <DependentUpon>HierarchicalSearchControlSimple.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\HtmlRichTextBox.resx">
+      <DependentUpon>HtmlRichTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzComboEditor.resx">
+      <DependentUpon>mzComboEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzComboSearchEditor.resx">
+      <DependentUpon>mzComboSearchEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzCuentasControl.resx">
+      <DependentUpon>mzCuentasControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzGridConfigPanel.resx">
+      <DependentUpon>mzGridConfigPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzHierarchicalSearchPanel.resx">
+      <DependentUpon>mzHierarchicalSearchPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzMaskTipoNumeroDoc.resx">
+      <DependentUpon>mzMaskTipoNumeroDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzProductosControl.resx">
+      <DependentUpon>mzProductosControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzProveedoresControl.resx">
+      <DependentUpon>mzProveedoresControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzSearchPanel.resx">
+      <DependentUpon>mzSearchPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\mzSearchTextBox.resx">
+      <DependentUpon>mzSearchTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\ToolTipListBox.resx">
+      <DependentUpon>ToolTipListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\DefaultForm.resx">
+      <DependentUpon>DefaultForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FilterDocument.resx">
+      <DependentUpon>FilterDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormAbmCondicionesDeVenta.resx">
+      <DependentUpon>FormAbmCondicionesDeVenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormCuentas.resx">
+      <DependentUpon>FormCuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmBonificacionesEx.resx">
+      <DependentUpon>FrmAbmBonificacionesEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmCajas.resx">
+      <DependentUpon>FrmAbmCajas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmChequeras.resx">
+      <DependentUpon>FrmAbmChequeras.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMComprobantesCategoriaIva.resx">
+      <DependentUpon>FrmABMComprobantesCategoriaIva.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMCondicionesDeVenta.resx">
+      <DependentUpon>FrmABMCondicionesDeVenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMConversionesEx.resx">
+      <DependentUpon>FrmABMConversionesEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmCostosIndirectos.resx">
+      <DependentUpon>FrmAbmCostosIndirectos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmCotizacionMoneda.resx">
+      <DependentUpon>FrmAbmCotizacionMoneda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmCuentas.resx">
+      <DependentUpon>FrmAbmCuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmCuentasCondicionesDeVenta.resx">
+      <DependentUpon>FrmAbmCuentasCondicionesDeVenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmCuentasObservaciones.resx">
+      <DependentUpon>FrmAbmCuentasObservaciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmCuentasObservacionesEstados.resx">
+      <DependentUpon>FrmAbmCuentasObservacionesEstados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmDomicilios.resx">
+      <DependentUpon>FrmAbmDomicilios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmEntidades.resx">
+      <DependentUpon>FrmAbmEntidades.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmEntidadesW.resx">
+      <DependentUpon>FrmAbmEntidadesW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMEx.resx">
+      <DependentUpon>FrmABMEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmExProductos.resx">
+      <DependentUpon>FrmAbmExProductos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMFormasDePago.resx">
+      <DependentUpon>FrmABMFormasDePago.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMInstanceManager.resx">
+      <DependentUpon>FrmABMInstanceManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmJerarquiaAgrupGeneral.resx">
+      <DependentUpon>FrmAbmJerarquiaAgrupGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmLocalidades.resx">
+      <DependentUpon>FrmAbmLocalidades.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMLocalidadesWorkflow.resx">
+      <DependentUpon>FrmABMLocalidadesWorkflow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmMotivoOrdenReparacion.resx">
+      <DependentUpon>FrmAbmMotivoOrdenReparacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmObjetos.resx">
+      <DependentUpon>FrmAbmObjetos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmPerfiles.resx">
+      <DependentUpon>FrmAbmPerfiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmPersonas.resx">
+      <DependentUpon>FrmAbmPersonas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmProductos.resx">
+      <DependentUpon>FrmAbmProductos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmProductosPrecios.resx">
+      <DependentUpon>FrmAbmProductosPrecios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmProductosSucursales.resx">
+      <DependentUpon>FrmAbmProductosSucursales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmProveedores.resx">
+      <DependentUpon>FrmAbmProveedores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmServicio.resx">
+      <DependentUpon>FrmAbmServicio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmSucursales.resx">
+      <DependentUpon>FrmAbmSucursales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmTarea.resx">
+      <DependentUpon>FrmAbmTarea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmTiposDeAjuste.resx">
+      <DependentUpon>FrmAbmTiposDeAjuste.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmTiposDeAjusteStock.resx">
+      <DependentUpon>FrmAbmTiposDeAjusteStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmTiposDeComprobantes.resx">
+      <DependentUpon>FrmAbmTiposDeComprobantes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmTiposMovimientos.resx">
+      <DependentUpon>FrmAbmTiposMovimientos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmTiposObservacionesCuentas.resx">
+      <DependentUpon>FrmAbmTiposObservacionesCuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmTransportes.resx">
+      <DependentUpon>FrmAbmTransportes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmUsuariosEx.resx">
+      <DependentUpon>FrmAbmUsuariosEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmValores.resx">
+      <DependentUpon>FrmAbmValores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmABMVariables.resx">
+      <DependentUpon>FrmABMVariables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmVisualizacionDeStock.resx">
+      <DependentUpon>FrmAbmVisualizacionDeStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAbmZonas.resx">
+      <DependentUpon>FrmAbmZonas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAceptacion.resx">
+      <DependentUpon>FrmAceptacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAgrupamientos.resx">
+      <DependentUpon>FrmAgrupamientos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAgrupProductos.resx">
+      <DependentUpon>FrmAgrupProductos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAjusteDeStock.resx">
+      <DependentUpon>FrmAjusteDeStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAltaRow.resx">
+      <DependentUpon>FrmAltaRow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAMB.resx">
+      <DependentUpon>FrmAMB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAperturaCaja.resx">
+      <DependentUpon>FrmAperturaCaja.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAplicacionDePagos.resx">
+      <DependentUpon>FrmAplicacionDePagos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAutorizaciones.resx">
+      <DependentUpon>FrmAutorizaciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmAutorizarFacturasCompras.resx">
+      <DependentUpon>FrmAutorizarFacturasCompras.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmCabeceraComprobanteDeCompra.resx">
+      <DependentUpon>FrmCabeceraComprobanteDeCompra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmCambioDeContraseña.resx">
+      <DependentUpon>FrmCambioDeContraseña.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmCargosAdicionales.resx">
+      <DependentUpon>FrmCargosAdicionales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmCierreCaja.resx">
+      <DependentUpon>FrmCierreCaja.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmCierreMasivoOrdenReparacion.resx">
+      <DependentUpon>FrmCierreMasivoOrdenReparacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobanteDeAjusteCuentaCorriente.resx">
+      <DependentUpon>FrmComprobanteDeAjusteCuentaCorriente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobanteDeCompraSelectN.resx">
+      <DependentUpon>FrmComprobanteDeCompraSelectN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantes.resx">
+      <DependentUpon>FrmComprobantes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesABMProductos.resx">
+      <DependentUpon>FrmComprobantesABMProductos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesDeCompra.resx">
+      <DependentUpon>FrmComprobantesDeCompra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesDeCompraPendientes.resx">
+      <DependentUpon>FrmComprobantesDeCompraPendientes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesDePago.resx">
+      <DependentUpon>FrmComprobantesDePago.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesDePagoCompras.resx">
+      <DependentUpon>FrmComprobantesDePagoCompras.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesDeVenta.resx">
+      <DependentUpon>FrmComprobantesDeVenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesPendientesConsolaEntregas.resx">
+      <DependentUpon>FrmComprobantesPendientesConsolaEntregas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmComprobantesSelectN.resx">
+      <DependentUpon>FrmComprobantesSelectN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConciliacionBancaria.resx">
+      <DependentUpon>FrmConciliacionBancaria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmConfiguracionLayoutGrilla.resx">
+      <DependentUpon>frmConfiguracionLayoutGrilla.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConfiguracionMenues.resx">
+      <DependentUpon>FrmConfiguracionMenues.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConfiguracionStyleGrilla.resx">
+      <DependentUpon>FrmConfiguracionStyleGrilla.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConfigurarMenues.resx">
+      <DependentUpon>FrmConfigurarMenues.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConfigurarPrecios.resx">
+      <DependentUpon>FrmConfigurarPrecios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConfigurarVariables.resx">
+      <DependentUpon>FrmConfigurarVariables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConfirmarPreciosProductosCompras.resx">
+      <DependentUpon>FrmConfirmarPreciosProductosCompras.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmConnectionString.resx">
+      <DependentUpon>frmConnectionString.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaArticulos.resx">
+      <DependentUpon>FrmConsultaArticulos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaCaja.resx">
+      <DependentUpon>FrmConsultaCaja.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaCajaDetalle.resx">
+      <DependentUpon>FrmConsultaCajaDetalle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaCajaTDCompTesoreria.resx">
+      <DependentUpon>FrmConsultaCajaTDCompTesoreria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaCompras.resx">
+      <DependentUpon>FrmConsultaCompras.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaEntregas.resx">
+      <DependentUpon>FrmConsultaEntregas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaMovimientosDeCaja.resx">
+      <DependentUpon>FrmConsultaMovimientosDeCaja.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaMovimientosStock.resx">
+      <DependentUpon>FrmConsultaMovimientosStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarActualizacionAlicuotasIIBB.resx">
+      <DependentUpon>FrmConsultarActualizacionAlicuotasIIBB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarControlCajas.resx">
+      <DependentUpon>FrmConsultarControlCajas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarEstadisticaOrdenReparacion.resx">
+      <DependentUpon>FrmConsultarEstadisticaOrdenReparacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarFacturasImpagas.resx">
+      <DependentUpon>FrmConsultarFacturasImpagas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarLibroIVA.resx">
+      <DependentUpon>FrmConsultarLibroIVA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarListasDePrecios.resx">
+      <DependentUpon>FrmConsultarListasDePrecios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarProductosConPreciosModificados.resx">
+      <DependentUpon>FrmConsultarProductosConPreciosModificados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarRetencionesProveedores.resx">
+      <DependentUpon>FrmConsultarRetencionesProveedores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarSeguimientoCompras.resx">
+      <DependentUpon>FrmConsultarSeguimientoCompras.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultarVariables.resx">
+      <DependentUpon>FrmConsultarVariables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultas.resx">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultasWF.resx">
+      <DependentUpon>FrmConsultasWF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaValores.resx">
+      <DependentUpon>FrmConsultaValores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConsultaVentas.resx">
+      <DependentUpon>FrmConsultaVentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmControlarCajas.resx">
+      <DependentUpon>FrmControlarCajas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmConversiones.resx">
+      <DependentUpon>FrmConversiones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmCuentaCorriente.resx">
+      <DependentUpon>FrmCuentaCorriente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmDepositoBancario.resx">
+      <DependentUpon>FrmDepositoBancario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmDetail.resx">
+      <DependentUpon>FrmDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmDetalleInstanciaCaja.resx">
+      <DependentUpon>FrmDetalleInstanciaCaja.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmDetalleItem.resx">
+      <DependentUpon>FrmDetalleItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmDetalleValores.resx">
+      <DependentUpon>FrmDetalleValores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmEditarComprobanteDeVenta.resx">
+      <DependentUpon>FrmEditarComprobanteDeVenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmEntregas.resx">
+      <DependentUpon>FrmEntregas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmEstados.resx">
+      <DependentUpon>FrmEstados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmExportarPercepcionIBClientes.resx">
+      <DependentUpon>FrmExportarPercepcionIBClientes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmFiscal.resx">
+      <DependentUpon>FrmFiscal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmFormasDePago.resx">
+      <DependentUpon>FrmFormasDePago.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmGrillasOpcionesSuperiores.resx">
+      <DependentUpon>FrmGrillasOpcionesSuperiores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmHabilitacionOpcionDeMenu.resx">
+      <DependentUpon>FrmHabilitacionOpcionDeMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmImpresion.resx">
+      <DependentUpon>FrmImpresion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmImputaciones.resx">
+      <DependentUpon>FrmImputaciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmImputacionesCtaCte.resx">
+      <DependentUpon>FrmImputacionesCtaCte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmIngresarCodigoSecundario.resx">
+      <DependentUpon>FrmIngresarCodigoSecundario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmIngresarPadronARBA.resx">
+      <DependentUpon>FrmIngresarPadronARBA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmIngresarPrecioProducto.resx">
+      <DependentUpon>FrmIngresarPrecioProducto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmIngresoMercParaReposicion.resx">
+      <DependentUpon>FrmIngresoMercParaReposicion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmInputType.resx">
+      <DependentUpon>FrmInputType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmJerarquiaAgrupGeneral.resx">
+      <DependentUpon>FrmJerarquiaAgrupGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmJerarquiaAgrupVariables.resx">
+      <DependentUpon>FrmJerarquiaAgrupVariables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmJerarquiaConfigurarVariable.resx">
+      <DependentUpon>FrmJerarquiaConfigurarVariable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmListarTareasRealizadasOrdenReparacion.resx">
+      <DependentUpon>FrmListarTareasRealizadasOrdenReparacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmModificarCuentasMasivo.resx">
+      <DependentUpon>FrmModificarCuentasMasivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmModificarPreciosMasivo.resx">
+      <DependentUpon>FrmModificarPreciosMasivo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmModificarPreciosMasivoDesdeExcel.resx">
+      <DependentUpon>FrmModificarPreciosMasivoDesdeExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmModificarProductosMasivo.resx">
+      <DependentUpon>FrmModificarProductosMasivo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmMostarErrores.resx">
+      <DependentUpon>FrmMostarErrores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmMovimientosAjusteCajaEx.resx">
+      <DependentUpon>FrmMovimientosAjusteCajaEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmMovimientosCajaEx.resx">
+      <DependentUpon>FrmMovimientosCajaEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmPagosGastosServicios.resx">
+      <DependentUpon>FrmPagosGastosServicios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmParameterReports.resx">
+      <DependentUpon>FrmParameterReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmPorcentajeAdicionalMedidaSugerido.resx">
+      <DependentUpon>FrmPorcentajeAdicionalMedidaSugerido.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmPreviewReport.resx">
+      <DependentUpon>FrmPreviewReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmPruebas.resx">
+      <DependentUpon>FrmPruebas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmRegistrarNumerosDeSerie.resx">
+      <DependentUpon>FrmRegistrarNumerosDeSerie.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmReporteImpuestos.resx">
+      <DependentUpon>FrmReporteImpuestos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmSearchProductbyJerarquia.resx">
+      <DependentUpon>FrmSearchProductbyJerarquia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmSeleccionarInstanciaOrdenReparacion.resx">
+      <DependentUpon>FrmSeleccionarInstanciaOrdenReparacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmSeleccionEstadoDeItems.resx">
+      <DependentUpon>FrmSeleccionEstadoDeItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmSeleccionJerarquia.resx">
+      <DependentUpon>frmSeleccionJerarquia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmShowErrors.resx">
+      <DependentUpon>FrmShowErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmShowRowError.resx">
+      <DependentUpon>FrmShowRowError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmShowWarnings.resx">
+      <DependentUpon>FrmShowWarnings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmSolicitarAutorizacion.resx">
+      <DependentUpon>FrmSolicitarAutorizacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmSoporteModificarComprobantes.resx">
+      <DependentUpon>FrmSoporteModificarComprobantes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmStockACero.resx">
+      <DependentUpon>FrmStockACero.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmStockNDias.resx">
+      <DependentUpon>FrmStockNDias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmTestFiscal.resx">
+      <DependentUpon>frmTestFiscal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmTransferenciasValoresCajas.resx">
+      <DependentUpon>FrmTransferenciasValoresCajas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmValores.resx">
+      <DependentUpon>FrmValores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmVerAsociaciones.resx">
+      <DependentUpon>FrmVerAsociaciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmVerImputaciones.resx">
+      <DependentUpon>FrmVerImputaciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmVisualizacionCuentaCorriente.resx">
+      <DependentUpon>FrmVisualizacionCuentaCorriente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmVisualizacionCuentaCorrienteGeneral.resx">
+      <DependentUpon>FrmVisualizacionCuentaCorrienteGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\GridDocument.resx">
+      <DependentUpon>GridDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\localization.resources" />
+    <EmbeddedResource Include="forms\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ModalListBox.resx">
+      <DependentUpon>ModalListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzComboEditorSearch.resx">
+      <DependentUpon>mzComboEditorSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzCuentasObservacionesSearchForm.resx">
+      <DependentUpon>mzCuentasObservacionesSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzCuentasSearchForm.cs.resx">
+      <DependentUpon>mzCuentasSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzCuentasSearchForm.resx">
+      <DependentUpon>mzCuentasSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzHierarchicalSearchForm.resx">
+      <DependentUpon>mzHierarchicalSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzPersonasSearchForm.resx">
+      <DependentUpon>mzPersonasSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzProductosSearchForm.resx">
+      <DependentUpon>mzProductosSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzProductosSearchFormWorkflow.resx">
+      <DependentUpon>mzProductosSearchFormWorkflow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzProveedoresSearchForm.resx">
+      <DependentUpon>mzProveedoresSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mzSearchForm.resx">
+      <DependentUpon>mzSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reportes\FrmReports.resx">
+      <DependentUpon>FrmReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reportes\FrmReportsGenericViewer.resx">
+      <DependentUpon>FrmReportsGenericViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\TestFactura.resx">
+      <DependentUpon>TestFactura.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="forms\ImageListProblems.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<PropertyGroup Condition="'$(TargetingClr2Framework)' == 'true'">
+  <ResGenExecuteAsTool>true</ResGenExecuteAsTool>
+  <ResGenToolArchitecture>ManagedIL</ResGenToolArchitecture>
+  <ResGenTrackerSdkPath>$(SDK40ToolsPath)\x86</ResGenTrackerSdkPath>
+</PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

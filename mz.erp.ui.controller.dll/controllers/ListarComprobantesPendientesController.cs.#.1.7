@@ -1,0 +1,276 @@
+using System;
+using System.Collections;
+using mz.erp.businessrules;
+using mz.erp.commontypes;
+using mz.erp.systemframework;
+
+
+namespace mz.erp.ui.controllers
+{
+	/// <summary>
+	/// ListarComprobantesPendientesController: subclase de ConsultasController, que implementa la interfaz ITaskController
+	/// </summary>
+	public class ListarComprobantesPendientesController: ConsultasController, ITaskController
+	{
+		public ListarComprobantesPendientesController(mz.erp.businessrules.ListarComprobantesPendientes listarComprobantesPendientes)
+		{
+						
+			this._listarComprobantesPendientes = listarComprobantesPendientes;
+			Init();
+		}
+
+		#region Variables Privadas
+			
+			private mz.erp.businessrules.ListarComprobantesPendientes _listarComprobantesPendientes;
+			
+		#endregion
+
+		#region Variables Publicas
+
+			public event EventHandler OnTaskAfterExecute;
+
+
+			public ArrayList ArrayComprobantesPendientes
+			{
+				get
+				{
+					return _listarComprobantesPendientes.ArrayListaComporbantesPendientes;
+				}
+				set
+				{	
+					_listarComprobantesPendientes.ArrayListaComporbantesPendientes = value;
+				}
+			}
+
+			public string IdCuenta
+			{
+				get
+				{
+					return _listarComprobantesPendientes.IdCuenta;
+				}
+
+			}
+
+			public string IdProveedor
+			{
+				get
+				{
+					return _listarComprobantesPendientes.IdProveedor;
+				}
+				set
+				{
+					_listarComprobantesPendientes.IdProveedor = value;
+				}
+
+			}
+			
+			public string CodigoCuenta
+			{
+				get
+				{
+					return _listarComprobantesPendientes.CodigoCuenta;
+				}
+				set
+				{
+					_listarComprobantesPendientes.CodigoCuenta = value;
+				}
+			}
+		
+			public string IdResponsable
+			{
+				get
+				{
+					return _listarComprobantesPendientes.IdResponsable;
+				}
+				set
+				{		
+					_listarComprobantesPendientes.IdResponsable = value;
+				}
+			}
+			public DateTime FechaDesde
+			{
+				get
+				{
+					return _listarComprobantesPendientes.FechaDesde;
+				}
+				set
+				{
+					_listarComprobantesPendientes.FechaDesde = value;
+				}
+			}
+
+			public DateTime FechaHasta
+			{
+				get
+				{
+					return _listarComprobantesPendientes.FechaHasta;
+				}
+				set
+				{
+					_listarComprobantesPendientes.FechaHasta = value;
+				}
+			}
+
+			
+		#endregion
+
+		#region Metodos Privados
+
+			private void InitEvents()
+			{		
+				this._listarComprobantesPendientes.OnTaskAfterExecute += new EventHandler(this.AfterTaskExecute);	
+			}
+
+			private void AfterTaskExecute(object sender , EventArgs e)
+			{
+				if(OnTaskAfterExecute != null)
+					OnTaskAfterExecute(this, new EventArgs());
+			}
+		
+			/// <summary>
+			/// En particular agrega los filtros , despues es como el resto de los init del Workflow
+			/// </summary>
+			private void Init()
+			{
+				InitializeData();
+				_filtros = new mz.erp.commontypes.ReportFilterArray();
+				_filtros.Add( "Cuenta","Cuenta",true,null,"CodigoCuenta");
+				_filtros.Add( "Fecha","Desde Fecha",true,null,"FechaDesde");
+				_filtros.Add( "Fecha","Hasta Fecha",true,null, "FechaHasta");
+				_filtros.Add( "Persona","Responsable de Emisión",true,null, "IdResponsable");
+				_allowMultipleSelect = true;
+				this._allowShowDetail = Variables.GetValueBool(this._listarComprobantesPendientes.GetProcessManagerParent().Process.ProcessName, this._listarComprobantesPendientes.GetTaskName(),"VisualizaDetalleComprobantes");
+				InitEvents();
+			}
+
+			/// <summary>
+			/// Metodo necesario para inicializar los datos
+			/// </summary>
+			/// <example> Inicializa el valor de la leyenda del formulario </example>
+			private void InitializeData()
+			{
+				SetLeyendaFormulario();
+			}
+
+			/// <summary>
+			/// Setea el valor de la variable leyenda (que muestra en la ventana la accion que se esta ejecutando)
+			/// </summary>
+			/// <remarks> En este caso en particular, toma la información de una variable de configuración. </remarks>
+			private void SetLeyendaFormulario()
+			{
+				string leyenda = Variables.GetValueString("Momentos."+_listarComprobantesPendientes.GetTaskName()+"."+ _listarComprobantesPendientes.ProcesoEnEjecucion+".LeyendaFormulario");
+				if (leyenda.Equals(string.Empty))
+				{
+					leyenda = _listarComprobantesPendientes.GetTaskName();
+				}
+				this._leyendaFormulario = leyenda;
+				
+			}
+
+
+		#endregion
+
+		#region Metodos Publicos
+
+		public override  bool IsFlushedState()
+		{
+			return this._processManager.ProcessFlushed;
+		}
+
+		public override bool IsNextState()
+		{
+			return this._processManager.IsNextState();	
+		}
+
+		public override bool IsBackState()
+		{	
+			return this._processManager.IsBackState();
+		}
+
+		public string GetTaskName()
+		{
+			return _listarComprobantesPendientes.GetTaskName();
+		}
+
+
+		public override bool IsFirstTask()
+		{
+			return this._processManager.IsFirstTask(_listarComprobantesPendientes.GetTaskName());
+		}
+
+		public override bool IsLastTask()
+		{
+			return this._processManager.IsLastTask(_listarComprobantesPendientes.GetTaskName());
+		}
+
+		private ProcessControllerManager _processManager;
+		public void SetProcessManager(ProcessControllerManager processManager)
+		{
+			_processManager = processManager;
+		}
+		public ProcessControllerManager GetProcessManager()
+		{
+			return _processManager;
+		}
+
+		public  bool AllowPrevious()
+		{
+			return _listarComprobantesPendientes.AllowPrevious();
+		}
+
+		public void Previous()
+		{
+			_listarComprobantesPendientes.Previous();
+		}
+
+			
+			public override bool AllowShow()
+			{
+				return true;
+			}
+			public override void Execute()
+			{
+				_listarComprobantesPendientes.Execute();
+			}
+
+			private object[] GetParameters()
+			{
+				ArrayList parameters = new ArrayList();
+				int i = 0;
+				foreach(ReportFilterItem item in this._filtros)
+				{
+					parameters.Add(this.GetType().GetProperty(item.PropertyBinding).GetValue(this,null));
+					
+				}
+				return parameters.ToArray();
+			}
+			
+			public override void RefreshData()
+			{	
+				string tiposComprobantesOrigen = mz.erp.systemframework.Util.PackString(this._listarComprobantesPendientes.TiposDeComprobantesOrigen,",");
+				string comprobante = _listarComprobantesPendientes.ObtenerComprobante();
+				System.Data.DataSet data = mz.erp.ui.controllers.ListarComprobantesPendientesWF.GetList(this.IdCuenta,this.FechaDesde,this.FechaHasta,this.IdResponsable,tiposComprobantesOrigen, comprobante);
+				this._table = data.Tables[0];
+				this._layoutData = mz.erp.ui.controllers.ListarComprobantesPendientesWF.GetLayout();
+				
+				
+			}
+			public ItemsDatasetErrors GetErrors()
+			{
+				return _listarComprobantesPendientes.GetErrors();
+			}
+			public string GetWarnings()
+			{
+				return null;
+			}
+
+		public void Continue()
+		{
+		}
+
+		
+
+
+		#endregion
+	}
+}

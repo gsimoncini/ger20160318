@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10035" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="973" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="10" Y1="450" X2="9910" Y2="450" />
+      <Control Type="AR.Label" Name="Label33" MOD="4" Left="10" Top="0" Width="3780" Height="360" Caption="Lista de precios" Style="text-align: left; font-weight: normal; font-size: 14pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label34" MOD="4" Left="5670" Top="0" Width="1710" Height="270" Caption="Fecha de Emisión" />
+      <Control Type="AR.Field" Name="fechaEmision" MOD="4" Left="7128" Top="0" Width="2602" Height="270" Text="TextBox34" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="TextBox37" MOD="4" Left="0" Top="450" Width="900" Height="270" Text="Código" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox38" MOD="4" Left="1440" Top="450" Width="2790" Height="270" Text="Producto" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="10" Y1="909.9999" X2="9910" Y2="909.9999" />
+      <Control Type="AR.Field" Name="PLista1" MOD="4" Left="7380" Top="450" Width="1350" Height="270" Text="P.Lista 1" Style="text-align: right; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="Simb1" DataField="Simbolo" MOD="4" Left="7470" Top="720" Width="1170" Height="180" Text="Simb" OutputFormat="#,##0.00" Style="ddo-char-set: 1; text-align: right; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="PLista2" MOD="4" Left="8550" Top="450" Width="1440" Height="270" Text="P.Lista 2" Style="text-align: right; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="Simb2" DataField="Simbolo" MOD="4" Left="8640" Top="720" Width="1260" Height="180" Text="Simb" OutputFormat="#,##0.00" Style="ddo-char-set: 1; text-align: right; font-family: Microsoft Sans Serif; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="240" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox34" DataField="Codigo" MOD="4" Left="0" Top="0" Width="1350" Height="216" Text="Codigo" Style="font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox35" DataField="Producto" MOD="4" Left="1440" Top="90" Width="5760" Height="126" Text="Descripcion" Style="text-align: left; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="10" Y1="226" X2="9910" Y2="226" LineColor="12632256" />
+      <Control Type="AR.Field" Name="TextBox51" DataField="Precio1" MOD="4" Left="7560" Top="0" Width="1080" Height="216" Text="PrecioLista1" OutputFormat="#,##0.00" Style="text-align: right; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox52" DataField="Precio2" MOD="4" Left="8820" Top="0" Width="1080" Height="216" Text="PrecioLista2" OutputFormat="#,##0.00" Style="text-align: right; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="8715" Top="0" Width="450" Height="270" Text="TextBox24" Style="text-align: right; font-weight: normal; font-family: Microsoft Sans Serif; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="8100" Top="0" Width="720" Height="270" Caption="Página" Style="font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtNombreEmpresa" MOD="4" Left="90" Top="0" Width="2790" Height="270" Text="MZ-Informática" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox33" MOD="4" Left="9270" Top="0" Width="450" Height="270" Text="TextBox33" Style="text-align: left; font-weight: normal; font-family: Microsoft Sans Serif; " SummaryType="4" />
+      <Control Type="AR.Label" Name="Label35" MOD="4" Left="9180" Top="0" Width="90" Height="270" Caption="/" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="10" Y1="10" X2="9910" Y2="10" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="IcGFcoXiEtMh/wV3xCWefie4f644XE3dm896xWQ5sDg5tOLeDKudxjDW9cICC+Th9DV/tyzmNzyyWGZg1+VEW8CeRdjxUKisLhLgo2FuyAq0Q8vBUQ6FvOE2Ydc3V+wFcxxpQGd5AY6M1SByL9gavwvRLciZgs3h+Ev3fhH5sx1r5iA6Ignzx49bSCWTt4nh" SQL="exec Pr_tpu_GetListaDePrecios &#xD;&#xA;@IdProducto = null,&#xD;&#xA;@Activo = 1,&#xD;&#xA;@IdJerarquia1 = null,&#xD;&#xA;@IdJerarquia2 = null,&#xD;&#xA;@IdJerarquia3 = null,&#xD;&#xA;@IdJerarquia4 = null,&#xD;&#xA;@IdJerarquia5 = null,&#xD;&#xA;@IdJerarquia6 = null,&#xD;&#xA;@IdJerarquia7 = null,&#xD;&#xA;@IdJerarquia8 = null,&#xD;&#xA;@IdEmpresa = 1,&#xD;&#xA;@IdSucursal = 1,&#xD;&#xA;@IdListaDePrecios1 = null,&#xD;&#xA;@IdListaDePrecios2 = 1,&#xD;&#xA;@IdListaDePrecios3 = null,&#xD;&#xA;@IdListaDePrecios4 = 3,&#xD;&#xA;@IdListaDePrecios5 = null,&#xD;&#xA;@IdListaDePrecios6 = null,&#xD;&#xA;@IdListaDePrecios7 = null,&#xD;&#xA;@IdListaDePrecios8 = null,&#xD;&#xA;@IdListaDePrecios9 = null,&#xD;&#xA;@IdListaDePrecios10 = null,&#xD;&#xA;@IdMonedaReferencia = 1,&#xD;&#xA;@IdMonedaVisualizacion = 1,&#xD;&#xA;@IdFuenteDeCambioVisualizacion = 1&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+  </DataSources>
+  <Script><![CDATA[string titulo1 = string.Empty;
+string titulo2 = string.Empty;
+
+/*bool m_color = true;
+
+public void Detail_Format()
+{
+	int count = rpt.Sections["Detail"].Controls.Count;
+	for (int i = 0; i < count; i++)  
+		((TextBox)rpt.Sections["Detail"].Controls[i]).ClassName="MyStyle";	
+
+	if(m_color)
+	{
+		m_color =false;
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+		m_color = true;	
+	}
+}
+
+*/
+
+public void ActiveReport_ReportStart()
+{
+	/*  
+ 	rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+	rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+    	rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+    	rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+    	rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+
+	rpt.StyleSheet.Add("MyStyle");
+  
+  	rpt.StyleSheet["MyStyle"].FontName = "Arial";
+   	rpt.StyleSheet["MyStyle"].FontSize =null;
+   	rpt.StyleSheet["MyStyle"].FontStrikeThrough = false;
+    	rpt.StyleSheet["MyStyle"].FontUnderline = false;
+ 	rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+    	rpt.StyleSheet["MyStyle"].VerticalAlignment = VerticalTextAlignment.Middle;
+	*/
+}
+
+public void PageFooter_Format()
+{
+/*
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["txtNombreEmpresa"];
+	text.Text = Empresa;
+*/
+}
+
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["fechaEmision"];
+	text.Text = System.DateTime.Now.ToString();
+
+                 DataDynamics.ActiveReports.TextBox text1 = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["PLista1"];
+                  if(text1.Text.Equals(string.Empty))
+	{
+                                    DataDynamics.ActiveReports.TextBox textS1 = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["Simb1"];
+		textS1.Text = "";
+	}
+                 DataDynamics.ActiveReports.TextBox text2 = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["PLista2"];
+                  if(text2.Text.Equals(string.Empty))
+	{
+                                    DataDynamics.ActiveReports.TextBox textS2 = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["Simb2"];
+		textS2.Text = "";
+	}
+ 
+
+
+}
+
+
+
+
+public void ActiveReport_DataInitialize()
+{
+rpt.Fields.Add("Precio1");
+rpt.Fields.Add ("Precio2");
+
+
+
+
+}
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+
+       string[] listaCampos = { "PrecioLista1", "PrecioLista2", "PrecioLista3", "PrecioLista4" };
+       string  campo1 = "" ;
+        string  campo2 = "" ;
+        foreach (string campo in listaCampos )
+        {
+              if(rpt.Fields[campo].Value != System.DBNull.Value){
+                 rpt.Fields["Precio1"].Value = rpt.Fields[ campo].Value ; 
+                 campo1 = campo;
+                 switch(campo)
+                  {
+                     case "PrecioLista1":  this.titulo1 = (System.String) rpt.Fields["DescripcionListaDePrecio1"].Value ; break;
+                     case "PrecioLista2":  this.titulo1 = (System.String)   rpt.Fields["DescripcionListaDePrecio2"].Value ; break;
+                     case "PrecioLista3":  this.titulo1 = (System.String)  rpt.Fields["DescripcionListaDePrecio3"].Value ; break;
+                     case "PrecioLista4":  this.titulo1 = (System.String)   rpt.Fields["DescripcionListaDePrecio4"].Value ; break;
+                 }
+                 
+                 break;
+              }
+        }
+      //precios para la 2da columna
+      foreach (string campo in listaCampos )
+        {
+              if((rpt.Fields[campo].Value != System.DBNull.Value) && ( campo != campo1  )){
+                 rpt.Fields["Precio2"].Value = rpt.Fields[ campo].Value ;
+                 switch(campo)
+                  {
+                     case "PrecioLista1":  this.titulo2 = (System.String) rpt.Fields["DescripcionListaDePrecio1"].Value ; break;
+                     case "PrecioLista2":  this.titulo2 = (System.String)  rpt.Fields["DescripcionListaDePrecio2"].Value ; break;
+                     case "PrecioLista3":  this.titulo2 = (System.String) rpt.Fields["DescripcionListaDePrecio3"].Value ; break;
+                     case "PrecioLista4":  this.titulo2 = (System.String)  rpt.Fields["DescripcionListaDePrecio4"].Value ; break;
+                 }
+                 break;
+              }
+        }
+
+
+return eof;
+
+}
+
+
+public void PageHeader_BeforePrint()
+{
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["PLista1"]).Text =titulo1;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["PLista2"]).Text =titulo2;
+}
+]]></Script>
+  <PageSettings RightMargin="720" BottomMargin="720" PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" Orientation="1" />
+</ActiveReportsLayout>

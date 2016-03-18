@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="13283.15" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="Detail" Height="2777" ColumnCount="3" BackColor="16777215" KeepTogether="1" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape4" MOD="4" Left="106.2992" Top="637.7953" Width="2019.685" Height="2040.945" BackColor="16777215" LineStyle="3" />
+      <Control Type="AR.Field" Name="TextBox5" DataField="Email" MOD="4" Left="9180" Top="0" Width="3479.999" Height="288" Text="" CanShrink="1" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="0" Top="0" Width="4427.716" Height="2777.953" BackColor="16777215" LineColor="11119017" LineWeight="5" />
+      <Control Type="AR.Field" Name="TextBox6" DataField="Descripcion" MOD="4" Left="141.7323" Top="744.0945" Width="1877.953" Height="1736.221" Text="Descripcion" CanGrow="0" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 9,75pt; font-family: Calibri; " />
+      <Control Type="AR.Shape" Name="Shape2" MOD="4" Left="0" Top="170.0788" Width="4427.716" Height="467.7165" BackColor="255" BackStyle="1" LineColor="11119017" LineWeight="5" />
+      <Control Type="AR.Shape" Name="Shape3" MOD="4" Left="1984.252" Top="170.0788" Width="496.0629" Height="460.6299" BackStyle="1" LineColor="11119017" LineWeight="5" Shape="1" />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="2657.48" Top="283.4646" Width="1700.787" Height="248.0315" Caption="AUTOSERVICIO" Style="color: DarkGray; font-weight: bold; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Codigo" MOD="4" Left="850.3938" Top="2444.882" Width="1062.992" Height="288" Text="Codigo" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Calibri; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="354.3307" Top="2444.882" Width="496.0631" Height="283.4646" Caption="Cod: " Style="ddo-char-set: 0; font-weight: bold; font-size: 9,75pt; font-family: Calibri; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="PrecioFinalParteEntera" MOD="4" Left="2480.315" Top="1275.591" Width="1327.323" Height="531.4962" Text="10000" OutputFormat="" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-size: 24pt; font-family: Arial; white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="PrecioFinalParteDecimal" MOD="4" Left="3788.504" Top="1417.323" Width="460.6303" Height="389.7639" Text="00" CanGrow="0" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 16pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox10" MOD="4" Left="2480.315" Top="2090.551" Width="1736.22" Height="496.0631" Text="- 10 % DE DESCUENTO EN PAGO CONTADO" CanGrow="0" Style="color: DarkGray; ddo-char-set: 1; font-weight: normal; font-size: 26pt; font-family: Arial Narrow; " />
+    </Section>
+  </Sections>
+  <DataSources>
+    <OleDbDataSource ConnectE="fnDeMoPQcekew7TB2OSGi7d361pwH5FZnwJ+0pI4PgPBzGzCYfMaH+8sQVrAx39E1cfjgst1+zTHaflZdd11ySu+7AzJzM8NYkPxxFpBeR2OaCj44m/mUj+cNIi3kSGUs21IH25Z+SNeRWnIBNmqVn9qR7483je+yVPhorYx+4cModK4eNtg1q8BhTqRNB6VUvFveow9cw6w3XyVZXJ0ow==" SQL="&#xD;&#xA;declare  @IdCondicionDeVentaVisualizacion bigint&#xD;&#xA;set @IdCondicionDeVentaVisualizacion = (select ValorDefault from sy_Variables where IdVariable = 'Productos.Buscador.Precio.CondicionDeVentaVisualizacion')&#xD;&#xA;declare @recargo decimal(14,4)&#xD;&#xA;set @recargo = case when @IdCondicionDeVentaVisualizacion is null then null&#xD;&#xA;			else (select recargo from tsa_condicionesdeventas where idcondiciondeventa = @IdCondicionDeVentaVisualizacion)&#xD;&#xA;		end&#xD;&#xA;&#xD;&#xA;select &#xD;&#xA;	p.IdProducto,&#xD;&#xA;	p.Codigo,&#xD;&#xA;	p.Descripcion,&#xD;&#xA;	coalesce(p.PrecioDeVentaBrutoConImpuesto * dbo.GetValorCotizacionMO_MD_CO(p.IdMonedaCierrePrecioDeVentaBruto,'1', p.IdCotizacionCierrePrecioDeVentaBruto) + (p.PrecioDeVentaBrutoConImpuesto * dbo.GetValorCotizacionMO_MD_CO(p.IdMonedaCierrePrecioDeVentaBruto,'1', p.IdCotizacionCierrePrecioDeVentaBruto) * @recargo /100),p.PrecioDeVentaBrutoConImpuesto * dbo.GetValorCotizacionMO_MD_CO(p.IdMonedaCierrePrecioDeVentaBruto,'1', p.IdCotizacionCierrePrecioDeVentaBruto))  as PrecioFinal,&#xD;&#xA;	'' as Leyenda&#xD;&#xA;	&#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;FROM&#xD;&#xA;	vw_tsh_ProductosListaDePrecios p &#xD;&#xA;&#xD;&#xA;where descripcion like 'Notebook%' and p.PrecioDeVentaBrutoConImpuesto &gt; 0" />
+  </DataSources>
+  <Script><![CDATA[
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+if(! eof)
+	{
+
+	decimal precio = System.Convert.ToDecimal(rpt.Fields["PrecioFinal"].Value);
+	int entero = (int)precio;
+	int deci = (int)(System.Math.Round(precio- entero, 2) * 100);
+	 rpt.Fields["PrecioFinalParteEntera"].Value = "$" + System.Convert.ToString(entero);
+	rpt.Fields["PrecioFinalParteDecimal"].Value  = "," + System.Convert.ToString(deci);
+
+
+	}
+
+return eof;
+}
+
+
+
+
+public void ActiveReport_DataInitialize()
+{
+
+rpt.Fields.Add("PrecioFinalParteEntera");
+rpt.Fields.Add("PrecioFinalParteDecimal");
+
+}
+]]></Script>
+  <PageSettings LeftMargin="590" RightMargin="590" TopMargin="590" BottomMargin="590" Orientation="2" />
+</ActiveReportsLayout>

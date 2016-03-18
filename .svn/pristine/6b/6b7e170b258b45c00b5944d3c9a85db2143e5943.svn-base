@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9360" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="525" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="720" Top="90" Width="7110" Height="360" Caption="Estructuras de Menus" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 16pt; font-family: Times New Roman; " />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="285" DataField="IdHerramientaPadre" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox1" DataField="IdHerramientaPadre" MOD="4" Left="180" Top="0" Width="1980" Height="288" Text="IdHerramientaPadre" Style="font-weight: bold; font-size: 12pt; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="100" Y1="270" X2="9360" Y2="270" />
+      <Control Type="AR.Field" Name="TextBox7" DataField="DescripcionPadre" MOD="4" Left="2160" Top="0" Width="7110" Height="288" Text="DescripcionPadre" Style="font-weight: bold; font-size: 12pt; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="299" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox2" DataField="IdHerramienta" MOD="4" Left="1620" Top="0" Width="1440" Height="288" Text="IdHerramienta" />
+      <Control Type="AR.Field" Name="TextBox5" DataField="Descripcion" MOD="4" Left="3060" Top="0" Width="6210" Height="288" Text="Descripcion" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="450" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox8" MOD="4" Left="3330" Top="90" Width="1890" Height="270" Text="TextBox8" Style="font-weight: bold; " SummaryType="4" SummaryRunning="2" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="6PhbNAYWQ/chPTFf8LN63mt/U7NEorZ2Ue2XI6PzdvyYSsp6G/0EdJ219yx0g6GtkcCVIaWCBe+YFtZkWyGcaYsJ9orQmeqRqIaId0DRqMIrU9goT0liENZoPUoPo51UCzeakOfFHTJQJIllNGoVGQ==" SQL="Select * from  vw_sy_herramientas" />
+  </DataSources>
+  <Script><![CDATA[public bool ActiveReport_FetchData(bool eof)
+{
+
+if (rpt.Fields["DescripcionPadre"].Value == System.DBNull.Value) rpt.Fields["DescripcionPadre"].Value="Menu Principal";
+else rpt.Fields["DescripcionPadre"].Value= "Menu/SubMenu " + System.Convert.ToString(rpt.Fields["DescripcionPadre"].Value);
+return eof;
+
+
+}]]></Script>
+  <PageSettings />
+</ActiveReportsLayout>

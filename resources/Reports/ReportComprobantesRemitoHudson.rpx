@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9675" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageHeader" Name="PageHeader" Height="2039" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="0" Top="0" Width="9630" Height="1620" BackColor="16777215" />
+      <Control Type="AR.Field" Name="TextBox26" DataField="Tipo de Comprobante" MOD="4" Left="4500" Top="90" Width="3060" Height="288" Text="Tipo de Comprobante" Multiline="0" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox27" DataField="Numero" MOD="4" Left="7650" Top="90" Width="1890" Height="288" Text="Numero" Multiline="0" Style="ddo-char-set: 1; text-align: left; font-weight: bold; font-size: 10pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="90" Top="450" Width="2250" Height="288" Caption="Cliente " Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-style: normal; font-size: 10pt; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Field" Name="lNombre" DataField="Nombre" MOD="4" Left="2430" Top="450" Width="7110" Height="288" Text="Cliente" Multiline="0" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="1080" Top="1680" Width="900" Height="270" Caption="Cantidad" Style="text-align: right; font-weight: normal; font-size: 9pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="2070" Top="1680" Width="5580" Height="270" Caption="Descripción" Style="text-align: left; font-weight: normal; font-size: 9pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="90" Top="90" Width="2250" Height="270" Caption="Fecha Emisión" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-style: normal; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Field" Name="txtFechaActual" DataField="Fecha de Emision" MOD="4" Left="2430" Top="90" Width="1890" Height="270" Text="Fecha" OutputFormat="" Multiline="0" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label17" MOD="4" Left="90" Top="1680" Width="900" Height="270" Caption="Código" Style="text-align: left; font-weight: normal; font-size: 9pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="90" Top="810" Width="2250" Height="270" Caption="Responsable de Entrega" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-style: normal; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Field" Name="TextBox30" DataField="Responsable" MOD="4" Left="2430" Top="810" Width="7110" Height="270" Text="Responsable" Multiline="0" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="10" Y1="6580" X2="10720" Y2="6580" />
+      <Control Type="AR.Label" Name="Label24" MOD="4" Left="90" Top="1170" Width="2250" Height="270" Caption="Responsable de Venta" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-style: normal; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Field" Name="TextBox41" DataField="NombreVendedor" MOD="4" Left="2430" Top="1170" Width="7110" Height="270" Text="Responsable de Venta" Multiline="0" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Line" Name="Line23" MOD="4" X1="10" Y1="2015" X2="9630" Y2="2014.44" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="299" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="Cantidad" MOD="4" Left="1080" Top="0" Width="900" Height="288" Text="fCanO" OutputFormat="0.00" Multiline="0" Style="ddo-char-set: 0; text-align: right; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Producto" MOD="4" Left="2070" Top="0" Width="7560" Height="288" Text="Producto" Style="ddo-char-set: 1; text-align: left; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox20" DataField="CodigoProducto" MOD="4" Left="90" Top="0" Width="900" Height="288" Text="fCodigo" Multiline="0" Style="ddo-char-set: 1; text-align: left; font-family: Arial; vertical-align: middle; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="5595" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label22" MOD="4" Left="6120" Top="4410" Width="3420" Height="270" Caption="Recibí Conforme" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="6130" Y1="4330" X2="9370" Y2="4330" />
+      <Control Type="AR.Field" Name="TextBox38" DataField="ComprobanteRelacionado" MOD="4" Left="1350" Top="90" Width="8280" Height="270" Text="Comprobante Relacionado" Style="font-style: italic; font-size: 9pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label23" MOD="4" Left="360" Top="90" Width="900" Height="270" Caption="Origen" Style="text-align: right; font-style: italic; font-size: 9pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label25" MOD="4" Left="90" Top="450" Width="1170" Height="270" Caption="Nros de Serie" Style="text-align: right; font-style: italic; font-size: 9pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox42" DataField="NumerosDeSeries" MOD="4" Left="1350" Top="450" Width="8280" Height="270" Text="Numeros De Series" Style="font-style: italic; font-size: 9pt; font-family: Arial; " />
+      <Control Type="AR.Line" Name="Line24" MOD="4" X1="10" Y1="10.08" X2="9630" Y2="9.999962" />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="vyttSZ1LFgKueZeSldTov8JVLWIcp1IGEW5Z1SESrNlRVmmyURsNWYUYe8av1AuGJ7GP7sTkMAczj6m/NoA3WH0+6zHtPoJACTjxMCnIR/7LhDqWhD0N9JpDlOM4VY3dA/4HVcDizViqOX1Ziy00ZdKBWi79LnK6g0Q8Nr0E9Vg=" SQL="exec Pr_tlg_ComprobantesView '00001000010000000003', 'FAB'" />
+  </DataSources>
+  <PageSettings RightMargin="720" BottomMargin="0" PaperSize="9" PaperWidth="14170" PaperHeight="8640" PaperName="" Orientation="1" />
+</ActiveReportsLayout>

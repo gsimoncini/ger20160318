@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="0" viewPortTop="0" zoom="100">
+    <tsa_Bonificaciones_XmlElement left="7144" top="2275" width="5292" height="2963" selected="0" zOrder="2" index="0" expanded="1" />
+    <tsa_BonificacionesDet_XmlElement left="16483" top="4419" width="5292" height="2963" selected="0" zOrder="3" index="1" expanded="1" />
+    <tsa_Bonificacionestsa_BonificacionesDet_XmlKeyref left="14222" top="4669" width="503" height="503" selected="0" zOrder="4" />
+</XSDDesignerLayout>

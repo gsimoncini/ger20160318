@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9660" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="360" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="360" Y1="180" X2="5580" Y2="90" />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="5940" Top="90" Width="2520" Height="270" Caption="Label5" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="225" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" DataField="Descripcion" MOD="4" Left="2160" Top="0" Width="2070" Height="180" Caption="Tipo" Style="font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label2" DataField="Numero" MOD="4" Left="4320" Top="0" Width="1710" Height="180" Caption="Numero" Style="font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label3" DataField="Fecha" MOD="4" Left="90" Top="0" Width="1980" Height="180" Caption="Fecha" Style="font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label4" DataField="Nombre" MOD="4" Left="6120" Top="0" Width="2970" Height="180" Caption="Responsable" Style="font-size: 8pt; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="IcGFcoXiEtMh/wV3xCWefi/eoF0tHD66j2D/GQ+Hfv8nYUkkv9nuToIjV1m8otfA+W0VmYsPMaF+VfqOeOTqYIPaj8Oi5vbAPMyHhBLV5o7oJjDghP6bSENatB7fIfdzQQq9z1nCAhkLv1qpHas8YA==" SQL="exec tlg_Comprobantes_SearchRelacionesPrevias '00001000010000001788'" />
+  </DataSources>
+  <Script><![CDATA[public void ActiveReport_ReportStart(object sender)
+{
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["Label5"]).Text = Convert.ToString(sender);
+}
+]]></Script>
+  <PageSettings BottomMargin="0" PaperSize="9" PaperWidth="14170" PaperHeight="8640" PaperName="" />
+</ActiveReportsLayout>

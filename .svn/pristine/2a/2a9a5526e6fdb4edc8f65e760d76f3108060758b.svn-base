@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10440" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1845" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="15" Top="0" Width="5745" Height="270" Caption="Comprobante de Transferencia" Style="text-decoration: none; font-weight: bold; font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBoxFecha" MOD="4" Left="8100" Top="0" Width="2340" Height="270" Text="fecha" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="6270" Top="0" Width="1710" Height="270" Caption="Fecha de Emisión" />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="0" Top="1530" Width="900" Height="270" Caption="Tipo" Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="3960" Top="1530" Width="1170" Height="270" Caption="Número" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="9270" Top="1530" Width="1170" Height="270" Caption="Importe" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label40" MOD="4" Left="5310" Top="1530" Width="810" Height="270" Caption="Entidad" Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="10" Y1="1450" X2="10720" Y2="1450" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="10" Y1="280" X2="10720" Y2="280" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="10" Y1="1810" X2="10720" Y2="1810" />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="0" Top="360" Width="1440" Height="270" Caption="Caja Origen:" Style="font-style: italic; " />
+      <Control Type="AR.Label" Name="Label41" MOD="4" Left="5850" Top="360" Width="1440" Height="270" Caption="Caja Destino:" Style="font-style: italic; " />
+      <Control Type="AR.Label" Name="Label42" MOD="4" Left="0" Top="720" Width="1440" Height="270" Caption="Responsable:" Style="font-style: italic; " />
+      <Control Type="AR.Label" Name="Label43" MOD="4" Left="5850" Top="720" Width="1440" Height="270" Caption="Responsable:" Style="font-style: italic; " />
+      <Control Type="AR.Label" Name="Label44" MOD="4" Left="3330" Top="1080" Width="3690" Height="270" Caption="Detalle de Valores Transferidos" Style="text-decoration: none; font-weight: bold; font-style: italic; font-size: 12pt; " Multiline="0" />
+      <Control Type="AR.Field" Name="TextBox40" DataField="CajaOrigen" MOD="4" Left="1260" Top="360" Width="4320" Height="288" Text="CajaOrigen" />
+      <Control Type="AR.Field" Name="TextBox41" DataField="CajaDestino" MOD="4" Left="7200" Top="360" Width="3150" Height="288" Text="CajaDestino" />
+      <Control Type="AR.Field" Name="TextBox42" DataField="ResponsableOrigen" MOD="4" Left="1350" Top="720" Width="4230" Height="288" Text="ResponsableOrigen" />
+      <Control Type="AR.Field" Name="TextBox43" DataField="ResponsableDestino" MOD="4" Left="7200" Top="720" Width="3150" Height="288" Text="ResponsableDestino" />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="0" DataField="Tipo" BackColor="16777215" CanShrink="0" />
+    <Section Type="Detail" Name="Detail" Height="285" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox47" DataField="Numero" MOD="4" Left="3330" Top="0" Width="1800" Height="288" Text="Numero" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox50" DataField="Entidad" MOD="4" Left="5310" Top="0" Width="3510" Height="288" Text="Entidad" />
+      <Control Type="AR.Field" Name="TextBox53" DataField="Tipo" MOD="4" Left="30" Top="0" Width="3660" Height="288" Text="Tipo" />
+      <Control Type="AR.Field" Name="TextBox56" DataField="Valor" MOD="4" Left="9000" Top="0" Width="1440" Height="288" Text="Valor" Style="text-align: right; " />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="450" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label45" MOD="4" Left="8145" Top="90" Width="990" Height="288" Caption="Subtotal" Style="font-weight: bold; background-color: Gainsboro; " />
+      <Control Type="AR.Field" Name="TextBox57" DataField="Total" Visible="0" MOD="4" Left="3690" Top="90" Width="1440" Height="288" Text="0" Style="text-align: right; font-weight: normal; background-color: Gainsboro; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="TextBox59" DataField="Valor" MOD="4" Left="9000" Top="90" Width="1440" Height="288" Text="0" OutputFormat="#,##0.00" Style="ddo-char-set: 0; text-align: right; background-color: Gainsboro; font-size: 9,75pt; " SummaryType="3" SummaryRunning="2" SummaryGroup="GroupHeader1" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="3075" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="4780" Y1="10" X2="10460" Y2="10.08" />
+      <Control Type="AR.Field" Name="TextBox9" MOD="4" Left="7830" Top="630" Width="2610" Height="270" Text="Recibí Conforme" OutputFormat="M/d/yyyy h:mm" Style="text-align: left; font-weight: bold; font-style: normal; " />
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="9450" Top="2790" Width="450" Height="270" Text="TextBox24" Style="text-align: right; font-weight: normal; font-size: 10pt; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="8640" Top="2790" Width="720" Height="270" Caption="Página" Style="font-weight: normal; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="TextBox32" MOD="4" Left="9990" Top="2790" Width="450" Height="270" Text="TextBox32" Style="text-align: left; font-weight: normal; font-size: 10pt; " SummaryType="4" />
+      <Control Type="AR.Label" Name="Label29" MOD="4" Left="9900" Top="2790" Width="90" Height="270" Caption="/" />
+      <Control Type="AR.Field" Name="TextBox44" DataField="ResponsableDestino" MOD="4" Left="7830" Top="2340" Width="2520" Height="288" Text="ResponsableDestino" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label46" MOD="4" Left="7380" Top="90" Width="1080" Height="360" Caption="TOTAL" Style="font-weight: normal; background-color: Gainsboro; font-size: 12pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="10" Y1="520" X2="10720" Y2="520" />
+      <Control Type="AR.Label" Name="LabelTotal" DataField="Valor" Visible="0" MOD="4" Left="3600" Top="90" Width="1980" Height="360" Caption="0" Style="text-align: right; font-weight: normal; background-color: Gainsboro; font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBox58" DataField="Valor" MOD="4" Left="8370" Top="90" Width="2070" Height="360" Text="Valor" Style="ddo-char-set: 1; text-align: right; background-color: Gainsboro; font-size: 12pt; " SummaryType="1" SummaryRunning="2" SummaryGroup="GroupHeader1" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="sMEcagZJQNqtnQUt/YPNHSKDeoGnO0Q3bNulvd7pwoZj0M5A54AAj+Ad80okYbtcVZqdV2VVtC1gRZMsiefhNCsNr8B99bX5hapfRF/NHpj/ef6MYsSC/XMOIOwW0apteS8y+424ygFuluF1V9iBQg==" SQL="exec Pr_tfi_MovimientosDeCaja_Transferencias_MaestroDetalle '00001000010000000039', '00001000010000000040'&#xD;&#xA;&#xD;&#xA;/*&#xD;&#xA;select distinct origen.Caja as CajaOrigen, origen.Nombre as ResponsableOrigen , Destino.Caja as CajaDestino, Destino.Nombre as ResponsableDestino, tdc+' ( '+ moneda+' )' as Tipo, Total, isnull(numero,'') as Numero, isnull(descripcion, '') as Entidad, Valor&#xD;&#xA;from 	(select *&#xD;&#xA;		from vw_tfi_movimientosCajaResponsables&#xD;&#xA;		where idmovimiento = '00001000010000000039') as Origen , &#xD;&#xA;	(select *&#xD;&#xA;		from vw_tfi_movimientosCajaResponsables&#xD;&#xA;	      	where idmovimiento = '00001000010000000040') as Destino, &#xD;&#xA;	(select tdc, detalle.moneda, total, numero, descripcion, valor&#xD;&#xA;		from    &#xD;&#xA;			(select tfitdc.descripcion as fdp, m.descripcion  as moneda, sum(valor) as Total&#xD;&#xA;			from tfi_valores v&#xD;&#xA;					inner join tfi_tdcomptesoreria tfitdc on (tfitdc.idtdcomptesoreria = v.idtdcomptesoreria)&#xD;&#xA;					inner join tfi_monedas m on (m.idmoneda = v.idmoneda)&#xD;&#xA;				where v.idvalor in&#xD;&#xA;					( &#xD;&#xA;						select idvalor from tfi_pagosmovimientoscajas&#xD;&#xA;						where idmovimiento = '00001000010000000040'&#xD;&#xA;					)&#xD;&#xA;				group by tfitdc.descripcion,m.descripcion with rollup&#xD;&#xA;				having (grouping(tfitdc.descripcion) = 0 and grouping(m.descripcion )=0)&#xD;&#xA;			) as maestro &#xD;&#xA;		&#xD;&#xA;		inner join &#xD;&#xA;		&#xD;&#xA;			(select Numero, e.descripcion, valor, tfitdc.descripcion as tdc, m.descripcion as moneda&#xD;&#xA;			from tfi_valores v&#xD;&#xA;					left join tfi_tdcomptesoreria tfitdc on (tfitdc.idtdcomptesoreria = v.idtdcomptesoreria)&#xD;&#xA;					left join tfi_monedas m on (m.idmoneda = v.idmoneda)&#xD;&#xA;					left join tfi_entidades e on v.identidad = e.identidad&#xD;&#xA;				where v.idvalor in&#xD;&#xA;				( &#xD;&#xA;					select idvalor &#xD;&#xA;					from tfi_pagosmovimientoscajas&#xD;&#xA;					where idmovimiento = '00001000010000000040'&#xD;&#xA;				)&#xD;&#xA;			)as detalle &#xD;&#xA;		on maestro.fdp = detalle.tdc and maestro.moneda = detalle.moneda	&#xD;&#xA;	) as MaestroDetalle&#xD;&#xA;	&#xD;&#xA;*/&#xD;&#xA;" />
+  </DataSources>
+  <Script><![CDATA[public void PageFooter_Format()
+{
+	//setea el nombre de el responsable de caja para la firma
+	//DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["respDestinoFirma"];
+	//text.Text = 
+}
+
+
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox fecha= (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["TextBoxFecha"];
+	fecha.Text = System.DateTime.Now.ToString();
+
+}
+
+
+
+//decimal tot = 0 ;
+decimal valor = 0;
+decimal subtot = 0 ;
+public bool ActiveReport_FetchData(bool eof)
+{	
+
+	if (!eof)
+	{
+		valor = System.Convert.ToDecimal(rpt.Fields["Valor"].Value);
+		rpt.Fields["Valor"].Value = (object) System.Decimal.Round(valor,2);
+
+		subtot = System.Convert.ToDecimal(rpt.Fields["Total"].Value);
+		rpt.Fields["Total"].Value = (object) System.Decimal.Round(subtot,2);
+
+//		tot = tot + valor;		
+	}
+
+/*	DataDynamics.ActiveReports.Label sumtot = (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["LabelTotal"];
+	sumtot.Text = System.Convert.ToString(System.Decimal.Round(tot,2));*/
+
+	return eof;
+}
+
+
+
+
+
+]]></Script>
+  <PageSettings LeftMargin="720" RightMargin="720" TopMargin="720" BottomMargin="720" PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" Duplex="2" />
+</ActiveReportsLayout>

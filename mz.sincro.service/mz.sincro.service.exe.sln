@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mz.sincro.service.exe", "mz.sincro.service.exe\mz.sincro.service.exe.csproj", "{31E6E4A4-242E-4F1E-BDCA-D5758FA04264}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mz.replication.filetransfer.dll", "mz.filetransfer.dll\mz.replication.filetransfer.dll.csproj", "{1B9E62DC-6CA7-41EF-B9E4-890347CA0409}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mz.replication.configuration.dll", "mz.replication.configuration\mz.replication.configuration.dll.csproj", "{C423B89A-BFD7-4D8E-9D87-A22C400DE9E4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mz.replication.filetransfer.ui", "mz.replication.filetransfer.ui\mz.replication.filetransfer.ui.csproj", "{C04365C7-F5B4-40CE-A065-DDFCE3883A8C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mz.replication.dataaccess.dll", "mz.replication.dataaccess.dll\mz.replication.dataaccess.dll.csproj", "{CD32D73D-B43C-4A8C-BF15-59ACEDF5776B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{31E6E4A4-242E-4F1E-BDCA-D5758FA04264}.Debug.ActiveCfg = Debug|.NET
+		{31E6E4A4-242E-4F1E-BDCA-D5758FA04264}.Debug.Build.0 = Debug|.NET
+		{31E6E4A4-242E-4F1E-BDCA-D5758FA04264}.Release.ActiveCfg = Release|.NET
+		{31E6E4A4-242E-4F1E-BDCA-D5758FA04264}.Release.Build.0 = Release|.NET
+		{1B9E62DC-6CA7-41EF-B9E4-890347CA0409}.Debug.ActiveCfg = Debug|.NET
+		{1B9E62DC-6CA7-41EF-B9E4-890347CA0409}.Debug.Build.0 = Debug|.NET
+		{1B9E62DC-6CA7-41EF-B9E4-890347CA0409}.Release.ActiveCfg = Release|.NET
+		{1B9E62DC-6CA7-41EF-B9E4-890347CA0409}.Release.Build.0 = Release|.NET
+		{C423B89A-BFD7-4D8E-9D87-A22C400DE9E4}.Debug.ActiveCfg = Debug|.NET
+		{C423B89A-BFD7-4D8E-9D87-A22C400DE9E4}.Debug.Build.0 = Debug|.NET
+		{C423B89A-BFD7-4D8E-9D87-A22C400DE9E4}.Release.ActiveCfg = Release|.NET
+		{C423B89A-BFD7-4D8E-9D87-A22C400DE9E4}.Release.Build.0 = Release|.NET
+		{C04365C7-F5B4-40CE-A065-DDFCE3883A8C}.Debug.ActiveCfg = Debug|.NET
+		{C04365C7-F5B4-40CE-A065-DDFCE3883A8C}.Debug.Build.0 = Debug|.NET
+		{C04365C7-F5B4-40CE-A065-DDFCE3883A8C}.Release.ActiveCfg = Release|.NET
+		{C04365C7-F5B4-40CE-A065-DDFCE3883A8C}.Release.Build.0 = Release|.NET
+		{CD32D73D-B43C-4A8C-BF15-59ACEDF5776B}.Debug.ActiveCfg = Debug|.NET
+		{CD32D73D-B43C-4A8C-BF15-59ACEDF5776B}.Debug.Build.0 = Debug|.NET
+		{CD32D73D-B43C-4A8C-BF15-59ACEDF5776B}.Release.ActiveCfg = Release|.NET
+		{CD32D73D-B43C-4A8C-BF15-59ACEDF5776B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

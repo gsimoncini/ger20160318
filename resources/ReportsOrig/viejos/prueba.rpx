@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9360" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="360" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageHeader" Name="PageHeader" Height="360" BackColor="16777215" CanShrink="0" />
+    <Section Type="Detail" Name="Detail" Height="2880" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Subreport" Name="SubReport1" MOD="4" Left="90" Top="540" Width="7740" Height="1620" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215" CanShrink="0" />
+    <Section Type="ReportFooter" Name="ReportFooter" Height="2610" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Subreport" Name="SubReport2" MOD="4" Left="270" Top="270" Width="4770" Height="1710" ReportName="ReportImpuestos" />
+    </Section>
+  </Sections>
+  <PageSettings />
+</ActiveReportsLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="twf_TareasComprobantesEx" targetNamespace="http://tempuri.org/twf_TareasComprobantesEx.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/twf_TareasComprobantesEx.xsd"
+	xmlns:mstns="http://tempuri.org/twf_TareasComprobantesEx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="twf_TareasComprobantesExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tsy_TiposDeComprobantes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdTipoDeComprobante" type="xs:string" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Mascara" type="xs:string" minOccurs="0" />
+							<xs:element name="signo" type="xs:long" minOccurs="0" />
+							<xs:element name="Activo" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Momento" type="xs:string" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="twf_Tareas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdTarea" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="IdConexion" type="xs:long" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" />
+							<xs:element name="IdConexionCreacion" type="xs:long" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="twf_TareasTiposDeComprobantes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdTarea" type="xs:long" />
+							<xs:element name="IdTipoDeComprobante" type="xs:string" />
+							<xs:element name="IdConexion" type="xs:long" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" />
+							<xs:element name="IdConexionCreacion" type="xs:long" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="twf_TareasComprobantesExKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tsy_TiposDeComprobantes" />
+			<xs:field xpath="mstns:IdTipoDeComprobante" />
+		</xs:unique>
+		<xs:unique name="twf_TareasComprobantesExKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:twf_Tareas" />
+			<xs:field xpath="mstns:IdTarea" />
+		</xs:unique>
+		<xs:unique name="twf_TareasComprobantesExKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:twf_TareasTiposDeComprobantes" />
+			<xs:field xpath="mstns:IdTarea" />
+			<xs:field xpath="mstns:IdTipoDeComprobante" />
+		</xs:unique>
+		<xs:keyref name="tsy_TiposDeComprobantestwf_TareasTiposDeComprobantes" refer="twf_TareasComprobantesExKey1">
+			<xs:selector xpath=".//mstns:twf_TareasTiposDeComprobantes" />
+			<xs:field xpath="mstns:IdTipoDeComprobante" />
+		</xs:keyref>
+		<xs:keyref name="twf_Tareastwf_TareasTiposDeComprobantes" refer="twf_TareasComprobantesExKey2">
+			<xs:selector xpath=".//mstns:twf_TareasTiposDeComprobantes" />
+			<xs:field xpath="mstns:IdTarea" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

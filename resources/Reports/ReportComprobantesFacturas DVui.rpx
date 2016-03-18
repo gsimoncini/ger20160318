@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="6390" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1859" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="lNombre" DataField="Nombre" MOD="4" Left="1080" Top="360" Width="4320" Height="288" Text="Nombre" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Domicilio" MOD="4" Left="1080" Top="630" Width="4320" Height="288" Text="Domicilio" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox31" DataField="Categoria de Iva" MOD="4" Left="1080" Top="900" Width="2880" Height="288" Text="Categoria de Iva" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="txtFechaActual" MOD="4" Left="3960" Top="90" Width="2340" Height="270" Text="" OutputFormat="dd-MMM-yyyy" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="Documento" MOD="4" Left="4500" Top="900" Width="1800" Height="288" Text="Documento" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox33" DataField="Telefono" MOD="4" Left="1080" Top="1170" Width="3060" Height="288" Text="Telefono" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox34" MOD="4" Left="270" Top="360" Width="810" Height="288" Text="Cliente:" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox35" MOD="4" Left="270" Top="630" Width="810" Height="288" Text="Domicilio:" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox36" MOD="4" Left="270" Top="900" Width="810" Height="288" Text="Cat. IVA:" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox37" MOD="4" Left="270" Top="1170" Width="810" Height="288" Text="Tel:" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox39" MOD="4" Left="3960" Top="900" Width="540" Height="288" Text="CUIT:" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox40" MOD="4" Left="90" Top="1530" Width="630" Height="288" Text="Codigo" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox41" MOD="4" Left="720" Top="1530" Width="720" Height="288" Text="Cantidad" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox42" MOD="4" Left="1440" Top="1530" Width="2880" Height="288" Text="Producto" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox43" MOD="4" Left="4320" Top="1530" Width="990" Height="288" Text="P. Unit." OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox44" MOD="4" Left="5310" Top="1530" Width="990" Height="288" Text="Precio Total" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="405" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="Cantidad" MOD="4" Left="720" Top="90" Width="720" Height="288" Text="Cantidad" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Producto" MOD="4" Left="1440" Top="90" Width="2880" Height="288" Text="Producto" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtPrecio" DataField="PrecioUnitarioFinal" MOD="4" Left="4320" Top="90" Width="990" Height="288" Text="PrecioNeto" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtPrecioFinal" DataField="PrecioFinal" MOD="4" Left="5310" Top="90" Width="990" Height="288" Text="PrecioFinal" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox38" DataField="CodigoProducto" MOD="4" Left="90" Top="90" Width="630" Height="288" Text="Codigo" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="sMEcagZJQNqtnQUt/YPNHSKDeoGnO0Q3bNulvd7pwoZj0M5A54AAj+Ad80okYbtc8zxcooTIyQU9+FTHKhGKuh4pESnA4IxQuFQGvqMtJB09uYVyurUTzqjV3+hXcouIO6sXsDSv4igjTGJBY3l1aw==" SQL="exec Pr_tsa_ComprobantesView null, null, null, null" />
+  </DataSources>
+  <Script><![CDATA[string myDate = System.DateTime.Now.ToString();
+//Representa al Tipo de Comprobante, por ej, A,B o E
+string TipoDeComprobante ="";
+//represenat al a los distintos tipos de comprobantes, por ej, FAA,FAB,FAE,PREA etc..
+string Comprobante;
+decimal PrecioFinal = 0;
+decimal Total = 0;
+bool compB = false;
+decimal PrecioNeto=0;
+decimal subtotalAnterior = 0;
+decimal sub=0;
+bool visible = false;
+System.DateTime Fecha = System.DateTime.Now;
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+if (TipoDeComprobante == "")
+{
+string IdTipoDeComp = System.Convert.ToString(rpt.Fields["IdTipoDeComprobante"].Value);
+System.Console.WriteLine("--------FecthDataAntes1--------"  );
+if ((IdTipoDeComp != "") || (IdTipoDeComp == null))
+{
+TipoDeComprobante = IdTipoDeComp.Substring(IdTipoDeComp.Length-1);
+compB = TipoDeComprobante.Equals("B");
+}
+}
+
+if(rpt.Fields["ValorImp1"].Value == System.DBNull.Value) rpt.Fields["ValorImp1"].Value = 0;	
+if(rpt.Fields["ValorImp2"].Value == System.DBNull.Value) rpt.Fields["ValorImp2"].Value = 0;
+if(rpt.Fields["ValorImp3"].Value == System.DBNull.Value) rpt.Fields["ValorImp3"].Value = 0;		
+if(rpt.Fields["ValorImp4"].Value == System.DBNull.Value) rpt.Fields["ValorImp4"].Value = 0;	
+if(rpt.Fields["BonificacionRecargoProducto"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoProducto"].Value = 0;	
+if(rpt.Fields["BonificacionRecargoCuenta"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoCuenta"].Value = 0;
+if(rpt.Fields["BonificacionRecargoFinanciero"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoFinanciero"].Value = 0;	
+if(rpt.Fields["DescuentosAplicados"].Value == System.DBNull.Value) rpt.Fields["DescuentosAplicados"].Value = 0;		
+decimal cant = System.Convert.ToDecimal(rpt.Fields["Cantidad"].Value);
+PrecioNeto =System.Convert.ToDecimal(rpt.Fields["PrecioNeto"].Value);
+decimal valorImp1 = System.Convert.ToDecimal(rpt.Fields["ValorImp1"].Value);
+decimal valorImp2 = System.Convert.ToDecimal(rpt.Fields["ValorImp2"].Value);
+decimal valorImp3 = System.Convert.ToDecimal(rpt.Fields["ValorImp3"].Value);
+decimal valorImp4 = System.Convert.ToDecimal(rpt.Fields["ValorImp4"].Value);
+PrecioFinal = PrecioNeto + System.Convert.ToDecimal(rpt.Fields["ImpuestosDirectos"].Value);
+PrecioFinal = PrecioFinal + System.Convert.ToDecimal(rpt.Fields["ImpuestosIndirectos"].Value);
+
+rpt.Fields["PrecioUnitarioFinal"].Value = PrecioFinal;
+
+PrecioFinal = PrecioFinal * cant;
+
+
+rpt.Fields["Cantidad"].Value =decimal.Round(cant,2);
+
+rpt.Fields["PrecioFinal"].Value = PrecioFinal;
+
+
+Fecha = System.Convert.ToDateTime(rpt.Fields["Fecha de Emision"].Value);
+
+rpt.Fields["ValorImp1"].Value = valorImp1*cant;
+rpt.Fields["ValorImp2"].Value = valorImp2*cant;	
+rpt.Fields["ValorImp3"].Value = valorImp3*cant;
+rpt.Fields["ValorImp4"].Value = valorImp4*cant;
+rpt.Fields["SubtotalNeto"].Value = cant*PrecioNeto;
+
+
+string calle = System.Convert.ToString(rpt.Fields["Calle"].Value);
+string numero = System.Convert.ToString(rpt.Fields["NumeroCalle"].Value);
+string localidad = System.Convert.ToString(rpt.Fields["Localidad"].Value);
+
+string torre = System.Convert.ToString(rpt.Fields["Torre"].Value);
+string departamento = System.Convert.ToString(rpt.Fields["Departamento"].Value);
+string piso =  System.Convert.ToString(rpt.Fields["Piso"].Value);
+string domicilio = null;
+
+if(localidad != string.Empty)
+	domicilio = calle + " " +numero + " " + torre +" " + departamento +" " + piso+ ", " + localidad;
+else
+	domicilio = calle + " " +numero + " "+ torre +" " +departamento +" " + piso;
+
+rpt.Fields["Domicilio"].Value = domicilio;
+
+
+string campoAuxiliar1 =  System.Convert.ToString(rpt.Fields["CampoAux1"].Value);
+string campoAuxiliar2 =  System.Convert.ToString(rpt.Fields["CampoAux2"].Value);
+string campoAuxiliar3 =  System.Convert.ToString(rpt.Fields["CampoAux3"].Value);
+string campoAuxiliar4 =  System.Convert.ToString(rpt.Fields["CampoAuxiliar4"].Value);
+string campoAuxiliar5 =  System.Convert.ToString(rpt.Fields["CampoAuxiliar5"].Value);
+string producto =  System.Convert.ToString(rpt.Fields["Producto"].Value);
+ 
+producto = producto + " " + campoAuxiliar1 + " " + campoAuxiliar2 + " " + campoAuxiliar3 + " " +campoAuxiliar4 + " " + campoAuxiliar5;
+
+rpt.Fields["Producto"].Value = producto;
+
+
+
+
+System.Console.WriteLine("--------FecthData---------");
+
+return eof;
+}
+
+public void ActiveReport_DataInitialize()
+{
+
+rpt.Fields.Add("SubtotalNeto");
+rpt.Fields.Add("Domicilio");
+rpt.Fields.Add("PrecioUnitarioFinal");
+System.Console.WriteLine("----------DataIntialize------------");
+}
+
+public void ActiveReport_ReportStart()
+{
+rpt.PageStart += new System.EventHandler(start);
+rpt.PageEnd+=new System.EventHandler(end);
+System.Console.WriteLine("----------ReportStart------------");
+
+}
+
+private void start(object o, System.EventArgs e)
+{
+
+rpt.CurrentPage.PenWidth = 4;
+rpt.CurrentPage.ForeColor=System.Drawing.Color.Black;
+ //Top Line
+//rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left ,  rpt.PageSettings.Margins.Top);
+      //Left Line
+//rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+        //Right Line
+
+//rpt.CurrentPage.DrawLine( rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+       //Bottom Line
+//rpt.CurrentPage.DrawLine(rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom, rpt.PageSettings.Margins.Left + rpt.PrintWidth, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+sub = subtotalAnterior;
+if (sub != 0) visible = true;
+System.Console.WriteLine("----------PageStart------------");
+}
+
+private void end(object o, System.EventArgs e)
+{
+
+System.Console.WriteLine("----------PageEnd------------");
+}
+
+public void PageHeader_BeforePrint()
+{
+
+string logo = Logo;
+((DataDynamics.ActiveReports.Picture)rpt.Sections["PageHeader"].Controls["Picture1"]).Image = System.Drawing.Image.FromFile(string.Format(System.Windows.Forms.Application.StartupPath + "\\resources\\Icons\\" +Logo));
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtFechaActual"]).Value = Fecha;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtIdTipoDeComprobante"]).Text = TipoDeComprobante;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtTotalAnterior"]).Text = System.Convert.ToString(sub);
+if (visible)
+{
+((DataDynamics.ActiveReports.Label)rpt.Sections["PageHeader"].Controls["lSubtotalAnterior"]).Visible =true;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtTotalAnterior"]).Visible =true;
+}
+System.Console.WriteLine("----------PageHeader_BeforePrint------------");
+}
+
+public void Detail_BeforePrint()
+{
+if(compB) 
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecio"]).Text= ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecioFinal"]).Text;
+System.Console.WriteLine("----------Detail_BeforePrint------------");
+}
+
+public void PageFooter_BeforePrint()
+{
+if(compB) 
+{
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lSubtotal"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVA"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVADIF"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIngresosBrutos"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lII"]).Visible = false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtSubtotal"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp1"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp2"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp3"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp4"]).Visible=false;
+
+}
+System.Console.WriteLine("----------PageFooter_BeforePrint------------");
+
+}
+
+
+public void PageHeader_Format()
+{
+DataDynamics.ActiveReports.Label text = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lNombreEmpresa"];
+text.Text = Empresa;
+DataDynamics.ActiveReports.Label l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lDireccion"];
+l.Text=DireccionEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCategoriaDeIva"];
+l.Text=CategoriaIvaEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lTelefonos"];
+l.Text=TelefonoEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCUIT"];
+l.Text=CUITEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lIB"];
+l.Text=IngresosBrutosEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lInicioDeActividades"];
+l.Text=InicioActividadesEmpresa;
+System.Console.WriteLine("----------PageHeader_Format------------");
+
+}
+
+
+
+
+public void Detail_Format()
+{
+decimal cant = System.Convert.ToDecimal(((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtCantidad"]).Text);
+subtotalAnterior = subtotalAnterior + cant*PrecioNeto;
+System.Console.WriteLine("----------Detail_Format------------");
+}
+
+public void ActiveReport_ReportEnd()
+{
+System.Console.WriteLine("----------ReportEnd------------");
+}
+
+public void ActiveReport_NoData()
+{
+System.Console.WriteLine("----------NoData------------");
+}
+
+public void ReportHeader_Format()
+{
+System.Console.WriteLine("----------ReportHeader_Format------------");
+}
+
+public void ReportHeader_AfterPrint()
+{
+System.Console.WriteLine("----------ReportHeader_AfterPrint------------");
+}
+
+
+
+public void PageHeader_AfterPrint()
+{
+System.Console.WriteLine("----------PageHeader_AfterPrint------------");
+}
+
+
+public void Detail_AfterPrint()
+{
+System.Console.WriteLine("----------Detail_AfterPrint------------");
+}
+
+public void PageFooter_Format()
+{
+System.Console.WriteLine("----------PageFooter_Format------------");
+}
+
+
+
+public void PageFooter_AfterPrint()
+{
+System.Console.WriteLine("----------PageFooter_AfterPrint------------");
+}
+
+public void ReportFooter_Format()
+{
+System.Console.WriteLine("----------ReportFooter_Format------------");
+}
+
+public void ReportFooter_BeforePrint()
+{
+System.Console.WriteLine("----------ReportFooter_BeforePrint------------");
+}
+
+public void ReportFooter_AfterPrint()
+{
+System.Console.WriteLine("----------ReportFooter_AfterPrint------------");
+}
+
+public void ReportHeader_BeforePrint()
+{
+System.Console.WriteLine("----------ReportHeader_BeforePrint------------");
+}]]></Script>
+  <PageSettings LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" PaperSize="0" PaperWidth="12960" PaperHeight="5760" PaperName="" Duplex="2" />
+</ActiveReportsLayout>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

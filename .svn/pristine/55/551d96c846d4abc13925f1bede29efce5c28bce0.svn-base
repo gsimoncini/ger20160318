@@ -1,0 +1,156 @@
+﻿;
+; Viewers Strings
+;
+; Barra de Herramientas
+;
+Percent10 = 10 %
+Percent25 = 25 %
+Percent50 = 50 %
+Percent75 = 75 %
+Percent100 = 100 %
+Percent200 = 200 %
+Percent400 = 400 %
+Percent800 = 800 %
+PageWidth = Ancho de Página
+FullPage = Página Completa
+Cancel = Cancelar
+MultPagePopupPageStatus = {0} x {1} Paginas
+TableOfContentTooltip = Tabla de Contenidos
+PrintCaption = &Imprimir...
+PrintTooltip = Imprimir
+CopyTooltip = Copiar
+FindTooltip = Buscar
+SinglePageTooltip = Vista Una Pagina
+MultiplePageTooltip = Vista Multiples Paginas
+ZoomOutTooltip = Bajar Zoom 
+ZoomInTooltip = Subir Zoom
+ZoomComboTooltip = Opciones de Zoom 
+PrevPageTooltip = Página Previa
+NextPageTooltip = Página Siguiente
+CurrentPageNumberTooltip = Numero de Página Actual
+BackwardCaption = &Anterior
+BackwardTooltip = Anterior
+ForwardCaption = &Siguiente
+ForwardTooltip = Siguiente
+;
+; Caption for Message Boxes
+;
+ViewerCaption = Visor de Reportes
+
+;
+; Table of Contents
+;
+TableOfContentsCaption = Contenidos
+
+;
+; Error messages
+;
+ErrorZoomValueInvalid = El Zoom deberia ser mas grande que 10.0 y menor o igual que 800.0 .
+ErrorInvalidZoomValue = El Zoom deberia ser mas grande que 0.0 y menor o igual que 8.0, -1 o -2.
+ErrorPageNotSetZoom = No se puede setear el Zoom hasta que el documento no tenga páginas.
+ErrorBeginningOfPages = Inicio de Páginas.
+ErrorEndOfPages = Fin de Páginas.
+
+; 
+; Documents strings
+;
+; Error messages
+;
+ErrorInvalidPrinterSettings = La Configuración de la Impresora no es válida.
+ErrorInvalidFileFormat = Formato de Archivo Inválido.
+ErrorInvalidVersionNumber = Número de versión Inválido.
+
+;
+; Printing Status Dialog
+;
+pagesPrompt = {0} de {1}
+canceling = Cancelando.
+;
+; Caption for Message Boxes
+;
+DocumentMessageBoxCaption = Visor de Reportes.
+
+;
+; Paper sizes
+;
+Letter = Carta
+LetterSmall = Carta Chica
+Tabloid = Tabloid
+Ledger = Ledger
+Legal = Oficio
+Statement = Statement
+Executive = Ejecutivo
+A3 = A3
+A4 = A4
+A4Small = A4 Chica
+A5 = A5
+B4 = B4
+B5 = B5
+Folio = Folio
+Quarto = Quarto
+Standard10x14 = 10X14
+Standard11x17 = 11X17
+Note = Note
+Number9Envelope = Envelope 9
+Number10Envelope = Envelope 10
+Number11Envelope = Envelope 11
+Number12Envelope = Envelope 12
+Number14Envelope = Envelope 14
+CSheet = C Sheet
+DSheet = D Sheet
+ESheet = E Sheet
+DLEnvelope = Envelope DL
+C5Envelope = Envelope C5
+C3Envelope = Envelope C3
+C4Envelope = Envelope C4
+C6Envelope = Envelope C6
+C65Envelope = Envelope C65
+B4Envelope = Envelope B4
+B5Envelope = Envelope B5
+B6Envelope = Envelope B6
+ItalyEnvelope = Envelope Italy
+MonarchEnvelope = Envelope Monarch
+PersonalEnvelope = Envelope Personal
+USStandardFanfold = Fanfold US
+GermanStandardFanfold = Fanfold Std German
+GermanLegalFanfold = Fanfold Legal German
+IsoB4 = ISO B4
+JapanesePostcard = Japanese Postcard
+JapanesePostcardRotated = Japanese Postcard Rotated
+Standard9x11 = 9X11
+Standard10x11 = 10X11
+Standard15x11 = 15X11
+InviteEnvelope = Envelope Invite
+LetterExtra = Carta Extra
+LegalExtra = Carta Extra
+TabloidExtra = Tabloid Extra
+A4Extra = A4 Extra
+LetterTransverse = Carta Transversal
+A4Transverse = A4 Transversal
+LetterExtraTransverse = Carta Extra Transversal
+APlus = A Plus
+BPlus = B Plus
+LetterPlus = Carta Plus
+A4Plus = A4 Plus
+A5Transverse = A5 Transversal
+B5Transverse = B5 Transversal
+A3Extra = A3 Extra
+A5Extra = A5 Extra
+B5Extra = B5 Extra
+A2 = A2
+A3Transverse = A3 Transversal
+A3ExtraTransverse = A3 Extra Transversal
+A6 = A6
+A6Rotated = A6 Rotado
+A5Rotated = A5 Rotado
+B4JisRotated = B4 Jis Rotado
+B5JisRotated = B5 Jis Rotado
+B6Jis =B6 Jis
+B6JisRotated = B6 Jis Rotado
+Standard12x11 = 12x11
+;
+; ConverterLabels
+;
+ToolbarConverterLabel = (Toolbar)
+TableOfContentsConverterLabel = (Table Of Contents)
+ReportViewerConverterLabel = (Report Viewer)

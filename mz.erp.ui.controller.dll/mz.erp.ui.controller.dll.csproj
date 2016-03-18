@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6133DE5B-5AAD-40B0-9620-735228AD2EA6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>mz.erp.ui.controller.dll</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mz.erp.ui.controller.dll</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/mz.erp.ui.controller.dll/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics.UltraChart.v4.1.Design, Version=4.1.20042.36, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics.UltraChart.v4.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinDataSource.v3.2.Design, Version=3.2.20042.18, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics.Win.UltraWinDataSource.v3.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid.v3.2.Design, Version=3.2.20042.18, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics.Win.UltraWinGrid.v3.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Shared.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.Misc.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinChart.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinDataSource.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinDock.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinEditors.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinExplorerBar.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinGrid.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinInkProvider.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinInkProvider.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinListBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinListBar.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinMaskedEdit.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinMaskedEdit.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinSchedule.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinStatusBar.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTabbedMdi.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTabControl.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinToolbars.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.UltraWinTree.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infragistics2.Win.v8.3.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\mz.erp.businessrules.dll\mz.erp.businessrules.dll.csproj">
+      <Name>mz.erp.businessrules.dll</Name>
+      <Project>{186D09F1-0548-4C3C-A9EF-9E73A1EA49EC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.commontypes.dll\mz.erp.commontypes.dll.csproj">
+      <Name>mz.erp.commontypes.dll</Name>
+      <Project>{23B55F01-BF06-4AA8-878D-FB579246D04B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.io.dll\mz.erp.io.dll.csproj">
+      <Name>mz.erp.io.dll</Name>
+      <Project>{9133E9E5-94BB-480F-8D43-6A7ED1A352A3}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\mz.erp.systemframework.dll\mz.erp.systemframework.dll.csproj">
+      <Name>mz.erp.systemframework.dll</Name>
+      <Project>{9D3E8AE6-DD14-46A8-9395-DFDD6CE2C6A5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="Janus.Windows.Common, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Janus.Windows.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <HintPath>..\lib\Janus.Windows.GridEX.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ComprobantesConProductosPendientesDeNumeroDeSerie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ComprobantesDeCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ComprobantesDeCompraPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ComprobantesDeCompraPorNumeroDeSerie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ComprobantesDeVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ComprobantesPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ComprobantesPendientesWF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ControllerDynamicInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\DetalleArticulosPorCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\DynamicParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\EditAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\FormatoCondicional.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\GridConfigurationLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\GridManagerViewColumnsFormDetailController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\GridVariablesLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\IDetailController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\IGridDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\IObservableController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ITaskConsultaComprasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ITaskController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\LayoutBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ListarComprobantesPendientesWF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ListarComprobantesWF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\NumerosDeSeriesPorAjusteDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\Parameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\Parameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ProcessControllerManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\ReparacionesPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\SearchAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\SeleccionarEstadoItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\st_Servicio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\sy_ConfigurarVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\sy_HerramientasEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tcs_Domicilios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tfi_FormasDePagoEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tfi_Recargos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tfi_ValoresEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tlg_MovimientosDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tlg_TiposDeAjuste.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tlg_VisualizacionDeStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tpu_AgrupProveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tpu_Comprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tpu_PorveedoresObservaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tpu_Proveedores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tpu_ProveedoresObservacionesEstados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tpu_ProveedoresProductos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsa_AgrupCuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsa_CondicionesDeVentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsa_CuentaCorriente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsa_Cuentas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsa_CuentasObservaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsa_CuentasObservacionesEstados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsa_CuentasObservacionesTipos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsh_localidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsh_Productos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsh_ProductosPedidosPendientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsy_MotivoOrdenReparacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsy_TipoProducto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsy_TiposDeComprobantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tsy_TiposMovimientos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\tui_ConfiguracionGrillaEstilosCondicionalesDet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class\Types.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmBonificacionesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMChequerasControllers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMComprobantesCategoriaIvaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMCondicionesDeVentaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmCostosIndirectosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmCotizacionMonedaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmCuentasCondicionesDeVentaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmCuentasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmCuentasObservacionesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMCuentasObservacionesEstadosControllers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmDomiciliosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMEntidadesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMFormasDePagoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMLocalidadesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmMotivoOrdenReparacionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmPerfilController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmProductosCategoriasCuentasController.cs" />
+    <Compile Include="controllers\AbmProductosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmProductosPreciosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmProductosSucursalesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmProveedoresController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmServicioController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmTareaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmTipoDeComprobanteController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMTiposDeAjusteStockController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmTiposMovimientosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ABMVariablesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbmVisualizacionDeStockController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AceptacionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AgrupCuentasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AgrupProductosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AjusteDeStockController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AlertasController.cs" />
+    <Compile Include="controllers\AutorizarController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AutorizarFacturasComprasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\CambiarContraseñaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\CierreMasivoOrdenReparacionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobanteDeAjusteCuentaCorrienteController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesConProductosPendientesDeNumeroDeSerieController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesDeCompraController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesDeCompraPendientesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesDeCompraSelectNController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesDePagoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesDeVentaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesPendientesConsolaEntregasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesPendientesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ComprobantesSelectNController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConceptosAdicionalesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConfiguracionStyleGrillaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConfigurarLayoutGrillasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConfigurarMenuesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConfigurarPreciosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConfigurarVariablesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConfirmarPreciosProductosComprasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultaComprasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultaEntregasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultaMovimientosStockController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarControlCajasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarEstadisticaOrdenReparacionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarFacturasImpagasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarLibroIVAController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarListasDePreciosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarMovimientosDeCajasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarActualizacionAlicuotasIIBBController.cs" />
+    <Compile Include="controllers\ConsultarProductosConPreciosModificadosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarRetencionesProveedoresController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarSeguimientoAcopioController.cs" />
+    <Compile Include="controllers\ConsultarSeguimientoComprasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultarVariablesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultasCajaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultasCajaTDCompTesoreriaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultaValoresController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ConsultaVentasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ControlarCajasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\CuentaCorrienteController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\CuentaCorrienteGeneralController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\DefaultController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\DepositoBancarioController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\EditarComprobanteDeVentaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\EntregasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ExportarCitiVentasController.cs" />
+    <Compile Include="controllers\ExportarPercepcionIBClientesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\FiscalController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\FormasDePagoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\GridManagerViewExportExcelController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\GridManagerViewSortByAgregateColumnController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\GrillasOpcionesSuperioresController.cs" />
+    <Compile Include="controllers\HabilitarOpcionDeMenuController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\HierarchicalSearchControlController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\HierarchicalSearchControlSimpleController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ImpresionComprobanteDeVentaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\IngresarCodigoSecundarioController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\IngresarComprobanteDeCompraCabeceraController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\IngresarComprobanteDePagoComprasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\IngresarPadronARBAController.cs" />
+    <Compile Include="controllers\IngresarPrecioProductoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\IngresoMercParaReposicionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\JerarquiaConfigurarVariableController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ListarComprobantesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ListarComprobantesDeCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ListarComprobantesDVController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ListarComprobantesPendientesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ListarTareasRealizadasOrdenReparacionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ModificarPreciosMasivoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ModificarPreciosMasivoDesdeExcelController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ModificarProductosMasivoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\MovimientoAjusteCajaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\MovimientosDeCajaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzCuentasControlController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzCuentasObservacionesSearchFormController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzCuentasSearchFormController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzGridConfigPanelController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzPersonasSearchFormController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzProductosControlController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzProductosSearchFormController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzProductosSearchFormWorkflowController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzProveedoresControlController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\mzProveedoresSearchFormController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\PagarServiciosGastosComprasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\PorcentajeAdicionalMedidaSugeridoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\RegistrarNumerosDeSerieController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ReparacionesAjustesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ReparacionesPendientesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ReportsController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ReportsGenericController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\SeguimientoDeArticulos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\SeleccionarComprobantesDeCompraPendientesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\SeleccionarEstadoItemsController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\SeleccionarInstanciaOrdenReparacionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\SolicitarAutorizacionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\SoporteModificarComprobantesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\Stock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\StockACeroController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\StockNDiasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\TiposObservacionesCuentasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\TransferenciasValoresCajasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\tsh_JerarquiaAgrupProd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ValoresController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ModificarCuentasMasivoController.cs" />
+    <Compile Include="reportes\AbstractFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\MatrixFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reportes\OrdenDePreparado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

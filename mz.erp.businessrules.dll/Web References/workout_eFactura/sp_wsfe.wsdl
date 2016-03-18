@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://192.168.64.38/mz/wko/ws_wko/sp_wsfe/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://192.168.64.38/mz/wko/ws_wko/sp_wsfe/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.64.38/mz/wko/ws_wko/sp_wsfe/">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="credenciales">
+        <xsd:sequence>
+          <xsd:element name="UserId" type="xsd:string" />
+          <xsd:element name="Password" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="sujeto">
+        <xsd:sequence>
+          <xsd:element name="TipoDoc" type="xsd:string" />
+          <xsd:element name="NroDoc" type="xsd:string" />
+          <xsd:element name="RSocial" type="xsd:string" />
+          <xsd:element name="Domicilio" type="xsd:string" />
+          <xsd:element name="Localidad" type="xsd:string" />
+          <xsd:element name="Cp" type="xsd:string" />
+          <xsd:element name="Provincia" type="xsd:string" />
+          <xsd:element name="TipoIva" type="xsd:string" />
+          <xsd:element name="IvaExento" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="totales">
+        <xsd:sequence>
+          <xsd:element name="SubtotalA" type="xsd:string" />
+          <xsd:element name="PorcentDescuento" type="xsd:string" />
+          <xsd:element name="ValorDescuento" type="xsd:string" />
+          <xsd:element name="SubtotalB" type="xsd:string" />
+          <xsd:element name="PorcentIB" type="xsd:string" />
+          <xsd:element name="ValorIB" type="xsd:string" />
+          <xsd:element name="PorcentIVA1" type="xsd:string" />
+          <xsd:element name="ValorIVA1" type="xsd:string" />
+          <xsd:element name="PorcentIVA2" type="xsd:string" />
+          <xsd:element name="ValorIVA2" type="xsd:string" />
+          <xsd:element name="TotalGral" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="linea">
+        <xsd:all>
+          <xsd:element name="Orden" type="xsd:string" />
+          <xsd:element name="Codigo" type="xsd:string" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+          <xsd:element name="Cantidad" type="xsd:string" />
+          <xsd:element name="Unidad" type="xsd:string" />
+          <xsd:element name="PrecioUnitario" type="xsd:string" />
+          <xsd:element name="PrecioTotal" type="xsd:string" />
+          <xsd:element name="IdIVA" type="xsd:string" />
+          <xsd:element name="ImporteIVA" type="xsd:string" />
+          <xsd:element name="Observaciones" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="lineas">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:linea[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="error">
+        <xsd:sequence>
+          <xsd:element name="Codigo" type="xsd:string" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PresentaFacturaReq">
+        <xsd:all>
+          <xsd:element name="Login" type="tns:credenciales" />
+          <xsd:element name="FacID" type="tns:facid" />
+          <xsd:element name="Emisor" type="tns:sujetoemisor" />
+          <xsd:element name="Cliente" type="tns:sujetocliente" />
+          <xsd:element name="Detalle" type="tns:lineas" />
+          <xsd:element name="Totales" type="tns:totales" />
+          <xsd:element name="TotalesAFIP" type="tns:TotalesAFIPType" />
+          <xsd:element name="OtrosDatos" type="tns:otrosdatos" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="PresentaFacturaRsp">
+        <xsd:sequence>
+          <xsd:element name="FacID" type="tns:facid" />
+          <xsd:element name="CAE" type="tns:cae" />
+          <xsd:element name="Error" type="tns:error" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="cae">
+        <xsd:sequence>
+          <xsd:element name="Nro" type="xsd:string" />
+          <xsd:element name="Fecha" type="xsd:string" />
+          <xsd:element name="Motivo" type="xsd:string" />
+          <xsd:element name="Resultado" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="facid">
+        <xsd:sequence>
+          <xsd:element name="NroInterno" type="xsd:string" />
+          <xsd:element name="Tipo" type="xsd:string" />
+          <xsd:element name="PtoVenta" type="xsd:string" />
+          <xsd:element name="Numero" type="xsd:string" />
+          <xsd:element name="Fecha" type="xsd:string" />
+          <xsd:element name="FechaVencimiento" type="xsd:string" />
+          <xsd:element name="ConceptoAFIP" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="sujetoemisor">
+        <xsd:sequence>
+          <xsd:element name="Datos" type="tns:sujeto" />
+          <xsd:element name="IngBrutos" type="xsd:string" />
+          <xsd:element name="FechaInicioActiv" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="sujetocliente">
+        <xsd:sequence>
+          <xsd:element name="Datos" type="tns:sujeto" />
+          <xsd:element name="Email" type="xsd:string" />
+          <xsd:element name="CondVta" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TotalesAFIPType">
+        <xsd:sequence>
+          <xsd:element name="ImpTotal" type="xsd:string" />
+          <xsd:element name="ImpTotConc" type="xsd:string" />
+          <xsd:element name="ImpNeto" type="xsd:string" />
+          <xsd:element name="ImpOpEx" type="xsd:string" />
+          <xsd:element name="ImpTrib" type="xsd:string" />
+          <xsd:element name="ImpIVA" type="xsd:string" />
+          <xsd:element name="FchServDesde" type="xsd:string" />
+          <xsd:element name="FchServHasta" type="xsd:string" />
+          <xsd:element name="MonId" type="xsd:string" />
+          <xsd:element name="MonCotiz" type="xsd:string" />
+          <xsd:element name="CbtesAsoc" type="tns:cbtesasoc" />
+          <xsd:element name="Tributos" type="tns:tributos" />
+          <xsd:element name="IVAs" type="tns:ivas" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ivas">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:iva[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="iva">
+        <xsd:sequence>
+          <xsd:element name="Id" type="xsd:string" />
+          <xsd:element name="BaseImp" type="xsd:string" />
+          <xsd:element name="Importe" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="tributos">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:tributo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="cbteasoc">
+        <xsd:sequence>
+          <xsd:element name="Tipo" type="xsd:string" />
+          <xsd:element name="PtoVta" type="xsd:string" />
+          <xsd:element name="Nro" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="cbtesasoc">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:cbteasoc[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="tributo">
+        <xsd:sequence>
+          <xsd:element name="Id" type="xsd:string" />
+          <xsd:element name="Desc" type="xsd:string" />
+          <xsd:element name="BaseImp" type="xsd:string" />
+          <xsd:element name="Alic" type="xsd:string" />
+          <xsd:element name="Importe" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="otrosdatos">
+        <xsd:sequence>
+          <xsd:element name="Leyenda0" type="xsd:string" />
+          <xsd:element name="Leyenda1" type="xsd:string" />
+          <xsd:element name="Leyenda2" type="xsd:string" />
+          <xsd:element name="Leyenda3" type="xsd:string" />
+          <xsd:element name="Leyenda4" type="xsd:string" />
+          <xsd:element name="Leyenda5" type="xsd:string" />
+          <xsd:element name="Leyenda6" type="xsd:string" />
+          <xsd:element name="Leyenda7" type="xsd:string" />
+          <xsd:element name="Leyenda8" type="xsd:string" />
+          <xsd:element name="Leyenda9" type="xsd:string" />
+          <xsd:element name="Remito" type="xsd:string" />
+          <xsd:element name="Operacion" type="xsd:string" />
+          <xsd:element name="Despacho" type="xsd:string" />
+          <xsd:element name="Confecciono" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PresentaFacturaRequest">
+    <wsdl:part name="in" type="tns:PresentaFacturaReq" />
+  </wsdl:message>
+  <wsdl:message name="PresentaFacturaResponse">
+    <wsdl:part name="out" type="tns:PresentaFacturaRsp" />
+  </wsdl:message>
+  <wsdl:portType name="sp_wsfeport">
+    <wsdl:operation name="PresentaFactura">
+      <wsdl:input message="tns:PresentaFacturaRequest" />
+      <wsdl:output message="tns:PresentaFacturaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sp_wsfeSOAP" type="tns:sp_wsfeport">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="PresentaFactura">
+      <soap:operation soapAction="http://192.168.64.38/mz/wko/ws_wko/PresentaFactura" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://192.168.64.38/mz/wko/ws_wko/sp_wsfe/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://192.168.64.38/mz/wko/ws_wko/sp_wsfe/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sp_wsfe">
+    <wsdl:port name="sp_wsfe" binding="tns:sp_wsfeSOAP">
+      <soap:address location="http://192.168.64.38/mz/wko/ws_wko/sp_wsfe.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tlg_OrdenesRemitosEx" targetNamespace="http://tempuri.org/tlg_OrdenesRemitosEx.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tlg_OrdenesRemitosEx.xsd"
+	xmlns:mstns="http://tempuri.org/tlg_OrdenesRemitosEx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tlg_OrdenesRemitosExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tlg_OrdenesRemitos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdOrdenPreparacion" type="xs:long" />
+							<xs:element name="IdProductoOrden" type="xs:string" />
+							<xs:element name="IdRemito" type="xs:long" />
+							<xs:element name="IdProductoRemito" type="xs:string" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tlg_OrdenesRemitosExKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tlg_OrdenesRemitos" />
+			<xs:field xpath="mstns:IdOrdenPreparacion" />
+			<xs:field xpath="mstns:IdProductoOrden" />
+			<xs:field xpath="mstns:IdRemito" />
+			<xs:field xpath="mstns:IdProductoRemito" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

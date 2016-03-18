@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="15285" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="570" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="0" Top="90" Width="1440" Height="450" Caption="Fecha de Vencimiento" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="2070" Top="180" Width="2160" Height="270" Caption="Fecha de Emision" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="4320" Top="180" Width="1440" Height="270" Caption="Comprobante" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="5850" Top="180" Width="1440" Height="270" Caption="Numero" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="8190" Top="180" Width="990" Height="270" Caption="Monto" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="9360" Top="180" Width="810" Height="270" Caption="Debe" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="10350" Top="180" Width="810" Height="270" Caption="Haber" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="7380" Top="180" Width="630" Height="270" Caption="Cuota" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="11340" Top="180" Width="810" Height="270" Caption="Saldo" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="12330" Top="180" Width="1620" Height="270" Caption="Saldo Acumulado" Style="text-align: center; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="344" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox2" DataField="FechaVencimiento" MOD="4" Left="0" Top="0" Width="2340" Height="270" Text="TextBox2" OutputFormat="dd/mm/yy" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox3" DataField="FechaEmision" MOD="4" Left="2340" Top="0" Width="2370" Height="270" Text="TextBox3" OutputFormat="MMMM d, yyyy" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox4" DataField="Comprobante" MOD="4" Left="4680" Top="0" Width="1530" Height="270" Text="TextBox4" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox5" DataField="Numero" MOD="4" Left="6300" Top="0" Width="1170" Height="270" Text="TextBox5" />
+      <Control Type="AR.Field" Name="TextBox6" DataField="Cuota" MOD="4" Left="7740" Top="0" Width="540" Height="270" Text="TextBox6" />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Total" MOD="4" Left="8280" Top="0" Width="990" Height="270" Text="TextBox7" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="Debe" MOD="4" Left="9360" Top="0" Width="990" Height="270" Text="TextBox8" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Haber" MOD="4" Left="10350" Top="0" Width="990" Height="270" Text="TextBox9" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="Saldo" MOD="4" Left="11340" Top="0" Width="1080" Height="270" Text="TextBox10" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox11" DataField="SaldoAcumulado" MOD="4" Left="12600" Top="0" Width="1260" Height="270" Text="TextBox11" OutputFormat="$#,##0.00" Style="text-align: right; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <Script><![CDATA[
+bool m_color = true;
+public void ActiveReport_DataInitialize()
+{
+rpt.Fields.Add("FechaVencimiento");
+rpt.Fields.Add("FechaEmision");
+rpt.Fields.Add("Comprobante");
+rpt.Fields.Add("Numero");
+rpt.Fields.Add("Cuota");
+rpt.Fields.Add("Total");
+rpt.Fields.Add("Debe");
+rpt.Fields.Add("Haber");
+rpt.Fields.Add("Saldo");
+rpt.Fields.Add("SaldoAcumulado");
+}
+
+public void Detail_Format()
+
+{
+
+if(m_color)
+	{
+		m_color =false;
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gray;	
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+		m_color = true;	
+	}
+
+
+
+}
+]]></Script>
+  <PageSettings />
+</ActiveReportsLayout>

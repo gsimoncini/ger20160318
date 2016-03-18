@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tpu_RetencionesEx" targetNamespace="http://tempuri.org/tpu_RetencionesEx.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tpu_RetencionesEx.xsd"
+	xmlns:mstns="http://tempuri.org/tpu_RetencionesEx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tpu_RetencionesExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tpu_Retenciones">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdRetencion" type="xs:long" />
+							<xs:element name="IdTipoDeRetencion" type="xs:string" />
+							<xs:element name="MontoNeto" type="xs:decimal" />
+							<xs:element name="MontoRetencion" type="xs:decimal" />
+							<xs:element name="NumeroRetencion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaRetencion" type="xs:dateTime" />
+							<xs:element name="NumeroRecibo" type="xs:string" minOccurs="0" />
+							<xs:element name="IdComprobante" type="xs:string" />
+							<xs:element name="IdProveedor" type="xs:string" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tpu_RetencionesDet">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdRetencion" type="xs:long" />
+							<xs:element name="IdComprobante" type="xs:string" />
+							<xs:element name="IdConcepto" type="xs:string" />
+							<xs:element name="MontoNeto" type="xs:decimal" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="AlicuotaAplicada" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontoRetencion" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tpu_RetencionesExKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tpu_Retenciones" />
+			<xs:field xpath="mstns:IdRetencion" />
+		</xs:unique>
+		<xs:unique name="tpu_RetencionesExKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tpu_RetencionesDet" />
+			<xs:field xpath="mstns:IdRetencion" />
+			<xs:field xpath="mstns:IdComprobante" />
+			<xs:field xpath="mstns:IdConcepto" />
+		</xs:unique>
+		<xs:keyref name="tpu_Retencionestpu_RetencionesDet" refer="tpu_RetencionesExKey1">
+			<xs:selector xpath=".//mstns:tpu_RetencionesDet" />
+			<xs:field xpath="mstns:IdRetencion" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-3831" viewPortTop="2008" zoom="100">
+    <tsa_CondicionesDeVentaDet_XmlElement left="2699" top="9631" width="8890" height="4656" selected="0" zOrder="1" index="0" expanded="1" />
+    <tsa_CondicionesDeVentas_XmlElement left="2646" top="3122" width="9313" height="5926" selected="0" zOrder="2" index="1" expanded="1" />
+    <tsa_CondicionesDeVentastsa_CondicionesDeVentaDet_XmlKeyref left="-249" top="8984" width="503" height="503" selected="0" zOrder="4" />
+</XSDDesignerLayout>

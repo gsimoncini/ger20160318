@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="mz.erp.commontypes.Properties.Settings.ErpPrincipalConnectionString"
+            connectionString="Data Source=SSERVIDOR;Initial Catalog=ErpPrincipal;User ID=sa;Password=gosp"
+            providerName="System.Data.SqlClient" />
+        <add name="mz.erp.commontypes.Properties.Settings.ErpPrincipalMZConnectionString"
+            connectionString="Data Source=10.1.254.102;Initial Catalog=ErpPrincipalMZ;Persist Security Info=True;User ID=sa;Password=silvinagerman2010"
+            providerName="System.Data.SqlClient" />
+        <add name="mz.erp.commontypes.Properties.Settings.ErpPrincipalSP18ConnectionString"
+            connectionString="Data Source=SABRINA-PC\SQLEXPRESS;Initial Catalog=ErpPrincipalSP18;User ID=sa;Password=gosp"
+            providerName="System.Data.SqlClient" />
+        <add name="mz.erp.commontypes.Properties.Settings.ErpPrincipalServiGardenConnectionString"
+            connectionString="Data Source=10.1.254.102;Initial Catalog=ErpPrincipalServiGarden;Persist Security Info=True;User ID=sa;Password=silvinagerman2010"
+            providerName="System.Data.SqlClient" />
+        <add name="mz.erp.commontypes.Properties.Settings.ErpPrincipalBrandHouseReservasConnectionString"
+            connectionString="Data Source=10.1.254.102;Initial Catalog=ErpPrincipalBrandHouseReservas;User ID=sa;Password=silvinagerman2010"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>

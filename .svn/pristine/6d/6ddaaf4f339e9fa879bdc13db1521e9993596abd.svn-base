@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="15660" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1440" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape5" MOD="4" Left="0" Top="720" Width="15570" Height="630" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label14" MOD="4" Left="990" Top="900" Width="1170" Height="270" Caption="Comprobante" Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label15" MOD="4" Left="2070" Top="900" Width="1260" Height="270" Caption="Numero" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label16" MOD="4" Left="0" Top="900" Width="1080" Height="270" Caption="Fecha" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="3240" Top="900" Width="1620" Height="270" Caption="Razon Social" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="4770" Top="810" Width="990" Height="450" Caption="Tipo de Documento" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label19" MOD="4" Left="5850" Top="900" Width="990" Height="270" Caption="Documento" Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="7290" Top="900" Width="990" Height="270" Caption="Neto" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="8460" Top="900" Width="1080" Height="270" Caption="Impuestos" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label20" MOD="4" Left="9900" Top="900" Width="990" Height="270" Caption="Total" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="Imp2" Visible="0" MOD="4" Left="12240" Top="900" Width="810" Height="270" Text="Impuesto2" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="Imp3" Visible="0" MOD="4" Left="13140" Top="900" Width="900" Height="270" Text="Impuesto3" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="Imp4" Visible="0" MOD="4" Left="14040" Top="900" Width="900" Height="270" Text="Impuesto4" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="Imp5" Visible="0" MOD="4" Left="14850" Top="900" Width="540" Height="270" Text="Impuesto5" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="Imp1" Visible="0" MOD="4" Left="10980" Top="900" Width="1080" Height="270" Text="Impuesto1" Style="text-align: center; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="0" Y1="630" X2="15570" Y2="630" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="90" Top="270" Width="3600" Height="270" Caption="Detalle de Impuestos" Style="font-weight: bold; font-size: 12pt; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="285" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Field" Name="ValorImp1" DataField="ValorImp1" Visible="0" MOD="4" Left="10890" Top="0" Width="990" Height="270" Text="ValorImp1" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="ValorImp2" DataField="ValorImp2" Visible="0" MOD="4" Left="11880" Top="0" Width="1080" Height="270" Text="ValorImp2" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Total" MOD="4" Left="9345" Top="0" Width="1545" Height="270" Text="Total" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="Total sin Impuestos" MOD="4" Left="6840" Top="0" Width="1260" Height="270" Text="Total sin Impuestos" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Titular" MOD="4" Left="3255" Top="0" Width="1515" Height="270" Text="Titular" Style="text-align: center; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="ValorImp4" DataField="ValorImp4" Visible="0" MOD="4" Left="13860" Top="0" Width="900" Height="270" Text="ValorImp4" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox14" DataField="Tipo de Documento" MOD="4" Left="4950" Top="0" Width="720" Height="270" Text="Tipo de Documento" Style="text-align: center; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox13" DataField="Documento" MOD="4" Left="5760" Top="0" Width="1080" Height="270" Text="Documento" Style="text-align: center; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="Impuestos" MOD="4" Left="8100" Top="0" Width="1260" Height="270" Text="Impuestos" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="Numero" MOD="4" Left="2070" Top="0" Width="1170" Height="270" Text="Numero" Style="text-align: center; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox6" DataField="Fecha" MOD="4" Left="180" Top="0" Width="810" Height="270" Text="Fecha" OutputFormat="MM/dd/yy" Style="font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="ValorImp3" DataField="ValorImp3" Visible="0" MOD="4" Left="12960" Top="0" Width="990" Height="270" Text="ValorImp3" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="ValorImp5" DataField="ValorImp5" Visible="0" MOD="4" Left="14760" Top="0" Width="900" Height="270" Text="ValorImp5" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox15" DataField="Comprobante" MOD="4" Left="990" Top="0" Width="1080" Height="270" Text="Comprobante" Style="text-align: center; font-size: 8pt; vertical-align: middle; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="945" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="6670" Y1="0" X2="15570" Y2="0" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="4680" Y1="270" X2="15570" Y2="270" />
+      <Control Type="AR.Field" Name="txtNombreEmpresa" MOD="4" Left="180" Top="450" Width="2790" Height="360" Text="txtEmpresa" Style="font-weight: normal; font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="15300" Top="450" Width="270" Height="270" Text="TextBox24" SummaryType="4" SummaryRunning="1" />
+      <Control Type="AR.Label" Name="Label22" MOD="4" Left="14580" Top="450" Width="720" Height="270" Caption="Página" />
+      <Control Type="AR.Field" Name="TotalImp1" DataField="ValorImp1" Visible="0" MOD="4" Left="10800" Top="0" Width="1080" Height="270" Text="TextBox16" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" SummaryDistinct="ValorImp1" />
+      <Control Type="AR.Field" Name="TotalImp2" DataField="ValorImp2" Visible="0" MOD="4" Left="11880" Top="0" Width="1080" Height="270" Text="TextBox15" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TotalImp3" DataField="ValorImp3" Visible="0" MOD="4" Left="12900" Top="0" Width="1065" Height="270" Text="TextBox15" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" SummaryDistinct="ValorImp1" />
+      <Control Type="AR.Field" Name="TotalImp4" DataField="ValorImp4" Visible="0" MOD="4" Left="13770" Top="0" Width="990" Height="270" Text="TextBox15" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" SummaryDistinct="ValorImp1" />
+      <Control Type="AR.Field" Name="TotalImp5" DataField="ValorImp5" Visible="0" MOD="4" Left="14490" Top="0" Width="1170" Height="270" Text="TextBox15" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" SummaryDistinct="ValorImp1" />
+      <Control Type="AR.Field" Name="TextBox21" DataField="Total" MOD="4" Left="9630" Top="0" Width="1350" Height="270" Text="TextBox15" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" SummaryDistinct="ValorImp1" />
+      <Control Type="AR.Field" Name="TextBox22" DataField="Total sin Impuestos" MOD="4" Left="6930" Top="0" Width="1350" Height="270" Text="TextBox15" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" SummaryDistinct="ValorImp1" />
+      <Control Type="AR.Field" Name="TextBox23" DataField="Impuestos" MOD="4" Left="8010" Top="0" Width="1440" Height="270" Text="TextBox15" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; vertical-align: middle; " SummaryType="2" SummaryRunning="2" SummaryDistinct="ValorImp1" />
+      <Control Type="AR.Label" Name="Label23" MOD="4" Left="4470" Top="-90" Width="1620" Height="360" Caption="Subtotales:" Style="text-decoration: none; font-weight: normal; font-size: 11pt; vertical-align: middle; " />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="zMos9ShmaOOPIwmAt5/bINbDGjLThxSBoTIxClh1sbKFrK7xiuxMDMI23cYF26e0cTCnD9fiC2e9Pe+rf4FqEvd5lWa9jWcTsOr0zW60LgslrJZqq/KWCft3JaHG9E72" SQL="exec Pr_tsa_ImpuestosComprobantes_GetImpuestos null,null,'IVA',null, null,null,null,&quot;FAA,FAB&quot;" />
+  </DataSources>
+  <Script><![CDATA[
+int cant=0;
+
+bool m_color = false;
+System.Collections.ArrayList  labelsImp;
+public void Detail_Format(){
+	
+int cantText = rpt.Sections["Detail"].Controls.Count;
+for (int i = 0; i < cantText ; i++)  
+((TextBox)rpt.Sections["Detail"].Controls[i]).ClassName="MyStyle";
+for(int i=1; i<=cant ;i++)
+{
+((TextBox)rpt.Sections["Detail"].Controls["ValorImp"+i]).Visible=true;
+}	
+
+if(m_color)
+	{
+		m_color =false;
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gray;	
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.White;
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+		m_color = true;	
+	}
+}
+public void ActiveReport_ReportStart()
+{
+  rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+    rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+    rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+    rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+
+
+
+  rpt.StyleSheet.Add("MyStyle");
+  
+  rpt.StyleSheet["MyStyle"].FontName = "Arial";
+   rpt.StyleSheet["MyStyle"].FontSize =null;
+   rpt.StyleSheet["MyStyle"].FontStrikeThrough = false;
+    rpt.StyleSheet["MyStyle"].FontUnderline = false;
+ rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+    rpt.StyleSheet["MyStyle"].VerticalAlignment = VerticalTextAlignment.Middle;
+labelsImp = new System.Collections.ArrayList();
+/*foreach(string imp in Param1)
+
+{
+	labelsImp.Add(imp);
+cant++;
+			
+}*/
+}
+
+
+
+
+
+
+
+
+
+public void PageFooter_Format()
+{
+DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["txtNombreEmpresa"];
+//text.Text = Empresa;
+for(int i=1; i<=cant ;i++)
+{
+((TextBox)rpt.Sections["PageFooter"].Controls["TotalImp"+i]).Visible=true;
+}
+}
+
+
+
+public void PageHeader_Format()
+{
+int i = 1;
+foreach(string imp in labelsImp)
+{
+
+
+DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["Imp"+i];
+text.Text = imp;
+i++;
+text.Visible=true;
+}
+}
+
+public bool ActiveReport_FetchData(bool eof)
+{
+for (int i =1;i<=5;i++)	
+if (rpt.Fields["ValorImp" +i].Value == System.DBNull.Value) rpt.Fields["ValorImp" +i].Value=0;
+return eof;
+
+}
+]]></Script>
+  <PageSettings Orientation="2" />
+</ActiveReportsLayout>

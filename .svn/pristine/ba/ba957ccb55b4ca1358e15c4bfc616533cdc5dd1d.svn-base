@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="sy_UsuariosEx" targetNamespace="http://tempuri.org/sy_UsuariosEx.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/sy_UsuariosEx.xsd" xmlns:mstns="http://tempuri.org/sy_UsuariosEx.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="sy_UsuariosExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="sy_PerfilesUsuariosEmpresas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdUsuario" type="xs:string" />
+							<xs:element name="IdPerfil" type="xs:long" />
+							<xs:element name="IdEmpresa" type="xs:long" />
+							<xs:element name="ConexionDefault" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="sy_Usuarios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdUsuario" type="xs:string" />
+							<xs:element name="Nombre" type="xs:string" />
+							<xs:element name="Clave" type="xs:string" />
+							<xs:element name="CantidadConexionesFallida" type="xs:unsignedByte" />
+							<xs:element name="UltimaConexion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Expiracion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DiasValidezClave" type="xs:short" minOccurs="0" />
+							<xs:element name="VencimientoClave" type="xs:dateTime" />
+							<xs:element name="Bloqueado" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IntentosPermitidosConexion" type="xs:unsignedByte" />
+							<xs:element name="HabilitacionCuenta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Administrador" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ClaveNuncaCaduca" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PermiteCambioClave" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ResponsableUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="PerfilUtilizado" type="xs:long" minOccurs="0" />
+							<xs:element name="Activo" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" />
+							<xs:element name="IdConexionCreacion" type="xs:long" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdPersona" type="xs:string" minOccurs="0" />
+							<xs:element name="Equipo" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="sy_Perfiles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdPerfil" type="xs:long" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Activo" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Comentario" type="xs:string" minOccurs="0" />
+							<xs:element name="IdConexion" type="xs:long" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" />
+							<xs:element name="IdConexionCreacion" type="xs:long" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tlg_ResponsablesDepositosSecciones">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdUsuario" type="xs:string" />
+							<xs:element name="IdDeposito" type="xs:string" />
+							<xs:element name="IdSeccion" type="xs:string" />
+							<xs:element name="Activo" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="sy_UsuariosExDatasetKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:sy_PerfilesUsuariosEmpresas" />
+			<xs:field xpath="mstns:IdUsuario" />
+			<xs:field xpath="mstns:IdPerfil" />
+			<xs:field xpath="mstns:IdEmpresa" />
+		</xs:unique>
+		<xs:keyref name="sy_Usuariossy_PerfilesUsuariosEmpresas" refer="sy_UsuariosExDatasetKey1">
+			<xs:selector xpath=".//mstns:sy_PerfilesUsuariosEmpresas" />
+			<xs:field xpath="mstns:IdUsuario" />
+		</xs:keyref>
+		<xs:unique name="sy_UsuariosExDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:sy_Usuarios" />
+			<xs:field xpath="mstns:IdUsuario" />
+		</xs:unique>
+		<xs:unique name="sy_UsuariosExDatasetKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:sy_Perfiles" />
+			<xs:field xpath="mstns:IdPerfil" />
+		</xs:unique>
+		<xs:keyref name="sy_Perfilessy_PerfilesUsuariosEmpresas" refer="sy_UsuariosExDatasetKey3">
+			<xs:selector xpath=".//mstns:sy_PerfilesUsuariosEmpresas" />
+			<xs:field xpath="mstns:IdPerfil" />
+		</xs:keyref>
+		<xs:unique name="sy_UsuariosExDatasetKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tlg_ResponsablesDepositosSecciones" />
+			<xs:field xpath="mstns:IdUsuario" />
+			<xs:field xpath="mstns:IdDeposito" />
+			<xs:field xpath="mstns:IdSeccion" />
+		</xs:unique>
+		<xs:keyref name="sy_Usuariostlg_ResponsablesDepositosSecciones" refer="sy_UsuariosExDatasetKey1">
+			<xs:selector xpath=".//mstns:tlg_ResponsablesDepositosSecciones" />
+			<xs:field xpath="mstns:IdUsuario" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

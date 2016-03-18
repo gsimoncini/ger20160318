@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10425" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1050" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="1170" Top="720" Width="1080" Height="270" Caption="Cliente" />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="9360" Top="720" Width="1080" Height="270" Caption="Saldo" />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="8190" Top="720" Width="1080" Height="270" Caption="Importe" />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="6930" Top="720" Width="1080" Height="270" Caption="Fecha Vto" />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="5760" Top="720" Width="810" Height="270" Caption="Fecha" />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="4050" Top="720" Width="1080" Height="270" Caption="Factura" />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="180" Top="180" Width="10170" Height="360" Caption="Listado de Ventas" Style="text-align: center; font-weight: normal; font-size: 16pt; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="90" Y1="990" X2="10440" Y2="990" LineWeight="2" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="90" Y1="720" X2="10440" Y2="720" LineWeight="2" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="419" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="Cliente" DataField="Cliente" MOD="4" Left="90" Top="90" Width="3510" Height="270" Text="Cliente" />
+      <Control Type="AR.Field" Name="Factura" DataField="Factura" MOD="4" Left="3690" Top="90" Width="1890" Height="270" Text="Factura" />
+      <Control Type="AR.Field" Name="Importe" DataField="Importe" MOD="4" Left="8190" Top="90" Width="1080" Height="270" Text="Importe" OutputFormat="#,##0.00" />
+      <Control Type="AR.Field" Name="Saldo" DataField="Saldo" MOD="4" Left="9360" Top="90" Width="1170" Height="270" Text="Saldo" OutputFormat="#,##0.00" />
+      <Control Type="AR.Field" Name="Fecha" DataField="Fecha" MOD="4" Left="5670" Top="90" Width="1080" Height="270" Text="Fecha" OutputFormat="dd/MM/yyyy" />
+      <Control Type="AR.Field" Name="FechaVencimiento" DataField="FechaVencimiento" MOD="4" Left="6930" Top="90" Width="1080" Height="270" Text="FechaVencimiento" OutputFormat="dd/MM/yyyy" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="zVEk+z1wrsH0j+buQH5ikzJpCbyk1P/yrS4grtbcqFsVMjkMZ0+uMpfZMsz64SxwaRDToJixP59CArn+ur4Mf8jUPH/xOHYa+rJzKgOFxLtdS2W2UrIAMe6TGIA6GE6cY9BpRDEvzMN3qdPLVRS1xw==" SQL="exec Pr_tsa_ComprobantesDeVenta_GetListVentasPorVendedor @IdCuenta=NULL,@FechaDesde='27/06/2011',@FechaHasta='24/04/2012',@IdResponsable=default,@IdTipoDeComprobante='FAA,FAB,FAE,FAAM,FABM,AFAA,AFAB,FAAD,FABD,FAAMD,FABMD,FAACOPA,FAACOPB',@IdJerarquia1=NULL,@IdJerarquia2=NULL,@IdJerarquia3=NULL,@IdJerarquia4=NULL,@IdJerarquia5=NULL,@IdJerarquia6=NULL,@IdJerarquia7=NULL,@IdJerarquia8=NULL,@IdJerarquia9=NULL,@IdJerarquia10=NULL,@IdJerarquia11=NULL,@IdJerarquia12=NULL,@IdJerarquia13=NULL,@IdJerarquia14=NULL,@IdJerarquia15=NULL,@IdJerarquia16=NULL" />
+  </DataSources>
+  <PageSettings LeftMargin="720" RightMargin="720" PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" />
+</ActiveReportsLayout>

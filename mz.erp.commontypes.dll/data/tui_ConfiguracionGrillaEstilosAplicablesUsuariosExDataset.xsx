@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-2588" viewPortTop="527" zoom="100">
+    <tui_ConfiguracionGrillaEstilosAplicablesUsuarios_XmlElement left="4604" top="979" width="13811" height="2963" selected="0" zOrder="4" index="0" expanded="1" />
+    <tui_ConfiguracionGrillaEstilosCondicionalesUsuarios_XmlElement left="-1023" top="5397" width="14922" height="2963" selected="0" zOrder="6" index="1" expanded="1" />
+    <tui_ConfiguracionGrillaEstilosCondicionalesDetUsuarios_XmlElement left="14842" top="5397" width="15452" height="2963" selected="0" zOrder="11" index="2" expanded="1" />
+    <tui_ConfiguracionGrillaEstilosCondicionalesDetEstilosAplicadosUsuarios_XmlElement left="2884" top="11033" width="19896" height="2963" selected="0" zOrder="16" index="3" expanded="1" />
+    <tui_ConfiguracionGrillaEstilosCondicionalesUsuariostui_ConfiguracionGrillaEstilosCondicionalesDetUsuarios_XmlKeyref left="14119" top="9142" width="503" height="503" selected="0" zOrder="13" />
+    <tui_ConfiguracionGrillaEstilosCondicionalesUsuariostui_ConfiguracionGrillaEstilosAplicablesUsuarios_XmlKeyref left="-571" top="53" width="503" height="503" selected="0" zOrder="8" />
+    <tui_ConfiguracionGrillaEstilosCondicionalesDetUsuariostui_ConfiguracionGrillaEstilosCondicionalesDetEstilosAplicadosUsuarios_XmlKeyref left="30543" top="9445" width="503" height="503" selected="0" zOrder="18" />
+</XSDDesignerLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tpr_ObjetosEx" targetNamespace="http://tempuri.org/tsh_Productos.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/tsh_Productos.xsd" xmlns:mstns="http://tempuri.org/tsh_Productos.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tpr_ObjetosExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded"></xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

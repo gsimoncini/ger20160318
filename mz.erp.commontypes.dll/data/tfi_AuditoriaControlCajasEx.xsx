@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="0" viewPortTop="1662" zoom="100">
+    <tfi_AuditoriaControlCajas_XmlElement left="1455" top="1112" width="8837" height="8043" selected="0" zOrder="1" index="0" expanded="1" />
+    <tfi_AuditoriaControlCajasDet_XmlElement left="12462" top="1349" width="11429" height="9473" selected="0" zOrder="2" index="1" expanded="1" />
+    <tfi_AuditoriaControlCajasDetalleBilletes_XmlElement left="2170" top="10875" width="14551" height="3757" selected="0" zOrder="4" index="2" expanded="1" />
+    <tfi_AuditoriaControlCajastfi_AuditoriaControlCajasDet_XmlKeyref left="11126" top="5358" width="503" height="503" selected="0" zOrder="6" />
+    <tfi_AuditoriaControlCajasDettfi_AuditoriaControlCajasDetalleBilletes_XmlKeyref left="24140" top="11604" width="503" height="503" selected="0" zOrder="10" />
+</XSDDesignerLayout>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10725" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Visible="0" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageHeader" Name="PageHeader" Height="2999" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="0" Y1="1170" X2="10530" Y2="1170" LineStyle="4" />
+      <Control Type="AR.Label" Name="Label26" MOD="4" Left="2520" Top="1260" Width="2700" Height="270" Caption="RECIBO DE PAGO Nº :" Style="ddo-char-set: 1; text-align: left; font-weight: normal; " />
+      <Control Type="AR.Field" Name="TextBox16" DataField="Numero" MOD="4" Left="5220" Top="1260" Width="1980" Height="288" Text="NumeroRecibo" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox17" DataField="Fecha" MOD="4" Left="7200" Top="1260" Width="3060" Height="288" Text="FechaPago" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="0" Y1="1620" X2="10530" Y2="1620" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="0" Y1="1710" X2="10530" Y2="1710" LineStyle="4" />
+      <Control Type="AR.Field" Name="TextBox18" DataField="NombreEmpresa" MOD="4" Left="0" Top="1260" Width="2520" Height="288" Text="NombreEmpresa" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label32" MOD="4" Left="0" Top="1800" Width="1620" Height="288" Caption="Señor/es:" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox19" DataField="Nombre" MOD="4" Left="1620" Top="1800" Width="8910" Height="288" Text="NombreProveedor" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox20" DataField="Domicilio" MOD="4" Left="1620" Top="2070" Width="8910" Height="288" Text="Domicilio" Style="ddo-char-set: 1; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label33" MOD="4" Left="0" Top="2070" Width="1620" Height="288" Caption="Dirección:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Shape" Name="Shape2" MOD="4" Left="0" Top="2430" Width="10530" Height="540" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label38" MOD="4" Left="180" Top="2610" Width="720" Height="270" Caption="Fecha" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="3340" Y1="2440" X2="3340" Y2="2980" />
+      <Control Type="AR.Label" Name="Label39" MOD="4" Left="1980" Top="2610" Width="720" Height="270" Caption="Tipo" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="1180" Y1="2440" X2="1180" Y2="2980" />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="5680" Y1="2440" X2="5680" Y2="2980" />
+      <Control Type="AR.Label" Name="Label40" MOD="4" Left="4050" Top="2610" Width="990" Height="270" Caption="Numero" />
+      <Control Type="AR.Label" Name="Label41" MOD="4" Left="6120" Top="2610" Width="630" Height="270" Caption="Total" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="7210" Y1="2440" X2="7210" Y2="2980" />
+      <Control Type="AR.Label" Name="Label42" MOD="4" Left="7560" Top="2610" Width="720" Height="270" Caption="Saldo" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="8740" Y1="2440" X2="8740" Y2="2980" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="0" Y1="1080" X2="10530" Y2="1080" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line17" MOD="4" X1="10180" Y1="2440" X2="10180" Y2="2980" />
+      <Control Type="AR.Label" Name="Label43" MOD="4" Left="9180" Top="2610" Width="720" Height="270" Caption="Pago" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox21" DataField="FechaFactura" MOD="4" Left="0" Top="0" Width="1170" Height="288" Text="FechaFactura" OutputFormat="dd/MM/yyyy" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox22" DataField="TipoComprobanteFactura" MOD="4" Left="1260" Top="0" Width="2070" Height="288" Text="TipoComprobanteFactura" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox23" DataField="NumeroFactura" MOD="4" Left="3525" Top="0" Width="2070" Height="288" Text="NumeroFactura" Style="text-align: left; " />
+      <Control Type="AR.Field" Name="TextBox24" DataField="TotalFactura" MOD="4" Left="5760" Top="0" Width="1260" Height="288" Text="TotalFactura" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox25" DataField="SaldoFactura" MOD="4" Left="7200" Top="0" Width="1440" Height="288" Text="SaldoPago" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox43" DataField="MontoPago" MOD="4" Left="8820" Top="0" Width="1260" Height="288" Text="MontoPago" OutputFormat="$#,##0.00" Style="text-align: right; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="1530" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox45" MOD="4" Left="8892" Top="450" Width="1260" Height="288" Text="Total" OutputFormat="$#,##0.00" Style="text-align: center; font-weight: normal; " />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="10270" Y1="370" X2="10270" Y2="1277.2" />
+      <Control Type="AR.Line" Name="Line20" MOD="4" X1="8740" Y1="370" X2="10252" Y2="370" />
+      <Control Type="AR.Line" Name="Line21" MOD="4" X1="8740" Y1="819.9999" X2="10252" Y2="819.9999" />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="8740" Y1="1270" X2="10252" Y2="1270" />
+      <Control Type="AR.Line" Name="Line23" MOD="4" X1="8740" Y1="370" X2="8740" Y2="1277.2" />
+      <Control Type="AR.Field" Name="TextBox46" DataField="Total" MOD="4" Left="8910" Top="900" Width="1260" Height="288" Text="Total" OutputFormat="$#,##0.00" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line24" MOD="4" X1="0" Y1="99.36" X2="10530" Y2="99.36" LineStyle="4" />
+      <Control Type="AR.Line" Name="Line25" MOD="4" X1="0" Y1="190.08" X2="10530" Y2="190.08" LineStyle="4" />
+      <Control Type="AR.Field" Name="TextBox47" DataField="DescripcionRetGanancia" Visible="0" MOD="4" Left="1440" Top="90" Width="5040" Height="288" Text="DescripcionRetGanancia" />
+      <Control Type="AR.Field" Name="TextBox26" DataField="DescripcionRetIB" Visible="0" MOD="4" Left="1440" Top="360" Width="5040" Height="288" Text="DescripcionRetIB" />
+      <Control Type="AR.Field" Name="TextBox27" DataField="NumeroRetencionGanancia" Visible="0" MOD="4" Left="6480" Top="90" Width="1440" Height="288" Text="NumeroRetencionGanancia" />
+      <Control Type="AR.Field" Name="TextBox28" DataField="NumeroRetencionIB" Visible="0" MOD="4" Left="6480" Top="360" Width="1440" Height="288" Text="NumeroRetencionIB" />
+      <Control Type="AR.Field" Name="TextBox29" DataField="DescripcionRetIVA" Visible="0" MOD="4" Left="1440" Top="630" Width="5040" Height="288" Text="DescripcionRetIVA" />
+      <Control Type="AR.Field" Name="TextBox30" DataField="NumeroRetencionIVA" Visible="0" MOD="4" Left="6480" Top="630" Width="1440" Height="288" Text="NumeroRetencionIVA" />
+      <Control Type="AR.Field" Name="TextBox31" DataField="MontoRetencionGanancia" Visible="0" MOD="4" Left="8100" Top="90" Width="1440" Height="288" Text="MontoRetencionGanancia" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox32" DataField="MontoRetencionIB" Visible="0" MOD="4" Left="8100" Top="360" Width="1440" Height="288" Text="MontoRetencionIB" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox33" DataField="MontoRetencionIVA" Visible="0" MOD="4" Left="8100" Top="630" Width="1440" Height="288" Text="MontoRetencionIVA" OutputFormat="$#,##0.00" Style="text-align: right; " />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Height="3690" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox34" DataField="DescripcionRetGanancia" MOD="4" Left="1440" Top="1530" Width="5040" Height="288" Text="DescripcionRetGanancia" />
+      <Control Type="AR.Field" Name="TextBox35" DataField="DescripcionRetIB" MOD="4" Left="1440" Top="1800" Width="5040" Height="288" Text="DescripcionRetIB" />
+      <Control Type="AR.Field" Name="TextBox36" DataField="NumeroRetencionGanancia" MOD="4" Left="6480" Top="1530" Width="1440" Height="288" Text="NumeroRetencionGanancia" />
+      <Control Type="AR.Field" Name="TextBox37" DataField="NumeroRetencionIB" MOD="4" Left="6480" Top="1800" Width="1440" Height="288" Text="NumeroRetencionIB" />
+      <Control Type="AR.Field" Name="TextBox38" DataField="DescripcionRetIVA" MOD="4" Left="1440" Top="2070" Width="5040" Height="288" Text="DescripcionRetIVA" />
+      <Control Type="AR.Field" Name="TextBox39" DataField="NumeroRetencionIVA" MOD="4" Left="6480" Top="2070" Width="1440" Height="288" Text="NumeroRetencionIVA" />
+      <Control Type="AR.Field" Name="TextBox40" DataField="MontoRetencionGanancia" MOD="4" Left="8100" Top="1530" Width="1440" Height="288" Text="MontoRetencionGanancia" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox41" DataField="MontoRetencionIB" MOD="4" Left="8100" Top="1800" Width="1440" Height="288" Text="MontoRetencionIB" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox42" DataField="MontoRetencionIVA" MOD="4" Left="8100" Top="2070" Width="1440" Height="288" Text="MontoRetencionIVA" OutputFormat="$#,##0.00" Style="text-align: right; " />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="Htw5uG+bcXYv4oXIvCR45+b9lTwK5kNfk+CyR2mREoK8YWLNWmC5CY05g17H4OJHwSuI0U//AvJzcLHS3o5AciQnlqs7ONmmt0fdi2CzlWkRnvl4sZGIg8ohj3/9NGaw" SQL="exec Pr_tpu_ComprobantesDePagoView @IdComprobante = '00001000010000033292'" />
+  </DataSources>
+  <Script><![CDATA[public void ActiveReport_ReportStart()
+{
+System.Console.WriteLine("-------- Report Start -------"  );
+ rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+System.Diagnostics.Debug.WriteLine("----------ReportStart------------");
+
+}]]></Script>
+  <PageSettings PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" />
+</ActiveReportsLayout>

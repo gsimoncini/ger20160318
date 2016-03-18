@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ListasdePreciosEx" targetNamespace="http://tempuri.org/ListasdePreciosEx.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ListasdePreciosEx.xsd"
+	xmlns:mstns="http://tempuri.org/ListasdePreciosEx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ListasdePreciosExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ListasdePrecios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdListadePrecio" type="xs:long" />
+							<xs:element name="Codigo" type="xs:string" />
+							<xs:element name="Descripcion" type="xs:string" />
+							<xs:element name="VigenciaDesde" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="VigenciaHasta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdLocal" type="xs:long" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ListasdePreciosExKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ListasdePrecios" />
+			<xs:field xpath="mstns:IdListadePrecio" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

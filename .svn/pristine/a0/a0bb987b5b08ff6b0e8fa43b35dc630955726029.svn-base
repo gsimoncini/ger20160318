@@ -1,0 +1,1086 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{EF4F53FA-1F4D-4292-8F88-4251DFE03043}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "mz.erp.ui"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "mz.erp.ui"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "mz.erp.commontypes.dll"
+                    Project = "{23B55F01-BF06-4AA8-878D-FB579246D04B}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "mz.erp.businessrules.dll"
+                    Project = "{186D09F1-0548-4C3C-A9EF-9E73A1EA49EC}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinStatusBar.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinStatusBar.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinStatusBar.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.v3.2"
+                    AssemblyName = "Infragistics.Win.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Infragistics.Shared.v3.2"
+                    AssemblyName = "Infragistics.Shared.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Shared.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinDock.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinDock.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinDock.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Runtime.Serialization.Formatters.Soap"
+                    AssemblyName = "System.Runtime.Serialization.Formatters.Soap"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Runtime.Serialization.Formatters.Soap.dll"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinToolbars.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinToolbars.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinToolbars.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinExplorerBar.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinExplorerBar.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinExplorerBar.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "mz.erp.systemframework.dll"
+                    Project = "{9D3E8AE6-DD14-46A8-9395-DFDD6CE2C6A5}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinTabbedMdi.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinTabbedMdi.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinTabbedMdi.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "janus.windows.gridex"
+                    AssemblyName = "Janus.Windows.GridEX"
+                    HintPath = "..\..\..\..\archivos de programa\janus systems\controls for microsoft .net\windows forms controls\bin\v1.0.2500\janus.windows.gridex.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                />
+                <Reference
+                    Name = "Janus.Windows.Common"
+                    AssemblyName = "Janus.Windows.Common"
+                    HintPath = "..\..\..\..\Archivos de programa\Janus Systems\Controls for Microsoft .NET\Windows Forms Controls\Bin\v1.0.2500\Janus.Windows.Common.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinEditors.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinEditors.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinEditors.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinGrid.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinGrid.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinGrid.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Infragistics.Win.Misc.v3.2"
+                    AssemblyName = "Infragistics.Win.Misc.v3.2"
+                    HintPath = "..\..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.Misc.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "mz.erp.dbhelper.dll"
+                    Project = "{8B4A211F-FE26-4E55-98CA-F37A95D39EAA}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "mz.erp.ui.controls.dll"
+                    Project = "{B5A46127-C620-47FB-8B4A-B2366378A51A}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "janus.windows.schedule"
+                    AssemblyName = "Janus.Windows.Schedule"
+                    HintPath = "..\..\..\archivos de programa\janus systems\controls for microsoft .net\windows forms controls\bin\v1.0.2500\janus.windows.schedule.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinSchedule.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinSchedule.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinSchedule.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "SHDocVw"
+                    Guid = "{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxSHDocVw"
+                    Guid = "{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+
+                <Reference
+                    Name = "Infragistics.Win.UltraWinMaskedEdit.v3.2"
+                    AssemblyName = "Infragistics.Win.UltraWinMaskedEdit.v3.2"
+                    HintPath = "..\..\..\Archivos de programa\Infragistics\NetAdvantage 2004 Volume 2\Windows Forms\Bin\Infragistics.Win.UltraWinMaskedEdit.v3.2.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20042"
+                />
+                <Reference
+                    Name = "janus.windows.calendarcombo"
+                    AssemblyName = "janus.windows.calendarcombo"
+                    HintPath = "..\..\..\archivos de programa\janus systems\controls for microsoft .net\windows forms controls\bin\v1.0.2500\janus.windows.calendarcombo.dll"
+                    AssemblyFolderKey = "hklm\dn\janus.windows.gridex"
+                />
+
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "licenses.licx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "class\IGridDocument.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\IGridDocumentEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\LayoutBuilder.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_AuxiliarVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_BarrasHerramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_BarrasHerramientasHerramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Conexion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Empresas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Funcionalidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Grupos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_GruposVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Herramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_HerramientasRecursosIdiomas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Idiomas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Perfiles.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_PerfilesFuncionalidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_PerfilesHerramientas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_PerfilesUsuariosEmpresas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Puestos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Recursos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Sucesos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Sucursales.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_TiposRecursos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_TiposSucesos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_TiposVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Usuarios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_Variables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesEmpresas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesPerfiles.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesPuestos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesSucursales.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\sy_VariablesUsuarios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_Cargos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_Domicilios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_DomiciliosPersonas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_TiposContactos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_TiposDomicilios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tcs_Tratamiento.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_CotizacionesMonedas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_Entidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_FuentesDeCambio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_Monedas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_TDCompTesoreria.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_Valores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_ValoresEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_ValoresVariablesAuxiliares.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_ValorizacionStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tfi_VariablesAuxiliaresTDCompTesoreria.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_ComprobantesRemitos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_Depositos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_OrdenesRemitos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_Remito.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_RemitoDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tlg_Secciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpr_TiposAjustes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_ComprobantesCompra.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_ComprobantesCompraDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_ContactosProveedores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_CotizCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_CotizOrdenesCompra.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_DevolucionesCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_Lotes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_MotivosDevoluciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_OrdenesCompra.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_OrdenesCompraDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_OrdenesRemitosCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_ProductosProveedores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_Proveedores.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_RemitosCompComprasDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_RemitosCompras.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_RemitosComprasDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tpu_SeguimientoDevoluciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_AgrupamientosCuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_AgrupCuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Combo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComboDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Comisiones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComisionesCotasVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Comprobante.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_ComprobantesDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_CondicionesDeVentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Cotizacion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_CotizacionesDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Cuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_CuentasFormasDePago.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_DescuentosPorCuentas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_DescuentosPorCuentasExt.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_DescuentosPorVolumen.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_Pedidos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_PedidosDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_SeguimientoPedidos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsa_VariantesStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Agrupamientos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_AgrupProductos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_AsociacionCodigos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Contactos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Documentos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_DocumentosPersonas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_GruposProductos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_JerarquiaAgrupProd.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Localidades.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_MovimientosStock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_MovimientosStockDet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Personas.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Productos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_RecursosHumanos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_Stock.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsh_StockMinimo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_CategoriasIva.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_ClaseDocumento.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_Conceptos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_EstadosCotizaciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_EstadosDevoluciones.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_FormasDePago.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_TipoProducto.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_TiposDocumentos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "class\tsy_TiposMovimientos.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FilterDocument.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FilterDocument.resx"
+                    DependentUpon = "FilterDocument.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmABMEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmABMEx.resx"
+                    DependentUpon = "FrmABMEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmExProductos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmExProductos.resx"
+                    DependentUpon = "FrmAbmExProductos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmJerarquiaAgrupProd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmJerarquiaAgrupProd.resx"
+                    DependentUpon = "FrmAbmJerarquiaAgrupProd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmLocalidades.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmLocalidades.resx"
+                    DependentUpon = "FrmAbmLocalidades.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmPersonas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmPersonas.resx"
+                    DependentUpon = "FrmAbmPersonas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductos.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProductos.resx"
+                    DependentUpon = "FrmAbmProductos.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProveedores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmProveedores.resx"
+                    DependentUpon = "FrmAbmProveedores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmSucursales.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmSucursales.resx"
+                    DependentUpon = "FrmAbmSucursales.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAbmValores.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAbmValores.resx"
+                    DependentUpon = "FrmAbmValores.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmAMB.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmAMB.resx"
+                    DependentUpon = "FrmAMB.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmJerarquiaAgrupProd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmJerarquiaAgrupProd.resx"
+                    DependentUpon = "FrmJerarquiaAgrupProd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmProveedores.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmPruebas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmPruebas.resx"
+                    DependentUpon = "FrmPruebas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\FrmShowRowError.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\FrmShowRowError.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\frmTest.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\frmTest.resx"
+                    DependentUpon = "frmTest.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\GridDocument.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\GridDocument.resx"
+                    DependentUpon = "GridDocument.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\LogIn.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\LogIn.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\MainForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\MainForm.resx"
+                    DependentUpon = "MainForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\Splash.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\Splash.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\TestFactura.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\TestFactura.resx"
+                    DependentUpon = "TestFactura.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "forms\Usuario.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "forms\Usuario.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "utility\Environment.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "utility\ToolsLoader.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

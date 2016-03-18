@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10290" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1215" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="270" Top="900" Width="990" Height="270" Caption="Código" Style="text-align: right; font-weight: bold; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="1350" Top="914.9999" Width="3600" Height="270" Caption="Descripción" Style="text-align: left; font-weight: bold; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="5220" Top="914.9999" Width="1530" Height="270" Caption="St.Mínimo" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="7380" Top="914.9999" Width="1080" Height="270" Caption="St.Disponible" Style="text-align: right; font-weight: bold; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="10" Y1="1195" X2="15870" Y2="1205.08" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="10" Y1="834.9999" X2="15770" Y2="835.0799" />
+      <Control Type="AR.Label" Name="Label25" MOD="4" Left="0" Top="90" Width="3780" Height="360" Caption="Reporte de Stock" Style="text-align: left; font-weight: bold; font-size: 12pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label26" MOD="4" Left="8640" Top="914.9999" Width="1440" Height="270" Caption="St.Fisico" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label27" MOD="4" Left="6210" Top="180" Width="1800" Height="270" Caption="Fecha de Emisión" />
+      <Control Type="AR.Label" Name="Label28" Visible="0" MOD="4" Left="270" Top="540" Width="1620" Height="270" Caption="Filtros Aplicados:" />
+      <Control Type="AR.Field" Name="TextBox33" Visible="0" MOD="4" Left="1980" Top="540" Width="3600" Height="270" Text="filtros" Style="font-style: italic; " />
+      <Control Type="AR.Field" Name="fechaEmision" MOD="4" Left="8010" Top="180" Width="2790" Height="270" Text="fechaEmision" OutputFormat="M/d/yyyy h:mm" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="10" Y1="460" X2="15770" Y2="460.08" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="0" Top="1530" Width="180" Height="180" BackColor="16777215" Shape="1" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="209" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox1" DataField="Codigo" MOD="4" Left="270" Top="0" Width="959.9999" Height="288" Text="Codigo" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox26" DataField="Descripcion" MOD="4" Left="1350" Top="0" Width="4500" Height="288" Text="Descripcion" CanShrink="1" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox27" DataField="StockDisponible" MOD="4" Left="7305" Top="0" Width="1140.48" Height="288" Text="StockDisponible" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox28" DataField="StockMinimo" MOD="4" Left="5670" Top="0" Width="1080" Height="288" Text="StockMinimo" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox34" DataField="StockFisico" MOD="4" Left="8910" Top="0" Width="1140.48" Height="288" Text="StockFisico" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.CheckBox" Name="falta" MOD="4" Left="90" Top="0" Width="180" Height="180" Caption="CheckBox1" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="644" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="9270" Top="360" Width="450" Height="270" Text="TextBox24" Style="text-align: right; font-weight: normal; font-size: 10pt; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="8460" Top="360" Width="720" Height="270" Caption="Página" Style="font-weight: normal; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="txtNombreEmpresa" MOD="4" Left="0" Top="360" Width="7830" Height="270" Text="txtEmpresa" Style="font-weight: normal; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="TextBox32" MOD="4" Left="9810" Top="360" Width="450" Height="270" Text="TextBox32" Style="text-align: left; font-weight: normal; font-size: 10pt; " SummaryType="4" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="10" Y1="265" X2="15770" Y2="265.08" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="10" Y1="9.999962" X2="15770" Y2="10.07996" />
+      <Control Type="AR.CheckBox" Name="CheckBox1" MOD="4" Left="90" Top="0" Width="2430" Height="270" Caption="Stock Faltante" Value="1" />
+      <Control Type="AR.Label" Name="Label29" MOD="4" Left="9720" Top="360" Width="90" Height="270" Caption="/" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="GJCfM0gZrKNpba3KmUgXSAcA0kAYFIMR3YmUU/66wpmKICZ5/R8kFPYpPOwixaepVbaY4ait7AxkF+bjcT0eW/5KwSKpnow5e99b3OKB4p7ka4Foynvzylc15dqRglWhVHCN8LJjtbdZPEPbN9gAUw==" SQL="Select * from  vw_tsa_Cuentas" />
+  </DataSources>
+  <Script><![CDATA[bool m_color = true;
+public void Detail_Format()
+{
+		if(m_color)
+		{		
+			rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+			m_color =false;
+		}	
+		else	
+		{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+			m_color = true;
+		}
+}
+
+public void ActiveReport_ReportStart()
+{
+  
+ 	rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+	rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+    	rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(2);
+    	rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(0);
+    	rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+
+	rpt.StyleSheet.Add("MyStyle");
+  
+  	rpt.StyleSheet["MyStyle"].FontName = "Arial";
+   	rpt.StyleSheet["MyStyle"].FontSize =null;
+   	rpt.StyleSheet["MyStyle"].FontStrikeThrough = false;
+    	rpt.StyleSheet["MyStyle"].FontUnderline = false;
+ 	rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+    	rpt.StyleSheet["MyStyle"].VerticalAlignment = VerticalTextAlignment.Middle;
+	System.Console.WriteLine("Start");
+}
+
+public void PageFooter_Format()
+{
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["txtNombreEmpresa"];
+	text.Text = Empresa;
+}
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+	System.Console.WriteLine("--------FetchData---------");
+	decimal cant = System.Convert.ToDecimal(rpt.Fields["PrecioDeVentaNeto"].Value);
+	rpt.Fields["PrecioDeVentaNeto"].Value =decimal.Round(cant,2);
+	cant = System.Convert.ToDecimal(rpt.Fields["StockMinimo"].Value);
+	rpt.Fields["StockMinimo"].Value = decimal.Round(cant,0);
+	cant = System.Convert.ToDecimal(rpt.Fields["StockDisponible"].Value);
+	rpt.Fields["StockDisponible"].Value =decimal.Round(cant,0);
+	cant = System.Convert.ToDecimal(rpt.Fields["StockFisico"].Value);
+	rpt.Fields["StockFisico"].Value =decimal.Round(cant,0);
+	DataDynamics.ActiveReports.CheckBox falta= (DataDynamics.ActiveReports.CheckBox) rpt.Sections["Detail"].Controls["falta"];
+	if (System.Convert.ToDecimal(rpt.Fields["StockDisponible"].Value)<= System.Convert.ToDecimal(rpt.Fields["StockMinimo"].Value))  
+	{
+		falta.Checked=true;
+	}
+	else 
+	{
+		falta.Checked=false;
+	}
+	return eof;
+}
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox text2 = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["fechaEmision"];
+	text2.Text = System.DateTime.Now.ToString();
+}
+]]></Script>
+  <PageSettings BottomMargin="0" PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" Orientation="1" />
+</ActiveReportsLayout>

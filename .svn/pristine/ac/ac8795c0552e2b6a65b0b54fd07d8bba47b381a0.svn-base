@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10710" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Visible="0" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageHeader" Name="PageHeader" Height="5950" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape2" MOD="4" Left="15" Top="0" Width="10710" Height="2880" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="4950" Top="0" Width="900" Height="720" BackColor="16777215" />
+      <Control Type="AR.Field" Name="txtIdTipoDeComprobante" MOD="4" Left="5040" Top="90" Width="720" Height="540" Text="X" Style="ddo-char-set: 0; text-align: center; font-weight: bold; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="5400" Y1="720" X2="5400" Y2="2880" />
+      <Control Type="AR.Image" Name="Picture1" MOD="4" Left="180" Top="90" Width="2430" Height="1530" LineColor="16777215" LineWeight="0" HyperLink="" SizeMode="2" />
+      <Control Type="AR.Field" Name="TextBox7" MOD="4" Left="5940" Top="180" Width="2700" Height="450" Text="Presupuesto" Style="ddo-char-set: 1; font-weight: normal; font-size: 12pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="Numero" MOD="4" Left="8640" Top="180" Width="1980" Height="450" Text="Numero" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-size: 12pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="10" Y1="4150.64" X2="10710" Y2="4150" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="10" Y1="5140" X2="10720" Y2="5140" />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="90" Top="2970" Width="1620" Height="288" Caption="Cliente: " Style="ddo-char-set: 1; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="lNombre" DataField="Nombre" MOD="4" Left="1710" Top="2970" Width="8910" Height="288" Text="Nombre" Style="ddo-char-set: 1; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Domicilio" MOD="4" Left="1710" Top="3254.4" Width="8910" Height="288" Text="Domicilio" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox31" DataField="Categoria de Iva" MOD="4" Left="1710" Top="3844.8" Width="3870" Height="288" Text="Categoria de Iva" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="7380" Top="5580" Width="990" Height="270" Caption="Cantidad" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="630" Top="5580" Width="7020" Height="270" Caption="Descripcion" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="9630" Top="5580" Width="999.9999" Height="270" Caption="Importe" Style="ddo-char-set: 0; text-align: right; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="5760" Top="1710" Width="1620" Height="270" Caption="Fecha Y Hora:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtFechaActual" MOD="4" Left="7920" Top="1710" Width="2610" Height="270" Text="" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox32" DataField="IdTipoDocumento" MOD="4" Left="6480" Top="3844.8" Width="990" Height="288" Text="IdTipoDocumento" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="Documento" MOD="4" Left="8010" Top="3844.8" Width="2610" Height="288" Text="Documento" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox33" DataField="Telefono" MOD="4" Left="1710" Top="3542.4" Width="8910" Height="288" Text="Telefonos" Style="ddo-char-set: 1; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="lNombreEmpresa" MOD="4" Left="180" Top="1710" Width="4500" Height="270" Caption="Empresa" Style="font-weight: normal; " />
+      <Control Type="AR.Label" Name="lDireccion" MOD="4" Left="180" Top="1980" Width="4500" Height="270" Caption="Direccion" Style="font-weight: normal; " />
+      <Control Type="AR.Label" Name="lTelefonos" MOD="4" Left="180" Top="2250" Width="4500" Height="270" Caption="Telefonos" Style="font-weight: normal; font-size: 10pt; " />
+      <Control Type="AR.Label" Name="lCategoriaDeIva" MOD="4" Left="180" Top="2520" Width="4860" Height="270" Caption="CategoriaDeIva" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox14" MOD="4" Left="5760" Top="1980" Width="1350" Height="270" Text="C.U.I.T:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="lCUIT" MOD="4" Left="7920" Top="1980" Width="2610" Height="270" Caption="CUIT" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox15" MOD="4" Left="5760" Top="2250" Width="1800" Height="270" Text="Ingresos Brutos:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="lIB" MOD="4" Left="7920" Top="2250" Width="2610" Height="270" Caption="IB" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox16" MOD="4" Left="5760" Top="2520" Width="2250" Height="270" Text="inicio de Actividades" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="lInicioDeActividades" MOD="4" Left="7920" Top="2520" Width="2610" Height="270" Caption="Inicio de Act" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtTotalAnterior" Visible="0" MOD="4" Left="2880" Top="5220" Width="2520" Height="288.0001" Text="Subtotal Anterior" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="lSubtotalAnterior" Visible="0" MOD="4" Left="1440" Top="5220" Width="2250" Height="270" Caption="Subtotal Pag. Anterior" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label12" MOD="4" Left="90" Top="3254.4" Width="1620" Height="288" Caption="Domicilio:" Style="ddo-char-set: 1; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label13" MOD="4" Left="90" Top="3844.8" Width="1620" Height="288" Caption="Categoria de IVA:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label14" MOD="4" Left="5940" Top="3844.8" Width="540" Height="288" Caption="Doc:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label15" MOD="4" Left="7470" Top="3844.8" Width="540" Height="288" Caption="Nro:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label16" MOD="4" Left="90" Top="3542.4" Width="1620" Height="288" Caption="Teléfonos:" Style="ddo-char-set: 1; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox25" DataField="Responsable" MOD="4" Left="7920" Top="1440" Width="2610" Height="270" Text="" Multiline="0" CanGrow="0" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; white-space: nowrap; " />
+      <Control Type="AR.Label" Name="Label19" MOD="4" Left="5760" Top="1440" Width="1620" Height="270" Caption="Responsable:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label20" MOD="4" Left="8550" Top="5580" Width="810" Height="270" Caption="P.Unit" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="90" Top="5580" Width="540" Height="270" Caption="Item" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label27" MOD="4" Left="90" Top="4230" Width="1620" Height="288" Caption="Cond. Venta:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox36" DataField="CondicVenta" MOD="4" Left="1710" Top="4230" Width="8910" Height="288" Text="CondicVenta" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label28" Visible="0" MOD="4" Left="90" Top="4500" Width="1620" Height="288" Caption="F. de Pago:" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox37" DataField="FormasDePagos" Visible="0" MOD="4" Left="1710" Top="4500" Width="8910" Height="630" Text="FormasDePagos" Style="ddo-char-set: 0; font-weight: normal; font-family: Microsoft Sans Serif; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="299" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="Cantidad" MOD="4" Left="7560" Top="0" Width="750.0001" Height="288" Text="Cantidad" Style="ddo-char-set: 0; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Producto" MOD="4" Left="720" Top="0" Width="6930" Height="288" Text="Producto" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Microsoft Sans Serif; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtPrecioFinal" DataField="PrecioFinal" MOD="4" Left="9450" Top="0" Width="1170" Height="288" Text="PrecioFinal" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="PrecioUnitario" DataField="PrecioUnitario" MOD="4" Left="8280" Top="0" Width="1170" Height="288" Text="PrecioUnitario" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtItem" DataField="Item" MOD="4" Left="180" Top="0" Width="630" Height="270" Text="txtItem" Style="ddo-char-set: 0; text-align: left; font-weight: normal; font-size: 9pt; font-family: Microsoft Sans Serif; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="3510" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="lTotal" MOD="4" Left="9360" Top="2250" Width="810" Height="270" Caption="Total" Style="ddo-char-set: 0; text-align: right; font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtTotal" DataField="PrecioFinal" MOD="4" Left="8550" Top="2520" Width="1620" Height="270" Text="TotalParcial" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-weight: normal; font-size: 9pt; font-family: Microsoft Sans Serif; vertical-align: middle; " SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="9540" Top="3150" Width="540" Height="360" Caption="Hoja" Style="ddo-char-set: 1; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox19" MOD="4" Left="9990" Top="3150" Width="630" Height="360" Text="Nro" Style="ddo-char-set: 0; font-family: Microsoft Sans Serif; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="0" Y1="0" X2="10710" Y2="0" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="10" Y1="2125" X2="10720" Y2="2125" />
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="3790.4" Top="3140" Width="2970" Height="288" Text="Comprobante No Fiscal" Style="ddo-char-set: 1; font-weight: normal; font-size: 12pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="LabelDescripcion" DataField="Observaciones" MOD="4" Left="90" Top="90" Width="10530" Height="1980" Caption="" Style="font-size: 10pt; " />
+      <Control Type="AR.Label" Name="lSubtotal" Visible="0" MOD="4" Left="2070" Top="2790" Width="1530" Height="270" Caption="Subtotal" Style="ddo-char-set: 1; text-align: center; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="lIVA" MOD="4" Left="4590" Top="2250" Width="900" Height="270" Caption="IVA 21%" Style="ddo-char-set: 1; text-align: right; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtValorImp1" DataField="ValorImp1" MOD="4" Left="3960" Top="2520" Width="1530" Height="288" Text="ValorImp1" OutputFormat="$#,##0.00" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="txtSubtotal" DataField="SubtotalNeto" MOD="4" Left="2430" Top="2520" Width="1620" Height="288" Text="Subtotal" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="lNeto" MOD="4" Left="3510" Top="2250" Width="540" Height="270" Caption="Neto" Style="ddo-char-set: 1; text-align: right; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtSubtotal1" DataField="SubtotalNeto" Visible="0" MOD="4" Left="1440" Top="3060" Width="1620" Height="288" Text="Subtotal" OutputFormat="$#,##0.00" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="lIVA105" MOD="4" Left="5850" Top="2250" Width="990" Height="270" Caption="IVA 10.5%" Style="ddo-char-set: 0; text-align: right; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtValorImp2" DataField="ValorImp2" MOD="4" Left="5490" Top="2520" Width="1350" Height="288" Text="ValorImp2" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="lIngBrutos" MOD="4" Left="7380" Top="2250" Width="1080" Height="270" Caption="Ing. Brutos" Style="ddo-char-set: 0; text-align: right; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtValorImp3" DataField="ValorImp3" MOD="4" Left="6930" Top="2520" Width="1530" Height="288" Text="ValorImp3" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-size: 9pt; font-family: Microsoft Sans Serif; " SummaryType="2" SummaryRunning="2" />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Visible="0" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="sMEcagZJQNqtnQUt/YPNHSKDeoGnO0Q3bNulvd7pwoZRgwE7C9xez/zbtJ8IS9bNLrq7e41XLRv4pBqpJwZ7EIZxU1FbSA5WbeG6B5834u6AkGiAnxidKQUVbdgiqeNDkcTlcpt6BG7drAWHg8iEZg==" SQL="exec Pr_tsa_ComprobantesView &quot;1079602897&quot;" />
+  </DataSources>
+  <Script><![CDATA[string myDate = System.DateTime.Now.ToString();
+//Representa al Tipo de Comprobante, por ej, A,B o E
+string TipoDeComprobante ="";
+//represenat al a los distintos tipos de comprobantes, por ej, FAA,FAB,FAE,PREA etc..
+string Comprobante;
+decimal PrecioFinal = 0;
+decimal Total = 0;
+bool compB = false;
+decimal PrecioNeto=0;
+decimal PrecioUnitario=0;
+decimal subtotalAnterior = 0;
+decimal sub=0;
+bool visible = false;
+int item = 1;
+int pageNumber = 0;
+string subtotal = "0";
+
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+if(! eof)
+{
+
+if(rpt.Fields["ValorImp1"].Value == System.DBNull.Value) rpt.Fields["ValorImp1"].Value = 0;	
+if(rpt.Fields["ValorImp2"].Value == System.DBNull.Value) rpt.Fields["ValorImp2"].Value = 0;
+if(rpt.Fields["ValorImp3"].Value == System.DBNull.Value) rpt.Fields["ValorImp3"].Value = 0;		
+if(rpt.Fields["ValorImp4"].Value == System.DBNull.Value) rpt.Fields["ValorImp4"].Value = 0;	
+if(rpt.Fields["BonificacionRecargoProducto"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoProducto"].Value = 0;	
+if(rpt.Fields["BonificacionRecargoCuenta"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoCuenta"].Value = 0;
+if(rpt.Fields["BonificacionRecargoFinanciero"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoFinanciero"].Value = 0;	
+if(rpt.Fields["DescuentosAplicados"].Value == System.DBNull.Value) rpt.Fields["DescuentosAplicados"].Value = 0;		
+decimal cant = System.Convert.ToDecimal(rpt.Fields["Cantidad"].Value);
+PrecioNeto =System.Convert.ToDecimal(rpt.Fields["PrecioNeto"].Value);
+decimal valorImp1 = System.Convert.ToDecimal(rpt.Fields["ValorImp1"].Value);
+decimal valorImp2 = System.Convert.ToDecimal(rpt.Fields["ValorImp2"].Value);
+decimal valorImp3 = System.Convert.ToDecimal(rpt.Fields["ValorImp3"].Value);
+decimal valorImp4 = System.Convert.ToDecimal(rpt.Fields["ValorImp4"].Value);
+PrecioFinal = PrecioNeto + System.Convert.ToDecimal(rpt.Fields["ImpuestosDirectos"].Value);
+PrecioFinal = PrecioFinal + System.Convert.ToDecimal(rpt.Fields["ImpuestosIndirectos"].Value);
+PrecioUnitario = PrecioFinal;
+PrecioFinal = PrecioFinal * cant;
+
+subtotalAnterior = subtotalAnterior + cant*PrecioFinal;
+
+
+
+string conversion = null;
+
+string unidadOrigen = System.Convert.ToString(rpt.Fields["unidadOrigen"].Value);
+string unidadDestino = System.Convert.ToString(rpt.Fields["unidadDestino"].Value);
+string valorConversion = System.Convert.ToString(rpt.Fields["valorConversion"].Value);
+decimal valorConversionValue; 
+if((unidadDestino != null) && (unidadDestino.Equals(string.Empty)))
+{
+	rpt.Fields["unidadDestino"].Value = "Unidad";	
+}
+
+if (rpt.Fields["valorConversion"].Value == System.DBNull.Value)
+	valorConversionValue = 0 ;
+else
+	valorConversionValue = System.Convert.ToDecimal(rpt.Fields["valorConversion"].Value);
+decimal valorConvertido = 0;
+
+if ( !(unidadOrigen.Equals(string.Empty)))
+{
+	if (valorConversionValue != 0)
+	{
+		valorConvertido = decimal.Round(cant * valorConversionValue,2) ;
+	}
+	conversion =  "= " + System.Convert.ToString(valorConvertido) + " " + unidadOrigen;
+
+}
+
+if (TipoDeComprobante == "")
+{
+	string IdTipoDeComp = System.Convert.ToString(rpt.Fields["IdTipoDeComprobante"].Value);
+	System.Console.WriteLine("--------FecthDataAntes1--------"  );
+	if ((IdTipoDeComp != "") || (IdTipoDeComp == null))
+	{
+		System.Console.WriteLine("Entra al if del tipo de comprobante"  );
+		TipoDeComprobante = IdTipoDeComp.Substring(IdTipoDeComp.Length-1);
+		compB = TipoDeComprobante.Equals("B");
+		System.Console.WriteLine(TipoDeComprobante );
+		rpt.Fields["Conversion"].Value = conversion;
+	}
+}
+
+System.Console.WriteLine("--------FecthData Otros--------"  );
+
+rpt.Fields["Cantidad"].Value =decimal.Round(cant,2);
+
+rpt.Fields["PrecioFinal"].Value = PrecioFinal;
+rpt.Fields["PrecioUnitario"].Value = PrecioUnitario;
+
+
+rpt.Fields["ValorImp1"].Value = valorImp1*cant;
+rpt.Fields["ValorImp2"].Value = valorImp2*cant;	
+rpt.Fields["ValorImp3"].Value = valorImp3*cant;
+rpt.Fields["ValorImp4"].Value = valorImp4*cant;
+rpt.Fields["SubtotalNeto"].Value = cant*PrecioNeto;
+
+
+string calle = System.Convert.ToString(rpt.Fields["Calle"].Value);
+string numero = System.Convert.ToString(rpt.Fields["NumeroCalle"].Value);
+string localidad = System.Convert.ToString(rpt.Fields["Localidad"].Value);
+
+string torre = System.Convert.ToString(rpt.Fields["Torre"].Value);
+string departamento = System.Convert.ToString(rpt.Fields["Departamento"].Value);
+string piso =  System.Convert.ToString(rpt.Fields["Piso"].Value);
+string domicilio = null;
+
+if(localidad != string.Empty)
+	domicilio = calle + " " +numero + " " + torre +" " + departamento +" " + piso+ ", " + localidad;
+else
+	domicilio = calle + " " +numero + " "+ torre +" " +departamento +" " + piso;
+
+rpt.Fields["Domicilio"].Value = domicilio;
+
+
+string campoAuxiliar1 =  System.Convert.ToString(rpt.Fields["CampoAux1"].Value);
+string campoAuxiliar2 =  System.Convert.ToString(rpt.Fields["CampoAux2"].Value);
+string campoAuxiliar3 =  System.Convert.ToString(rpt.Fields["CampoAux3"].Value);
+string campoAuxiliar4 =  System.Convert.ToString(rpt.Fields["CampoAuxiliar4"].Value);
+string campoAuxiliar5 =  System.Convert.ToString(rpt.Fields["CampoAuxiliar5"].Value);
+string producto =  System.Convert.ToString(rpt.Fields["Producto"].Value);
+ 
+producto = producto + " " + campoAuxiliar1 + " " + campoAuxiliar2 + " " + campoAuxiliar3 + " " +campoAuxiliar4 + " " + campoAuxiliar5;
+System.Console.WriteLine("--------FecthData 1--------"  );
+rpt.Fields["Producto"].Value = producto;
+System.Console.WriteLine("--------FecthData 2--------"  );
+System.Diagnostics.Debug.WriteLine("--------FecthData---------");
+System.Console.WriteLine("--------FecthData 5--------"  );
+
+rpt.Fields["Item"].Value = item;
+item++;
+
+}
+return eof;
+}
+
+public void ActiveReport_DataInitialize()
+{
+System.Console.WriteLine("-------- Data Initialize--------"  );
+rpt.Fields.Add("SubtotalNeto");
+rpt.Fields.Add ("Conversion");
+rpt.Fields.Add("Domicilio");
+rpt.Fields.Add("PrecioUnitario");
+rpt.Fields.Add("Item");
+
+System.Diagnostics.Debug.WriteLine("----------DataIntialize------------");
+}
+
+public void ActiveReport_ReportStart()
+{
+System.Console.WriteLine("-------- Report Start -------"  );
+rpt.PageStart += new System.EventHandler(start);
+rpt.PageEnd+=new System.EventHandler(end);
+ rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+System.Diagnostics.Debug.WriteLine("----------ReportStart------------");
+
+}
+
+private void start(object o, System.EventArgs e)
+{
+System.Console.WriteLine("-------- Start -------"  );
+rpt.CurrentPage.PenWidth = 4;
+rpt.CurrentPage.ForeColor=System.Drawing.Color.Black;
+ //Top Line
+rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left ,  rpt.PageSettings.Margins.Top);
+      //Left Line
+rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+        //Right Line
+
+rpt.CurrentPage.DrawLine( rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+       //Bottom Line
+rpt.CurrentPage.DrawLine(rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom, rpt.PageSettings.Margins.Left + rpt.PrintWidth, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+System.Diagnostics.Debug.WriteLine("----------PageStart------------");
+}
+
+private void end(object o, System.EventArgs e)
+{
+
+visible= true;
+System.Diagnostics.Debug.WriteLine("----------PageEnd------------");
+}
+
+public void PageHeader_BeforePrint()
+{
+System.Console.WriteLine("-------- Before -------"  );
+System.Console.WriteLine("-------- Before 1-------"  );
+System.Diagnostics.Debug.WriteLine("----------BeforePrint--Begin ---------");
+System.Console.WriteLine(System.Windows.Forms.Application.StartupPath + "\\resources\\Icons\\" +Logo);
+string logo = Logo;
+((DataDynamics.ActiveReports.Picture)rpt.Sections["PageHeader"].Controls["Picture1"]).Image = System.Drawing.Image.FromFile(string.Format(System.Windows.Forms.Application.StartupPath + "\\resources\\Icons\\" +Logo));
+System.Console.WriteLine("-------- Before 2-------"  );
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtFechaActual"]).Text = myDate;
+
+
+System.Diagnostics.Debug.WriteLine("----------PageHeader_BeforePrint------------");
+}
+
+public void Detail_BeforePrint()
+{
+System.Console.WriteLine("-------- Before Print-------"  );
+System.Diagnostics.Debug.WriteLine("----------Detail_BeforePrint--Begin----------");
+/*if(compB) 
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecio"]).Text= ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecioFinal"]).Text;*/
+System.Diagnostics.Debug.WriteLine("----------Detail_BeforePrint--End----------");
+}
+
+
+
+
+public void PageHeader_Format()
+{
+System.Console.WriteLine("-------- Format -------"  );
+DataDynamics.ActiveReports.Label text = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lNombreEmpresa"];
+text.Text = Empresa;
+DataDynamics.ActiveReports.Label l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lDireccion"];
+l.Text=DireccionEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCategoriaDeIva"];
+l.Text=CategoriaIvaEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lTelefonos"];
+l.Text=TelefonoEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCUIT"];
+l.Text=CUITEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lIB"];
+l.Text=IngresosBrutosEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lInicioDeActividades"];
+l.Text=InicioActividadesEmpresa;
+
+
+
+if (visible)
+{
+
+
+
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtTotalAnterior"]).Text = subtotal;
+((DataDynamics.ActiveReports.Label)rpt.Sections["PageHeader"].Controls["lSubtotalAnterior"]).Visible =true;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtTotalAnterior"]).Visible =true;
+}
+
+System.Diagnostics.Debug.WriteLine("----------PageHeader_Format------------");
+
+}
+
+
+
+
+public void Detail_Format()
+{
+System.Console.WriteLine("-------- Detail Format -------"  );
+System.Diagnostics.Debug.WriteLine("----------Detail_Format------------");
+System.Console.WriteLine("-------- Detail Format End -------"  );
+}
+
+public void ActiveReport_ReportEnd()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportEnd------------");
+}
+
+public void ActiveReport_NoData()
+{
+System.Diagnostics.Debug.WriteLine("----------NoData------------");
+}
+
+public void ReportHeader_Format()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportHeader_Format------------");
+}
+
+public void ReportHeader_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportHeader_AfterPrint------------");
+}
+
+
+
+public void PageHeader_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------PageHeader_AfterPrint------------");
+}
+
+
+public void Detail_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------Detail_AfterPrint------------");
+}
+
+public void PageFooter_Format()
+{
+System.Diagnostics.Debug.WriteLine("----------PageFooter_Format------------");
+}
+
+
+
+public void PageFooter_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------PageFooter_AfterPrint------------");
+}
+
+public void ReportFooter_Format()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportFooter_Format------------");
+}
+
+public void ReportFooter_BeforePrint()
+{
+System.Console.WriteLine("-------- Before Print begin -------"  );
+	if(compB) 
+	{
+	
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lSubtotal"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lNeto"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVA"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVA105"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIngBrutos"]).Visible = false;
+		
+
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtSubtotal"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtSubtotal1"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp1"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp2"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp3"]).Visible=false;
+		
+		System.Diagnostics.Debug.WriteLine("----------ReportFooter_BeforePrint_Comp B----------");
+	}
+	else 
+	{
+		System.Diagnostics.Debug.WriteLine("----------ReportFooter_BeforePrint_Comp A----------");
+	}
+	System.Diagnostics.Debug.WriteLine("----------ReportFooter_BeforePrint------------");
+System.Console.WriteLine("-------- Before Print end-------"  );
+}
+
+public void ReportFooter_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportFooter_AfterPrint------------");
+}
+
+public void ReportHeader_BeforePrint()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportHeader_BeforePrint------------");
+}
+
+public void PageFooter_BeforePrint()
+{
+System.Console.WriteLine("-------- PageFooter_BeforePrint-------"  );
+subtotal =  ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtTotal"]).Text;
+if(compB) 
+	{
+	
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lSubtotal"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lNeto"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVA"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVA105"]).Visible = false;
+		( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIngBrutos"]).Visible = false;
+		
+
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtSubtotal"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtSubtotal1"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp1"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp2"]).Visible=false;
+		 ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp3"]).Visible=false;
+		
+		System.Diagnostics.Debug.WriteLine("----------ReportFooter_BeforePrint_Comp B----------");
+	}
+	else 
+	{
+		System.Diagnostics.Debug.WriteLine("----------ReportFooter_BeforePrint_Comp A----------");
+	}
+
+
+System.Diagnostics.Debug.WriteLine("----------PageFooter_BeforePrint------------");
+}
+]]></Script>
+  <PageSettings PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" Duplex="2" />
+</ActiveReportsLayout>                                                                                                                                                                                                                                                                                                                                                       

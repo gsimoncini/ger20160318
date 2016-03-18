@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10425" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="2264" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="1170" Top="1890" Width="1080" Height="270" Caption="Cliente" />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="9270" Top="1890" Width="1080" Height="270" Caption="Saldo" />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="7830" Top="1890" Width="1080" Height="270" Caption="Importe" />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="6300" Top="1890" Width="810" Height="270" Caption="Fecha" />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="4050" Top="1890" Width="1080" Height="270" Caption="Recibo" />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="4050" Top="180" Width="4680" Height="360" Caption="Listado de Cobranzas" Style="font-weight: normal; font-size: 16pt; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="20" Y1="2195" X2="10550" Y2="2195" LineWeight="2" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="20" Y1="1820" X2="10550" Y2="1820" LineWeight="2" />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="180" Top="810" Width="450" Height="360" Caption="Del" />
+      <Control Type="AR.Field" Name="FechaDesde" DataField="FechaDesde" MOD="4" Left="810" Top="810" Width="1710" Height="270" Text="FechaDesde" OutputFormat="dd/MM/yyyy" />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="2700" Top="810" Width="1260" Height="360" Caption="Hasta" />
+      <Control Type="AR.Field" Name="FechaHasta" DataField="FechaHasta" MOD="4" Left="4140" Top="810" Width="1710" Height="270" Text="FechaHasta" OutputFormat="dd/MM/yyyy" />
+      <Control Type="AR.Field" Name="Vendedor" DataField="Vendedor" MOD="4" Left="2070" Top="1350" Width="4590" Height="270" Text="Vendedor" />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="180" Top="1350" Width="1710" Height="360" Caption="Vendedor" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="419" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="Cliente" DataField="Cliente" MOD="4" Left="90" Top="90" Width="3510" Height="270" Text="Cliente" />
+      <Control Type="AR.Field" Name="Factura" DataField="Recibo" MOD="4" Left="3690" Top="90" Width="2340" Height="270" Text="Recibo" />
+      <Control Type="AR.Field" Name="Importe" DataField="Importe" MOD="4" Left="7560" Top="90" Width="1440" Height="270" Text="Importe" OutputFormat="#,##0.00" />
+      <Control Type="AR.Field" Name="Saldo" DataField="Saldo" MOD="4" Left="9180" Top="90" Width="1350" Height="270" Text="Saldo" OutputFormat="#,##0.00" />
+      <Control Type="AR.Field" Name="Fecha" DataField="Fecha" MOD="4" Left="6120" Top="90" Width="1080" Height="270" Text="Fecha" OutputFormat="dd/MM/yyyy" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="1064" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox1" MOD="4" Left="9450" Top="540" Width="630" Height="270" Text="" SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox2" DataField="Saldo" MOD="4" Left="9090" Top="90" Width="990" Height="270" Text="" OutputFormat="#,##0.00" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox3" DataField="Importe" MOD="4" Left="7830" Top="90" Width="990" Height="270" Text="" OutputFormat="#,##0.00" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="6120" Top="90" Width="1260" Height="360" Caption="Totales" />
+      <Control Type="AR.Label" Name="Label12" MOD="4" Left="8640" Top="540" Width="720" Height="360" Caption="Página" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="zVEk+z1wrsH0j+buQH5ikzJpCbyk1P/yrS4grtbcqFsVMjkMZ0+uMpfZMsz64SxwaRDToJixP59CArn+ur4Mf8jUPH/xOHYa+rJzKgOFxLtdS2W2UrIAMe6TGIA6GE6cY9BpRDEvzMN3qdPLVRS1xw==" SQL="exec Pr_tsa_ComprobantesDeVenta_GetListCobranzas @IdCuenta=NULL,@FechaDesde='05/07/2011',@FechaHasta='25/04/2012',&#xD;&#xA;@IdResponsable=default,@IdTipoDeComprobante='RE,REC,REM,REACOP',@IdJerarquia1=NULL,@IdJerarquia2=NULL,@IdJerarquia3=NULL,&#xD;&#xA;@IdJerarquia4=NULL,@IdJerarquia5=NULL,@IdJerarquia6=NULL,@IdJerarquia7=NULL,@IdJerarquia8=NULL" />
+  </DataSources>
+  <PageSettings LeftMargin="720" RightMargin="720" PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" />
+</ActiveReportsLayout>

@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="7545" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Visible="0" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageHeader" Name="PageHeader" Height="1650" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="lNombre" DataField="Nombre" MOD="4" Left="1170" Top="720" Width="2790" Height="288" Text="Nombre" Style="ddo-char-set: 1; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Domicilio" MOD="4" Left="1170" Top="1080" Width="2790" Height="288" Text="Domicilio" Style="ddo-char-set: 1; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox35" DataField="Fecha de Emision" MOD="4" Left="5850" Top="180" Width="1620" Height="288" Text="Fecha" OutputFormat="dd/MM/yyyy" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="5220" Top="180" Width="630" Height="270" Caption="Fecha" Style="font-weight: bold; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="180" Top="720" Width="900" Height="270" Caption="Cliente" Style="font-weight: bold; font-size: 9pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Domicilio" MOD="4" Left="180" Top="1080" Width="900" Height="270" Caption="Domicilio" Style="font-weight: bold; font-size: 9pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="90" Top="180" Width="4500" Height="270" Caption="Comprobante de Carga" Style="font-weight: bold; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="299" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="Cantidad" MOD="4" Left="1230" Top="0" Width="1080" Height="288" Text="Cantidad" OutputFormat="#,##0.00" Style="ddo-char-set: 1; text-align: left; font-size: 8pt; font-family: Microsoft Sans Serif; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Producto" MOD="4" Left="2355" Top="0" Width="4590" Height="288" Text="Producto" Style="ddo-char-set: 1; text-align: left; font-size: 8pt; font-family: Microsoft Sans Serif; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox34" DataField="CodigoProducto" MOD="4" Left="360" Top="0" Width="810" Height="288" Text="Codigo" Style="ddo-char-set: 1; text-align: left; font-size: 8pt; font-family: Microsoft Sans Serif; vertical-align: middle; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="705" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="LabelDescripcion" DataField="Observaciones" MOD="4" Left="4410" Top="0" Width="3600" Height="630" Caption="" Style="font-size: 9pt; " />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Visible="0" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="zVEk+z1wrsH0j+buQH5ikzJpCbyk1P/yrS4grtbcqFsVMjkMZ0+uMpfZMsz64Sxw3JElGIET/Y148bRzvabClfs0KwzF5YawiYmG46kC7P29W7shB2/K+O13tLrecIKhbZ3axh9j96rv6PI/c79ixA==" SQL="exec Pr_tsa_ComprobantesView null,null,null,null" />
+  </DataSources>
+  <Script><![CDATA[string myDate = System.DateTime.Now.ToString();
+//Representa al Tipo de Comprobante, por ej, A,B o E
+string TipoDeComprobante ="";
+//represenat al a los distintos tipos de comprobantes, por ej, FAA,FAB,FAE,PREA etc..
+string Comprobante;
+decimal PrecioFinal = 0;
+decimal Total = 0;
+bool compB = false;
+decimal PrecioNeto=0;
+decimal PrecioUnitario=0;
+decimal subtotalAnterior = 0;
+decimal sub=0;
+bool visible = false;
+int item = 1;
+int pageNumber = 0;
+string subtotal = "0";
+
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+if(! eof)
+{
+
+
+
+
+
+
+
+
+
+
+
+
+string calle = System.Convert.ToString(rpt.Fields["Calle"].Value);
+string numero = System.Convert.ToString(rpt.Fields["NumeroCalle"].Value);
+string localidad = System.Convert.ToString(rpt.Fields["Localidad"].Value);
+
+string torre = System.Convert.ToString(rpt.Fields["Torre"].Value);
+string departamento = System.Convert.ToString(rpt.Fields["Departamento"].Value);
+string piso =  System.Convert.ToString(rpt.Fields["Piso"].Value);
+string domicilio = null;
+
+if(localidad != string.Empty)
+	domicilio = calle + " " +numero + " " + torre +" " + departamento +" " + piso+ ", " + localidad;
+else
+	domicilio = calle + " " +numero + " "+ torre +" " +departamento +" " + piso;
+
+rpt.Fields["Domicilio"].Value = domicilio;
+
+
+string campoAuxiliar1 =  System.Convert.ToString(rpt.Fields["CampoAux1"].Value);
+string campoAuxiliar2 =  System.Convert.ToString(rpt.Fields["CampoAux2"].Value);
+string campoAuxiliar3 =  System.Convert.ToString(rpt.Fields["CampoAux3"].Value);
+string campoAuxiliar4 =  System.Convert.ToString(rpt.Fields["CampoAuxiliar4"].Value);
+string campoAuxiliar5 =  System.Convert.ToString(rpt.Fields["CampoAuxiliar5"].Value);
+string producto =  System.Convert.ToString(rpt.Fields["Producto"].Value);
+ 
+producto = producto + " " + campoAuxiliar1 + " " + campoAuxiliar2 + " " + campoAuxiliar3 + " " +campoAuxiliar4 + " " + campoAuxiliar5;
+rpt.Fields["Producto"].Value = producto;
+
+
+
+
+rpt.Fields["Item"].Value = item;
+item++;
+
+}
+return eof;
+}
+
+public void ActiveReport_DataInitialize()
+{
+System.Console.WriteLine("-------- Data Initialize--------"  );
+rpt.Fields.Add("Domicilio");
+rpt.Fields.Add("Item");
+
+System.Diagnostics.Debug.WriteLine("----------DataIntialize------------");
+}
+
+public void ActiveReport_ReportStart()
+{
+System.Console.WriteLine("-------- Report Start -------"  );
+rpt.PageStart += new System.EventHandler(start);
+rpt.PageEnd+=new System.EventHandler(end);
+ rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+System.Diagnostics.Debug.WriteLine("----------ReportStart------------");
+
+}
+
+private void start(object o, System.EventArgs e)
+{
+System.Console.WriteLine("-------- Start -------"  );
+rpt.CurrentPage.PenWidth = 4;
+rpt.CurrentPage.ForeColor=System.Drawing.Color.Black;
+ //Top Line
+//rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left ,  rpt.PageSettings.Margins.Top);
+      //Left Line
+//rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+        //Right Line
+
+//rpt.CurrentPage.DrawLine( rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+       //Bottom Line
+//rpt.CurrentPage.DrawLine(rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom, rpt.PageSettings.Margins.Left + rpt.PrintWidth, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+System.Diagnostics.Debug.WriteLine("----------PageStart------------");
+}
+
+private void end(object o, System.EventArgs e)
+{
+
+visible= true;
+System.Diagnostics.Debug.WriteLine("----------PageEnd------------");
+}
+
+public void PageHeader_BeforePrint()
+{
+System.Console.WriteLine("-------- Before -------"  );
+System.Console.WriteLine("-------- Before 1-------"  );
+System.Diagnostics.Debug.WriteLine("----------BeforePrint--Begin ---------");
+System.Console.WriteLine(System.Windows.Forms.Application.StartupPath + "\\resources\\Icons\\" +Logo);
+string logo = Logo;
+((DataDynamics.ActiveReports.Picture)rpt.Sections["PageHeader"].Controls["Picture1"]).Image = System.Drawing.Image.FromFile(string.Format(System.Windows.Forms.Application.StartupPath + "\\resources\\Icons\\" +Logo));
+System.Console.WriteLine("-------- Before 2-------"  );
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtFechaActual"]).Text = myDate;
+
+
+System.Diagnostics.Debug.WriteLine("----------PageHeader_BeforePrint------------");
+}
+
+public void Detail_BeforePrint()
+{
+System.Console.WriteLine("-------- Before Print-------"  );
+System.Diagnostics.Debug.WriteLine("----------Detail_BeforePrint--Begin----------");
+/*if(compB) 
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecio"]).Text= ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecioFinal"]).Text;*/
+System.Diagnostics.Debug.WriteLine("----------Detail_BeforePrint--End----------");
+}
+
+
+
+
+public void PageHeader_Format()
+{
+System.Console.WriteLine("-------- Format -------"  );
+DataDynamics.ActiveReports.Label text = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lNombreEmpresa"];
+text.Text = Empresa;
+DataDynamics.ActiveReports.Label l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lDireccion"];
+l.Text=DireccionEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCategoriaDeIva"];
+l.Text=CategoriaIvaEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lTelefonos"];
+l.Text=TelefonoEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCUIT"];
+l.Text=CUITEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lIB"];
+l.Text=IngresosBrutosEmpresa;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lInicioDeActividades"];
+l.Text=InicioActividadesEmpresa;
+
+
+
+
+
+System.Diagnostics.Debug.WriteLine("----------PageHeader_Format------------");
+
+}
+
+
+
+
+public void Detail_Format()
+{
+System.Console.WriteLine("-------- Detail Format -------"  );
+System.Diagnostics.Debug.WriteLine("----------Detail_Format------------");
+System.Console.WriteLine("-------- Detail Format End -------"  );
+}
+
+public void ActiveReport_ReportEnd()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportEnd------------");
+}
+
+public void ActiveReport_NoData()
+{
+System.Diagnostics.Debug.WriteLine("----------NoData------------");
+}
+
+public void ReportHeader_Format()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportHeader_Format------------");
+}
+
+public void ReportHeader_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportHeader_AfterPrint------------");
+}
+
+
+
+public void PageHeader_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------PageHeader_AfterPrint------------");
+}
+
+
+public void Detail_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------Detail_AfterPrint------------");
+}
+
+public void PageFooter_Format()
+{
+System.Diagnostics.Debug.WriteLine("----------PageFooter_Format------------");
+}
+
+
+
+public void PageFooter_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------PageFooter_AfterPrint------------");
+}
+
+public void ReportFooter_Format()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportFooter_Format------------");
+}
+
+public void ReportFooter_BeforePrint()
+{
+System.Console.WriteLine("-------- Before Print begin -------"  );
+	
+System.Console.WriteLine("-------- Before Print end-------"  );
+}
+
+public void ReportFooter_AfterPrint()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportFooter_AfterPrint------------");
+}
+
+public void ReportHeader_BeforePrint()
+{
+System.Diagnostics.Debug.WriteLine("----------ReportHeader_BeforePrint------------");
+}
+
+public void PageFooter_BeforePrint()
+{
+System.Console.WriteLine("-------- PageFooter_BeforePrint-------"  );
+
+
+
+System.Diagnostics.Debug.WriteLine("----------PageFooter_BeforePrint------------");
+}
+]]></Script>
+  <PageSettings PaperSize="9" PaperWidth="11520" PaperHeight="11520" PaperName="" />
+</ActiveReportsLayout>

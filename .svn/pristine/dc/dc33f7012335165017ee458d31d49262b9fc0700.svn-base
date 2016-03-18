@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="mz.erp.businessrules.CondicionDeVenta" Collapsed="true">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qwggBU0AAiFIQQiEAggAJBMB4ACoggEoAIQgYACAIAk=</HashCode>
+      <FileName>CondicionDeVenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mz.erp.businessrules.Constantes" Collapsed="true">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIwoAEBTQSDRAKIAgAkEAgFCASciKJShuQhBAECBAg=</HashCode>
+      <FileName>Constantes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mz.erp.businessrules.Herramienta">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgDgEAAAAAAAAAARABEAAAABBGAADAAAAAMAEAIAAA=</HashCode>
+      <FileName>Herramienta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

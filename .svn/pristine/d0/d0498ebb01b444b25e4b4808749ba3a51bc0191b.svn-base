@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tsy_TiposDeComprobantes" targetNamespace="http://tempuri.org/tsy_TiposDeComprobantes.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tsy_TiposDeComprobantes.xsd"
+	xmlns:mstns="http://tempuri.org/tsy_TiposDeComprobantes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="tsy_TiposDeComprobantesDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tsy_TiposDeComprobantes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdTipoDeComprobante" type="xs:string" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Mascara" type="xs:string" minOccurs="0" />
+							<xs:element name="signo" type="xs:long" minOccurs="0" />
+							<xs:element name="Activo" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Momento" type="xs:string" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="RequiereCondicionDeVenta" type="xs:boolean" />
+							<xs:element name="Familia" type="xs:string" minOccurs="0" nillable="true" msprop:nullValue="_null" />
+							<xs:element name="TipoCtaCte" type="xs:int" minOccurs="0" />
+							<xs:element name="SignoCtaCte" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tsy_TiposDeComprobantesDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tsy_TiposDeComprobantes" />
+			<xs:field xpath="mstns:IdTipoDeComprobante" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

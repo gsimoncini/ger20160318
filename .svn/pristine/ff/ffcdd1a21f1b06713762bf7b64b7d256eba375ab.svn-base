@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9945" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageHeader" Name="PageHeader" Height="2295" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape2" MOD="4" Left="90" Top="1684.8" Width="9720" Height="450" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="1080" Top="1800" Width="630" Height="270" Caption="Cant" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="3150" Top="1800" Width="5760" Height="270" Caption="Descripcion" Style="ddo-char-set: 0; text-align: left; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox29" DataField="DomicilioProveedor" MOD="4" Left="2520" Top="1260" Width="2070" Height="288" Text=" " Multiline="0" Style="ddo-char-set: 0; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label16" MOD="4" Left="720" Top="1260" Width="1710" Height="288" Caption="Domicilio" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Label" Name="Label17" MOD="4" Left="180" Top="1800" Width="900" Height="270" Caption="Cod" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="10" Y1="6580" X2="10720" Y2="6580" />
+      <Control Type="AR.Field" Name="TextBox53" DataField="TipoComprobante" MOD="4" Left="4140" Top="180" Width="3240" Height="288" Text="Tipo de Comprobante" Multiline="0" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-size: 10pt; font-family: Courier New; " />
+      <Control Type="AR.Field" Name="TextBox27" DataField="Numero" MOD="4" Left="7470" Top="180" Width="2250" Height="288" Text="Numero" Multiline="0" Style="ddo-char-set: 1; text-align: left; font-weight: normal; font-size: 12pt; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="180" Top="900" Width="2250" Height="288" Caption="Proveedor" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Field" Name="lNombre" DataField="Proveedor" MOD="4" Left="2520" Top="900" Width="4050" Height="288" Text="" Multiline="0" Style="ddo-char-set: 0; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="180" Top="540" Width="2250" Height="270" Caption="Fecha" Style="ddo-char-set: 0; text-align: right; font-weight: normal; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Field" Name="txtFechaActual" DataField="Fecha" MOD="4" Left="2520" Top="540" Width="3060" Height="270" Text="" Multiline="0" Style="ddo-char-set: 0; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Shape" Name="Shape3" MOD="4" Left="90" Top="90" Width="9720" Height="1584" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label39" MOD="4" Left="1710" Top="1800" Width="1440" Height="270" Caption="Precio" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-family: Arial; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="330" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="CantidadAComprar" MOD="4" Left="1080" Top="0" Width="630" Height="288" Text="fCanO" OutputFormat="0.00" Multiline="0" Style="ddo-char-set: 1; text-align: right; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Descripcion" MOD="4" Left="3060" Top="0" Width="5850" Height="288" Text="Producto" Style="ddo-char-set: 1; text-align: left; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox20" DataField="Codigo" MOD="4" Left="90" Top="0" Width="900" Height="288" Text="fCodigo" Multiline="0" Style="ddo-char-set: 0; text-align: left; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox35" DataField="PrecioReal" MOD="4" Left="2250" Top="0" Width="810" Height="288" Text="Precio" OutputFormat="0.00" Multiline="0" Style="ddo-char-set: 1; text-align: left; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox54" DataField="Moneda" MOD="4" Left="1860" Top="0" Width="570.0001" Height="288" Text="Moneda" OutputFormat="0.00" Multiline="0" Style="ddo-char-set: 1; text-align: left; font-family: Arial; vertical-align: middle; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="4304" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="8730" Top="1530" Width="720" Height="260" Caption="Hoja" Style="ddo-char-set: 0; text-align: right; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox19" MOD="4" Left="8280" Top="1800" Width="849.9999" Height="260" Text="Nro" Style="ddo-char-set: 0; text-align: right; font-family: Arial; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label33" MOD="4" Left="90" Top="450" Width="1710" Height="270" Caption="Observaciones" Style="ddo-char-set: 0; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Label" Name="Label34" DataField="Observaciones" MOD="4" Left="1890" Top="450" Width="7830" Height="990" Caption="" Style="ddo-char-set: 1; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox37" MOD="4" Left="9180" Top="1800" Width="540" Height="260" Text="/" Style="ddo-char-set: 0; font-family: Arial; " SummaryType="4" SummaryFunc="1" />
+      <Control Type="AR.Field" Name="TextBox38" MOD="4" Left="9270" Top="1800" Width="450" Height="260" Text="Nro" Style="ddo-char-set: 0; font-family: Arial; " SummaryType="4" />
+      <Control Type="AR.Label" Name="Label40" MOD="4" Left="90" Top="90" Width="1710" Height="270" Caption="Total" Style="ddo-char-set: 0; font-family: Arial; " Multiline="0" />
+      <Control Type="AR.Label" Name="Label41" DataField="Total" MOD="4" Left="8460" Top="90" Width="1260" Height="270" Caption="Precio Total" Style="ddo-char-set: 0; text-align: left; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label42" DataField="Moneda" MOD="4" Left="7740" Top="90" Width="630" Height="270" Caption="Moneda" Style="ddo-char-set: 1; text-align: right; font-weight: normal; font-family: Arial; " />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="eZ1vYmziCfp//jvrFaAgkGut98FzCHi+26sP8id7f1T14AVHFhZ86mN/8Rzv/Myj3CSsqUSZpHx0ktNADi8ZSPcVa3yuCHLEpGqYGseeukK3mNUXI4ys7WEo+ShHZNM9WBnlvkzux2WhCio7Jw8Now==" SQL="exec Pr_tlg_ComprobantesView &quot;00001000050000000002&quot;" />
+  </DataSources>
+  <Script><![CDATA[
+]]></Script>
+  <PageSettings BottomMargin="0" PaperSize="9" PaperWidth="14170" PaperHeight="8640" PaperName="" />
+</ActiveReportsLayout>

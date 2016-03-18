@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="18015" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1215" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="1320" Top="877.5" Width="990" Height="262.5" Caption="Código" Style="text-align: right; font-weight: bold; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="3330" Top="870.0001" Width="3600" Height="262.5" Caption="Producto" Style="text-align: left; font-weight: bold; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="6930" Top="870.0001" Width="1170" Height="270" Caption="Pcio. costo dir." Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="10" Y1="1190" X2="18014.4" Y2="1170" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="10" Y1="470" X2="18014.4" Y2="460" />
+      <Control Type="AR.Label" Name="Label25" MOD="4" Left="0" Top="90" Width="6300" Height="360" Caption="Reporte de Productos con Precios modificados" Style="text-align: left; font-weight: normal; font-size: 12pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label26" MOD="4" Left="6480" Top="180" Width="1710" Height="270" Caption="Fecha" Style="font-weight: normal; " />
+      <Control Type="AR.Field" Name="fechaEmision" MOD="4" Left="7920" Top="180" Width="2610" Height="270" Text="txtHoy" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; font-weight: normal; " />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="10" Y1="829.9998" X2="18014.4" Y2="819.9999" />
+      <Control Type="AR.Label" Name="Label27" MOD="4" Left="2310" Top="877.5" Width="990" Height="262.5" Caption="Código Sec." Style="text-align: right; font-weight: bold; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label30" MOD="4" Left="-90" Top="900" Width="1440" Height="262.5" Caption="Lista de Precios" Style="text-align: right; font-weight: bold; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label31" MOD="4" Left="8100" Top="870.0001" Width="1260" Height="270" Caption="Pcio. costo indir." Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label32" MOD="4" Left="9360" Top="870.0001" Width="1170" Height="270" Caption="Pcio. costo Ref." Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label33" MOD="4" Left="10530" Top="870.0001" Width="720" Height="270" Caption="MAC" Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label34" MOD="4" Left="11250" Top="870.0001" Width="1170" Height="270" Caption="Pcio. Vta. Neto" Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label35" MOD="4" Left="13590" Top="870.0001" Width="1440" Height="270" Caption="Pcio Vta Bruto Imp" Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label36" MOD="4" Left="12420" Top="870.0001" Width="1170" Height="270" Caption="Pcio. Vta. Bruto" Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label37" MOD="4" Left="15030" Top="870.0001" Width="1080" Height="270" Caption="% Coeficiente" Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label38" MOD="4" Left="16110" Top="870.0001" Width="900" Height="270" Caption="Max Desc." Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label39" MOD="4" Left="17010" Top="870.0001" Width="990" Height="270" Caption="% Max Desc." Style="text-align: right; font-weight: normal; font-size: 8pt; vertical-align: middle; " />
+    </Section>
+    <Section Type="GroupHeader" Name="ghOrderGroup" Height="419" DataField="ListaDePrecios" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox35" DataField="ListaDePrecios" MOD="4" Left="-90" Top="0" Width="1440" Height="288" Text="ListaDePrecios" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox36" DataField="Codigo" MOD="4" Left="1350" Top="0" Width="990.72" Height="288" Text="Codigo" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox32" DataField="PrecioCostoDirecto" MOD="4" Left="6930" Top="0" Width="1170" Height="288" Text="PrecioCostoDirecto" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox26" DataField="Descripcion" MOD="4" Left="3330" Top="0" Width="3600" Height="288" Text="Descripcion" CanShrink="1" Style="text-align: left; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox34" DataField="CodigoSecundario" MOD="4" Left="2340" Top="0" Width="990.72" Height="288" Text="Codigo Sec" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox37" DataField="PrecioDeCostoIndirecto" MOD="4" Left="8100" Top="0" Width="1260" Height="288" Text="PrecioDeCostoIndirecto" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox38" DataField="PrecioDeCostoRef" MOD="4" Left="9360" Top="0" Width="1170" Height="288" Text="PrecioDeCostoRef" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox39" DataField="MAC" MOD="4" Left="10530" Top="0" Width="720" Height="288" Text="MAC" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox40" DataField="PrecioDeVentaNeto" MOD="4" Left="11250" Top="0" Width="1170.72" Height="288" Text="PrecioDeVentaNeto" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox41" DataField="PrecioDeVentaBrutoConImpuesto" MOD="4" Left="13590" Top="0" Width="1440" Height="288" Text="PrecioDeVentaBrutoConImpuesto" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox42" DataField="PrecioDeVentaBruto" MOD="4" Left="12420" Top="0" Width="1170" Height="288" Text="PrecioDeVentaBruto" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox43" DataField="Coeficiente" MOD="4" Left="15030" Top="0" Width="1080" Height="288" Text="Coeficiente" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox44" DataField="MaxDescuento" MOD="4" Left="16095" Top="0" Width="900" Height="288" Text="MaxDescuento" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox45" DataField="MaxDescuentoPorcentual" MOD="4" Left="16995" Top="0" Width="990.72" Height="288" Text="MaxDescuentoPorcentual" CanShrink="1" Style="text-align: right; font-weight: normal; font-size: 8pt; font-family: Arial; " />
+    </Section>
+    <Section Type="GroupFooter" Name="gfOrderGroup" Height="360" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="270" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="9420" Top="0" Width="450" Height="270" Text="TextBox24" Style="text-align: right; font-weight: normal; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="8730" Top="0" Width="720" Height="270" Caption="Página" Style="font-weight: normal; " />
+      <Control Type="AR.Field" Name="txtNombreEmpresa" MOD="4" Left="0" Top="0" Width="7380" Height="270" Text="txtEmpresa" Style="font-weight: normal; font-size: 10pt; " />
+      <Control Type="AR.Field" Name="TextBox30" MOD="4" Left="9960" Top="0" Width="450" Height="270" Text="TextBox30" Style="text-align: left; font-weight: normal; " SummaryType="4" />
+      <Control Type="AR.Label" Name="Label24" MOD="4" Left="9870" Top="0" Width="90" Height="270" Caption="/" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="10" Y1="20" X2="20890" Y2="10" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="GJCfM0gZrKNpba3KmUgXSAcA0kAYFIMR3YmUU/66wpmKICZ5/R8kFPYpPOwixaepVbaY4ait7AxkF+bjcT0eW/5KwSKpnow5e99b3OKB4p7ka4Foynvzylc15dqRglWhVHCN8LJjtbdZPEPbN9gAUw==" SQL="Select * from  TablaResultadoProcesoModificarPrecioProducto group by ListaDePrecios" />
+  </DataSources>
+  <Script><![CDATA[bool m_color = true;
+public void Detail_Format()
+{
+	if(m_color)
+	{		
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+		m_color = false;
+	}	
+	else	
+	{	
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;	
+		m_color = true;
+	}
+}
+
+public void ActiveReport_ReportStart()
+{
+  
+ 	rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+	rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+    	rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+    	rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+    	rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+	rpt.StyleSheet.Add("MyStyle");
+  	rpt.StyleSheet["MyStyle"].FontName = "Arial";
+   	rpt.StyleSheet["MyStyle"].FontSize =null;
+   	rpt.StyleSheet["MyStyle"].FontStrikeThrough = false;
+    	rpt.StyleSheet["MyStyle"].FontUnderline = false;
+ 	rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+    	rpt.StyleSheet["MyStyle"].VerticalAlignment = VerticalTextAlignment.Middle;
+
+                 
+
+}
+
+public void PageFooter_Format()
+{
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) 	rpt.Sections["PageFooter"].Controls["txtNombreEmpresa"];
+	text.Text = Empresa;
+}
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+                  decimal cant = System.Convert.ToDecimal(rpt.Fields["PrecioCostoDirecto"].Value);
+	rpt.Fields["PrecioCostoDirecto"].Value =decimal.Round(cant,2);
+	
+                  decimal cant1 = System.Convert.ToDecimal(rpt.Fields["PrecioDeCostoIndirecto"].Value);
+	rpt.Fields["PrecioDeCostoIndirecto"].Value =decimal.Round(cant1,2);
+
+                  decimal cant2= System.Convert.ToDecimal(rpt.Fields["PrecioDeCostoRef"].Value);
+	rpt.Fields["PrecioDeCostoRef"].Value =decimal.Round(cant2,2);
+
+                  decimal cant3 = System.Convert.ToDecimal(rpt.Fields["MAC"].Value);
+	rpt.Fields["MAC"].Value =decimal.Round(cant3,2);
+
+                  decimal cant4 = System.Convert.ToDecimal(rpt.Fields["PrecioDeVentaNeto"].Value);
+	rpt.Fields["PrecioDeVentaNeto"].Value =decimal.Round(cant4,2);
+
+                  decimal cant5 = System.Convert.ToDecimal(rpt.Fields["PrecioDeVentaBruto"].Value);
+	rpt.Fields["PrecioDeVentaBruto"].Value =decimal.Round(cant5,2);
+
+                  decimal cant6 = System.Convert.ToDecimal(rpt.Fields["PrecioDeVentaBrutoConImpuesto"].Value);
+	rpt.Fields["PrecioDeVentaBrutoConImpuesto"].Value =decimal.Round(cant6,2);
+
+                  decimal cant7 = System.Convert.ToDecimal(rpt.Fields["Coeficiente"].Value);
+	rpt.Fields["Coeficiente"].Value =decimal.Round(cant7,2);
+
+                  decimal cant8 = System.Convert.ToDecimal(rpt.Fields["MaxDescuento"].Value);
+	rpt.Fields["MaxDescuento"].Value =decimal.Round(cant8,2);
+
+                  decimal cant9 = System.Convert.ToDecimal(rpt.Fields["MaxDescuentoPorcentual"].Value);
+	rpt.Fields["MaxDescuentoPorcentual"].Value =decimal.Round(cant9,2);
+
+	System.Console.WriteLine("--------FetchData---------");
+	return eof;
+}
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox text2 = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["fechaEmision"];
+	text2.Text = System.DateTime.Now.ToString();
+}
+
+
+
+]]></Script>
+  <PageSettings PaperSize="5" PaperWidth="12240" PaperHeight="20160" PaperName="" Orientation="2" />
+</ActiveReportsLayout>

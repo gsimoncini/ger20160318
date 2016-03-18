@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tpu_ComprobantesEx" targetNamespace="http://tempuri.org/tpu_ComprobantesEx.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tpu_ComprobantesEx.xsd"
+	xmlns:mstns="http://tempuri.org/tpu_ComprobantesEx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="tpu_ComprobantesExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tpu_Comprobantes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdComprobante" type="xs:string" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdInstanciaCaja" type="xs:string" minOccurs="0" />
+							<xs:element name="IdTipoDeComprobante" type="xs:string" minOccurs="0" />
+							<xs:element name="Numero" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdProveedor" type="xs:string" />
+							<xs:element name="IdResponsable" type="xs:string" />
+							<xs:element name="Total" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IdCotizacionCierre" type="xs:string" minOccurs="0" />
+							<xs:element name="IdMonedaCierre" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdGenerado" type="xs:string" minOccurs="0" nillable="true" />
+							<xs:element name="RowIdGenerado" type="xs:string" minOccurs="0" nillable="true" />
+							<xs:element name="ValorCotizacionProveedor" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IdMonedaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="IdFuenteDeCambioProveedor" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaRecepcionMercaderia" type="xs:date" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" nillable="true" msprop:nullValue="_empty" />
+							<xs:element name="IdCondicionDeCompra" type="xs:string" minOccurs="0" />
+							<xs:element name="IdAutorizacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tpu_ComprobantesDet">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdComprobante" type="xs:string" />
+							<xs:element name="Ordinal" type="xs:long" />
+							<xs:element name="IdProducto" type="xs:string" minOccurs="0" />
+							<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImpuestosDirectos" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImpuestosIndirectos" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IdMonedaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="IdMonedaCierre" type="xs:string" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="PrecioDeCosto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IdCotizacionCierre" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="RowIdGenerado" type="xs:string" minOccurs="0" nillable="true" />
+							<xs:element name="ValorCotizacionProveedor" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrecioDeCostoNetoMonedaOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Bonificacion1MonedaOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Bonificacion2MonedaOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Bonificacion3MonedaOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Bonificacion4MonedaOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Bonificacion5MonedaOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PorcentajeBonificacion1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PorcentajeBonificacion2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PorcentajeBonificacion3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PorcentajeBonificacion4" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PorcentajeBonificacion5" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" nillable="true" msprop:nullValue="_empty" />
+							<xs:element name="PrecioDeCostoMonedaOrigen" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tlg_MovimientosDeStock">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdMovimientoDeStock" type="xs:string" />
+							<xs:element name="IdProducto" type="xs:string" />
+							<xs:element name="Cantidad" type="xs:decimal" />
+							<xs:element name="IdDeposito" type="xs:string" />
+							<xs:element name="IdSeccion" type="xs:string" />
+							<xs:element name="IdEstadoDeStockOrigen" type="xs:string" nillable="true" />
+							<xs:element name="IdTipoDeAjuste" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdEstadoDeStockDestino" type="xs:string" />
+							<xs:element name="IdGenerado" type="xs:string" minOccurs="0" nillable="true" />
+							<xs:element name="RowIdGenerado" type="xs:string" minOccurs="0" nillable="true" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tpu_ComprobantesRelacionOrigenDestino">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdComprobanteOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="IdComprobanteDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="IdOrdinalOrigen" type="xs:long" minOccurs="0" />
+							<xs:element name="IdOrdinalDestino" type="xs:long" minOccurs="0" />
+							<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="IdRelacionOrigenDestino" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:long" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tpu_ComprobantesExKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tpu_Comprobantes" />
+			<xs:field xpath="mstns:IdComprobante" />
+		</xs:unique>
+		<xs:unique name="tpu_ComprobantesExKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tpu_ComprobantesDet" />
+			<xs:field xpath="mstns:IdComprobante" />
+			<xs:field xpath="mstns:Ordinal" />
+		</xs:unique>
+		<xs:keyref name="tpu_Comprobantestpu_ComprobantesDet" refer="tpu_ComprobantesExKey1">
+			<xs:selector xpath=".//mstns:tpu_ComprobantesDet" />
+			<xs:field xpath="mstns:IdComprobante" />
+		</xs:keyref>
+		<xs:unique name="tpu_ComprobantesExDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tlg_MovimientosDeStock" />
+			<xs:field xpath="mstns:IdMovimientoDeStock" />
+		</xs:unique>
+		<xs:unique name="tpu_ComprobantesExDatasetKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tpu_ComprobantesRelacionOrigenDestino" />
+			<xs:field xpath="mstns:IdRelacionOrigenDestino" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

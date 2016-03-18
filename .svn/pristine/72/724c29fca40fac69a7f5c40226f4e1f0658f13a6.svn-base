@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="sy_Excepciones" targetNamespace="http://tempuri.org/sy_Excepciones.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/sy_Excepciones.xsd" xmlns:mstns="http://tempuri.org/sy_Excepciones.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="sy_ExcepcionesDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="sy_Excepciones">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdExcepcion" type="xs:string" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Machine" type="xs:string" />
+							<xs:element name="User" type="xs:string" />
+							<xs:element name="Version" type="xs:string" />
+							<xs:element name="AppDomain" type="xs:string" />
+							<xs:element name="CodeBase" type="xs:string" />
+							<xs:element name="Exc_Source" type="xs:string" />
+							<xs:element name="Exc_Type" type="xs:string" />
+							<xs:element name="Exc_Message" type="xs:string" />
+							<xs:element name="Exc_Site" type="xs:string" />
+							<xs:element name="Exc_StackTrace" type="xs:string" />
+							<xs:element name="Exc_InnerException" type="xs:string" />
+							<xs:element name="Exc_HelpLink" type="xs:string" minOccurs="0" />
+							<xs:element name="Exception" type="xs:string" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="sy_ExcepcionesDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:sy_Excepciones" />
+			<xs:field xpath="mstns:IdExcepcion" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

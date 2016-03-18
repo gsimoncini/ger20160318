@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-124" viewPortTop="-47" zoom="100">
+    <twf_Caminos_XmlElement left="12302" top="953" width="10583" height="6350" selected="0" zOrder="1" index="0" expanded="1" />
+    <twf_Tareas_XmlElement left="1509" top="1403" width="6509" height="5080" selected="0" zOrder="2" index="1" expanded="1" />
+    <twf_Dependencias_XmlElement left="10133" top="9578" width="8255" height="4656" selected="0" zOrder="4" index="2" expanded="1" />
+    <twf_Caminostwf_Dependencias_XmlKeyref left="22376" top="11657" width="503" height="503" selected="0" zOrder="5" />
+    <twf_Tareastwf_Caminos_DESTINO_XmlKeyref left="10146" top="5254" width="503" height="503" selected="0" zOrder="13" />
+    <twf_Tareastwf_Dependencias_XmlKeyref left="1521" top="11655" width="503" height="503" selected="0" zOrder="17" />
+    <twf_Tareastwf_Caminos_ORIGEN_XmlKeyref left="10095" top="2170" width="503" height="503" selected="0" zOrder="9" />
+</XSDDesignerLayout>

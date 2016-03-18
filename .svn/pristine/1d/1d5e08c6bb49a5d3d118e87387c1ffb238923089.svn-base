@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tfi_ValoresDatosAuxiliares" targetNamespace="http://tempuri.org/tfi_ValoresDatosAuxiliares.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tfi_ValoresDatosAuxiliares.xsd"
+	xmlns:mstns="http://tempuri.org/tfi_ValoresDatosAuxiliares.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tfi_ValoresDatosAuxiliaresDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tfi_ValoresDatosAuxiliares">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdValor" type="xs:string" />
+							<xs:element name="CODIGO_AUT_TC_TD_TCCUO_" type="xs:string" minOccurs="0" />
+							<xs:element name="CUPON_TC_TD_TCCUO_" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_ACREDIT_TC_TCCUO_" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_AUT_TC_TD_TCCUO_" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LOTE_TC_TD_TCCUO_" type="xs:string" minOccurs="0" />
+							<xs:element name="CANTIDAD_CUOTAS_TCCUO_" type="xs:short" minOccurs="0" />
+							<xs:element name="CTA_BANCARIA_CHE_T_C_DT_D_DP_" type="xs:string" minOccurs="0" />
+							<xs:element name="LIBRADOR_CHE_T_DT_" type="xs:string" minOccurs="0" />
+							<xs:element name="SUCURSAL_CHE_T_C_DT_D_DP_" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_PAGO_CHE_T_DT_" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_RECEP_CHE_T_C_DT_D_" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TIPO_RETENCION_RET_" type="xs:string" minOccurs="0" />
+							<xs:element name="aux1" type="xs:string" minOccurs="0" />
+							<xs:element name="aux2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="aux3" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_INGRESO_RET_" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_COMP_RET_" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="NROBOLETA_CHE_T_C_DT_D_" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHAINGBANCO_CHE_T_C_DT_D_" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CODIGO10_TC_TD_TCCUO_" type="xs:string" minOccurs="0" />
+							<xs:element name="DESTINATARIO_CHE_DP_" type="xs:string" minOccurs="0" />
+							<xs:element name="SELLADO_CHE_T_C_DT_D_DP_" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CRUZADO_CHE_T_C_DT_D_DP_" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IDDESTINATARIO_CHE_DP_" type="xs:string" minOccurs="0" />
+							<xs:element name="IDBANCO_CHE_DP_" type="xs:string" minOccurs="0" />
+							<xs:element name="BANCO_CHE_DP_" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tfi_ValoresDatosAuxiliaresDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tfi_ValoresDatosAuxiliares" />
+			<xs:field xpath="mstns:IdValor" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

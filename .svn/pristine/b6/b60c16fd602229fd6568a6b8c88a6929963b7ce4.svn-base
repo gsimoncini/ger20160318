@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10425" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="3809" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Image" Name="Picture1" Visible="0" MOD="4" Left="180" Top="90" Width="1800" Height="1440" LineColor="16777215" LineWeight="0" HyperLink="" SizeMode="1" />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="90" Top="1710" Width="1080" Height="288" Caption="Cliente: " Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Field" Name="lNombre" DataField="Nombre" MOD="4" Left="1170" Top="1710" Width="9450" Height="288" Text="Nombre" Style="ddo-char-set: 1; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox15" DataField="Domicilio" MOD="4" Left="1170" Top="2250" Width="9450" Height="288" Text="Domicilio" Style="ddo-char-set: 1; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox31" DataField="Categoria de Iva" MOD="4" Left="1890" Top="2790" Width="2880" Height="288" Text="Categoria de Iva" Style="ddo-char-set: 1; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="-90" Top="3505" Width="1070" Height="270" Caption="Cantidad" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="1080" Top="3510" Width="9540" Height="270" Caption="Descripcion" Style="text-align: left; font-weight: bold; vertical-align: top; " />
+      <Control Type="AR.Field" Name="TextBox32" DataField="IdTipoDocumento" MOD="4" Left="630" Top="2520" Width="990" Height="288" Text="IdTipoDocumento" Style="ddo-char-set: 1; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox33" DataField="Documento" MOD="4" Left="2160" Top="2520" Width="2610" Height="288" Text="Documento" Style="ddo-char-set: 1; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox43" DataField="Telefono" MOD="4" Left="1170" Top="1980" Width="9450" Height="288" Text="Telefono" Style="ddo-char-set: 1; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label12" MOD="4" Left="90" Top="2250" Width="1080" Height="288" Caption="Domicilio:" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label13" MOD="4" Left="90" Top="2790" Width="1710" Height="288" Caption="Categoria de IVA:" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label14" MOD="4" Left="90" Top="2520" Width="540" Height="288" Caption="Doc:" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label15" MOD="4" Left="1620" Top="2520" Width="540" Height="288" Caption="Nro:" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label16" MOD="4" Left="90" Top="1980" Width="1080" Height="288" Caption="Telefonos:" Style="ddo-char-set: 1; font-weight: bold; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox40" MOD="4" Left="5760" Top="1080" Width="2250" Height="270" Text="Fecha:" OutputFormat="" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox41" DataField="Fecha de Emision" MOD="4" Left="6660" Top="1080" Width="2610" Height="288" Text="Fecha Emision" OutputFormat="dd/MM/yyyy" Style="ddo-char-set: 1; font-weight: normal; font-family: Arial; " />
+      <Control Type="AR.Label" Name="Label23" MOD="4" Left="5670" Top="2790" Width="900" Height="270" Caption="Factura:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-style: normal; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox44" DataField="ComprobanteRelacionado" MOD="4" Left="6660" Top="2790" Width="3150" Height="270" Text="Comprobante Relacionado" Style="font-style: normal; font-size: 9pt; font-family: Arial; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="Cantidad" MOD="4" Left="0" Top="0" Width="810" Height="288" Text="Cantidad" Style="text-align: right; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Producto" MOD="4" Left="1080" Top="0" Width="9540" Height="288" Text="Producto" Style="text-align: left; font-size: 9pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox45" DataField="ValorImp1" Visible="0" MOD="4" Left="7740" Top="630" Width="900" Height="288" Text="ValorImp1" OutputFormat="#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox35" DataField="ValorImp2" Visible="0" MOD="4" Left="6570" Top="630" Width="990" Height="288" Text="ValorImp2" OutputFormat="#,##0.00" Style="text-align: right; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="1589" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label22" MOD="4" Left="6660" Top="1260" Width="3420" Height="270" Caption="Recibí Conforme" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="6490" Y1="1190" X2="10170" Y2="1190" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="eZ1vYmziCfp//jvrFaAgkGut98FzCHi+26sP8id7f1QFqAvye4qnagG+ZEv71vF1B05buW3y9l+qktV+hUUMMals3XSCyMDjujF+z5SPibp8vUmWoxLBfHBZa2tBLJ17SZpI2UgUQEjfyBZ8Dmzlo6Q1Dn7wAHoWlq3+N7jzVEI=" SQL="exec Pr_tlg_ComprobantesView @IdComprobante = '00001000010000000025', @IdTipoDeComprobanteRel = 'FAA,FAB,FAE,FAAM,FABM,AFAA,AFAB'" />
+  </DataSources>
+  <Script><![CDATA[string myDate = System.DateTime.Now.ToString();
+//Representa al Tipo de Comprobante, por ej, A,B o E
+string TipoDeComprobante ="";
+//represenat al a los distintos tipos de comprobantes, por ej, FAA,FAB,FAE,PREA etc..
+string Comprobante;
+decimal PrecioFinal = 0;
+decimal Total = 0;
+bool compB = false;
+decimal PrecioNeto=0;
+decimal PrecioUnitario=0;
+decimal subtotalAnterior = 0;
+decimal sub=0;
+bool visible = false;
+System.DateTime Fecha = System.DateTime.Now;
+decimal PrecioNetoConImpuestos = 0;
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+
+System.Console.WriteLine("--------FecthData---------");
+
+Fecha = System.Convert.ToDateTime(rpt.Fields["Fecha de Emision"].Value);
+
+System.Console.WriteLine("--------FecthData1---------");
+string calle = System.Convert.ToString(rpt.Fields["Calle"].Value);
+string numero = System.Convert.ToString(rpt.Fields["NumeroCalle"].Value);
+string localidad = System.Convert.ToString(rpt.Fields["Localidad"].Value);
+
+System.Console.WriteLine("--------FecthData2---------");
+string torre = System.Convert.ToString(rpt.Fields["Torre"].Value);
+System.Console.WriteLine("Torre ");  
+System.Console.WriteLine(torre);  
+string departamento = System.Convert.ToString(rpt.Fields["Departamento"].Value);
+System.Console.WriteLine("Depto ");  
+System.Console.WriteLine(departamento);  
+string piso =  System.Convert.ToString(rpt.Fields["Piso"].Value);
+System.Console.WriteLine("Piso ");  
+System.Console.WriteLine(piso);  
+string domicilio = null;
+
+
+string provincia = System.Convert.ToString(rpt.Fields["Provincia"].Value);
+System.Console.WriteLine("Prov ");  
+System.Console.WriteLine(provincia);  
+System.Console.WriteLine("--------FecthData3---------");
+if(localidad != string.Empty)
+{
+	if(provincia != string.Empty)
+		domicilio = calle + " " +numero + " " + torre +" " + departamento +" " + piso+ ", " + localidad + ", " + provincia;
+	else
+		domicilio = calle + " " +numero + " " + torre +" " + departamento +" " + piso+ ", " + localidad;
+}
+else
+	domicilio = calle + " " +numero + " "+ torre +" " +departamento +" " + piso;
+
+System.Console.WriteLine("--------FecthData4---------");
+rpt.Fields["Domicilio"].Value = domicilio;
+
+System.Console.WriteLine("--------FecthData5---------");
+string campoAuxiliar1 =  System.Convert.ToString(rpt.Fields["CampoAux1"].Value);
+string campoAuxiliar2 =  System.Convert.ToString(rpt.Fields["CampoAux2"].Value);
+string campoAuxiliar3 =  System.Convert.ToString(rpt.Fields["CampoAux3"].Value);
+string campoAuxiliar4 =  System.Convert.ToString(rpt.Fields["CampoAux4"].Value);
+string campoAuxiliar5 =  System.Convert.ToString(rpt.Fields["CampoAux5"].Value);
+string producto =  System.Convert.ToString(rpt.Fields["Producto"].Value);
+ 
+producto = producto + " " + campoAuxiliar1 + " " + campoAuxiliar2 + " " + campoAuxiliar3 + " " +campoAuxiliar4 + " " + campoAuxiliar5;
+
+System.Console.WriteLine("--------FecthData6---------");
+
+rpt.Fields["Producto"].Value = producto;
+
+System.Console.WriteLine("--------FecthData7---------");
+
+return eof;
+}
+
+public void ActiveReport_DataInitialize()
+{
+System.Console.WriteLine("----------DataIntialize------------");
+rpt.Fields.Add("Domicilio");
+System.Console.WriteLine("----------DataIntialize------------");
+}
+
+public void ActiveReport_ReportStart()
+{
+System.Console.WriteLine("----------ReportStart------------");
+
+rpt.Document.Printer.PrinterName = "";
+//rpt.PageSettings.DefaultPaperSize = false;
+//rpt.PageSettings.DefaultPaperSource = false;
+//rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+/*
+rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+*/
+//rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+//rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+//rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+//rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+System.Console.WriteLine("----------ReportStart------------");
+
+}
+
+private void start(object o, System.EventArgs e)
+{
+System.Console.WriteLine("----------PageStart------------");
+System.Console.WriteLine("----------PageStart------------");
+}
+
+private void end(object o, System.EventArgs e)
+{
+System.Console.WriteLine("----------PageEnd------------");
+}
+
+public void PageHeader_BeforePrint()
+{
+System.Console.WriteLine("----------PageHeader_BeforePrint------------");
+System.Console.WriteLine("----------PageHeader_BeforePrint------------");
+}
+
+public void Detail_BeforePrint()
+{
+System.Console.WriteLine("----------Detail_BeforePrint------------");
+System.Console.WriteLine("----------Detail_BeforePrint------------");
+}
+
+public void PageFooter_BeforePrint()
+{
+System.Console.WriteLine("----------PageFooter_BefoPrint 1-----------");
+System.Console.WriteLine("----------PageFooter_BeforePrint------------");
+
+}
+
+
+public void PageHeader_Format()
+{
+System.Console.WriteLine("----------PageHeader_Format------------");
+}
+
+
+
+
+public void Detail_Format()
+{
+System.Console.WriteLine("----------Detail_Format------------");
+}
+
+public void ActiveReport_ReportEnd()
+{
+System.Console.WriteLine("----------ReportEnd------------");
+}
+
+public void ActiveReport_NoData()
+{
+System.Console.WriteLine("----------NoData------------");
+}
+
+public void ReportHeader_Format()
+{
+System.Console.WriteLine("----------ReportHeader_Format------------");
+}
+
+public void ReportHeader_AfterPrint()
+{
+System.Console.WriteLine("----------ReportHeader_AfterPrint------------");
+}
+
+
+
+public void PageHeader_AfterPrint()
+{
+System.Console.WriteLine("----------PageHeader_AfterPrint------------");
+}
+
+
+public void Detail_AfterPrint()
+{
+System.Console.WriteLine("----------Detail_AfterPrint------------");
+}
+
+public void PageFooter_Format()
+{
+System.Console.WriteLine("----------PageFooter_Format------------");
+}
+
+
+
+public void PageFooter_AfterPrint()
+{
+System.Console.WriteLine("----------PageFooter_AfterPrint------------");
+}
+
+public void ReportFooter_Format()
+{
+System.Console.WriteLine("----------ReportFooter_Format------------");
+}
+
+public void ReportFooter_BeforePrint()
+{
+System.Console.WriteLine("----------ReportFooter_BeforePrint------------");
+}
+
+public void ReportFooter_AfterPrint()
+{
+System.Console.WriteLine("----------ReportFooter_AfterPrint------------");
+}
+
+public void ReportHeader_BeforePrint()
+{
+System.Console.WriteLine("----------ReportHeader_BeforePrint------------");
+}
+
+]]></Script>
+  <PageSettings LeftMargin="0" RightMargin="0" PaperSize="0" PaperWidth="11520" PaperHeight="11520" PaperName="" Orientation="2" Duplex="2" />
+</ActiveReportsLayout>

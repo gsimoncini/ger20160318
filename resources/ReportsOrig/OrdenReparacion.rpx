@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="11355" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; color: Black; font-family: t; font-size: 8pt; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="Detail" Name="Detail" Height="13753" BackColor="16777215" NewPage="2" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox1" DataField="CuentaDescripcion" MOD="4" Left="1170" Top="1980" Width="5066.22" Height="288" Text="CuentaDescripcion" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox2" DataField="FechaCreacion" MOD="4" Left="6930" Top="1980" Width="1522.204" Height="288" Text="FechaCreacion" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox3" DataField="HoraCreacion" MOD="4" Left="9360" Top="1980" Width="1800" Height="288" Text="HoraCreacion" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox4" DataField="Domicilio" MOD="4" Left="1275.591" Top="2340" Width="4960.629" Height="288" Text="Domicilio" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox5" DataField="Equipo" MOD="4" Left="6930" Top="2340" Width="1440" Height="288" Text="Equipo" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox6" DataField="Localidad" MOD="4" Left="1170" Top="2700" Width="2231.575" Height="288" Text="Localidad" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Telefono" MOD="4" Left="4140" Top="2700" Width="2096.22" Height="288" Text="Telefono" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="NumeroSerie" MOD="4" Left="9720" Top="2700" Width="1566.851" Height="288" Text="NumeroSerie" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="DescripcionFalla" MOD="4" Left="566.9291" Top="4320" Width="10629.92" Height="937.5591" Text="DescripcionFalla" CanGrow="0" Style="ddo-char-set: 0; font-family: Tahoma; white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="CuentaDescripcion" MOD="4" Left="1170" Top="10350" Width="5066.22" Height="288" Text="CuentaDescripcion" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox11" DataField="FechaCreacion" MOD="4" Left="6930" Top="10350" Width="1522.204" Height="288" Text="FechaCreacion" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="HoraCreacion" MOD="4" Left="9360" Top="10350" Width="1800" Height="288" Text="HoraCreacion" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox13" DataField="Domicilio" MOD="4" Left="1275.591" Top="10710" Width="4960.629" Height="288" Text="Domicilio" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox14" DataField="Equipo" MOD="4" Left="6930" Top="10710" Width="1440" Height="288" Text="Equipo" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox15" DataField="Localidad" MOD="4" Left="1170" Top="11070" Width="2231.575" Height="288" Text="Localidad" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox16" DataField="Telefono" MOD="4" Left="4140" Top="11070" Width="2096.22" Height="288" Text="Telefono" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox17" DataField="NumeroSerie" MOD="4" Left="9720" Top="11070" Width="1566.851" Height="288" Text="NumeroSerie" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="DescripcionFalla" MOD="4" Left="566.9291" Top="12690" Width="10629.92" Height="937.5591" Text="DescripcionFalla" CanGrow="0" Style="ddo-char-set: 0; font-family: Tahoma; white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox19" DataField="IdOrdenReparacion" MOD="4" Left="9921.26" Top="1172.126" Width="1282.677" Height="288" Text="IdOrdenReparacion" OutputFormat="0000000" Multiline="0" CanGrow="0" Style="ddo-char-set: 0; font-weight: bold; font-size: 12pt; font-family: Tahoma; white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox20" DataField="IdOrdenReparacion" MOD="4" Left="9921.26" Top="9599.528" Width="1282.677" Height="288" Text="IdOrdenReparacion" OutputFormat="0000000" Multiline="0" CanGrow="0" Style="ddo-char-set: 0; font-weight: bold; font-size: 12pt; font-family: Tahoma; white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox21" DataField="EsGarantia" MOD="4" Left="9720" Top="2340" Width="1440" Height="288" Text="EsGarantia" />
+      <Control Type="AR.Field" Name="TextBox22" DataField="EsGarantia" MOD="4" Left="9720" Top="10710" Width="1440" Height="288" Text="EsGarantia" />
+      <Control Type="AR.Field" Name="TextBox23" DataField="Voltaje" MOD="4" Left="6840" Top="2700" Width="1440" Height="288" Text="Voltaje" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox24" DataField="Accesorios" MOD="4" Left="1170" Top="3060" Width="10080" Height="288" Text="Accesorios" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox25" DataField="Perifericos" MOD="4" Left="1170" Top="3384" Width="10080" Height="288" Text="Perifericos" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox26" DataField="Datos" MOD="4" Left="1170" Top="3708" Width="10080" Height="288" Text="Datos" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox27" DataField="Voltaje" MOD="4" Left="6840" Top="11070" Width="1440" Height="288" Text="Voltaje" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox28" DataField="Accesorios" MOD="4" Left="1170" Top="11430" Width="10080" Height="288" Text="Accesorios" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox29" DataField="Perifericos" MOD="4" Left="1170" Top="11754.72" Width="10080" Height="288" Text="Perifericos" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+      <Control Type="AR.Field" Name="TextBox30" DataField="Datos" MOD="4" Left="1170" Top="12078.72" Width="10080" Height="288" Text="Datos" Multiline="0" CanGrow="0" Style="white-space: nowrap; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="IcGFcoXiEtMh/wV3xCWeftBjIr0ZuH6nxvIh8GFyX9FVWZPuuX9Mgwqwe2T/T0aF4rXiaqH1vO5nepg/DB9xff/C+gl8NCWPYdz5JhGORu4H9VMF9Jiw3Ai2fXgyYOn4nhdaq65to8FqBox9Z5OcoD/qUviAmhSP9qoyVuPEGLw=" SQL="SELECT     o.IdOrdenReparacion, c.Nombre AS CuentaDescripcion, dbo.DatePart(o.FechaCreacion) AS FechaCreacion, dbo.TimePart(o.FechaCreacion) &#xD;&#xA;                      AS HoraCreacion, d.Calle + COALESCE (d.Numero, ' ' + d.Numero) AS Domicilio, e.Descripcion AS Equipo, l.Descripcion AS Localidad, d.Telefono, &#xD;&#xA;                      e.Codigo AS NumeroSerie, o.DescripcionFalla, EsGarantia = CASE EsGarantia WHEN 1 THEN 'Garantía' ELSE '' END, o.Voltaje, o.Accesorios, o.Perifericos, o.Datos &#xD;&#xA;FROM         dbo.tcs_Domicilios d INNER JOIN&#xD;&#xA;                      dbo.tcs_DomiciliosCuentas dc ON d.IdDomicilio = dc.idDomicilio LEFT OUTER JOIN&#xD;&#xA;                      dbo.tsh_Localidades l ON d.IdLocalidad = l.IdLocalidad RIGHT OUTER JOIN&#xD;&#xA;                      dbo.st_RecepcionCliente rc INNER JOIN&#xD;&#xA;                      dbo.st_OrdenReparacion o INNER JOIN&#xD;&#xA;                      dbo.st_Equipo e ON o.IdEquipo = e.IdEquipo INNER JOIN&#xD;&#xA;                      dbo.st_EstadoOrdenReparacion eor ON o.IdEstadoOrdenReparacion = eor.IdEstadoOrdenReparacion ON &#xD;&#xA;                      rc.IdRecepcionCliente = o.IdRecepcionCliente INNER JOIN&#xD;&#xA;                      dbo.tsa_Cuentas c ON rc.IdCuenta = c.IdCuenta ON dc.IdCuenta = c.IdCuenta LEFT OUTER JOIN&#xD;&#xA;                      dbo.st_Falla f ON o.IdFalla = f.IdFalla&#xD;&#xA;WHERE o.IdOrdenReparacion = &lt;%ID||0 %&gt;" />
+  </DataSources>
+  <PageSettings LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="Custom paper" Orientation="1" />
+</ActiveReportsLayout>

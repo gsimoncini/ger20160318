@@ -1,0 +1,8 @@
+﻿<runtime>
+  <!-- Configuracion de carpetas Librerias y ensamblados  -->
+  <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+    <probing privatePath="/lib;/Assemblies;../lib;../Assemblies" />
+  </assemblyBinding>
+
+
+</runtime>

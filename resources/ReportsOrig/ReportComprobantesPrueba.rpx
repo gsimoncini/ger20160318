@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10710" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageHeader" Name="PageHeader" Height="5895" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape2" MOD="4" Left="0" Top="0" Width="10710" Height="2880" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="4950" Top="0" Width="900" Height="720" BackColor="16777215" />
+      <Control Type="AR.Field" Name="txtIdTipoDeComprobante" DataField="IdTipoDeComprobante" MOD="4" Left="5040" Top="90" Width="720" Height="540" Text="IdTipoDeComprobante" Style="text-align: center; font-weight: bold; font-size: 12pt; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="5400" Y1="720" X2="5400" Y2="2880" />
+      <Control Type="AR.Image" Name="Picture1" MOD="4" Left="180" Top="90" Width="2700" Height="1530" LineColor="16777215" LineWeight="0" HyperLink="" SizeMode="1" />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Tipo de Comprobante" MOD="4" Left="5760" Top="1170" Width="1440" Height="288" Text="Tipo de Comprobante" Style="ddo-char-set: 1; font-weight: bold; font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="Numero" MOD="4" Left="7200" Top="1170" Width="2790" Height="288" Text="Numero" Style="font-weight: bold; " />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="9.999999" Y1="3880" X2="10710" Y2="3879.36" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="0" Y1="4860" X2="10710" Y2="4860" />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="180" Top="3960" Width="810" Height="288" Caption="Cliente: " Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="lNombre" DataField="Nombre" MOD="4" Left="990" Top="3960" Width="4140" Height="288" Text="Nombre" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Domicilio" MOD="4" Left="180" Top="4248" Width="4950" Height="288" Text="Domicilio" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="Categoria de Iva" MOD="4" Left="180" Top="4518" Width="4950" Height="288" Text="Categoria de Iva" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="100" Top="5500" Width="1260" Height="270" Caption="Cantidad" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="1360" Top="5500" Width="2430" Height="270" Caption="Descripcion" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="3880" Top="5500" Width="1800" Height="270" Caption="Precio Unitario" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="5500" Top="5500" Width="1800" Height="270" Caption="Alicuota IVA" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="7300" Top="5500" Width="1800" Height="270" Caption="% Base IVA" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="9100" Top="5500" Width="1530" Height="270" Caption="Importe" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="5760" Top="1710" Width="1350" Height="270" Caption="Fecha Y Hora:" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="txtFechaActual" MOD="4" Left="7200" Top="1710" Width="3330" Height="270" Text="" Style="font-weight: bold; " />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="5400" Y1="2890" X2="5400" Y2="3880" />
+      <Control Type="AR.Field" Name="TextBox11" DataField="IdTipoDocumento" MOD="4" Left="5760" Top="3960" Width="990" Height="288" Text="IdTipoDocumento" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="Documento" MOD="4" Left="6750" Top="3960" Width="3870" Height="288" Text="Documento" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="TextBox13" DataField="Telefonos" MOD="4" Left="5760" Top="4230" Width="4860" Height="288" Text="Telefonos" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lNombreEmpresa" MOD="4" Left="180" Top="1710" Width="4860" Height="270" Caption="Empresa" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="lDireccion" MOD="4" Left="180" Top="1980" Width="4860" Height="270" Caption="Direccion" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="lTelefonos" MOD="4" Left="180" Top="2250" Width="4860" Height="270" Caption="Telefonos" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="lCategoriaDeIva" MOD="4" Left="180" Top="2520" Width="4860" Height="270" Caption="CategoriaDeIva" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox14" MOD="4" Left="5760" Top="1980" Width="1350" Height="270" Text="C.U.I.T:" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="lCUIT" MOD="4" Left="7200" Top="1980" Width="3330" Height="270" Caption="CUIT" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox15" MOD="4" Left="5760" Top="2250" Width="1800" Height="270" Text="Ingresos Brutos:" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="lIB" MOD="4" Left="7560" Top="2250" Width="2970" Height="270" Caption="IB" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox16" MOD="4" Left="5760" Top="2520" Width="2250" Height="270" Text="inicio de Actividades" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="lInicioDeActividades" MOD="4" Left="8100" Top="2520" Width="2430" Height="270" Caption="Inicio de Act" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="txtTotalAnterior" Visible="0" MOD="4" Left="2880" Top="5040" Width="2520" Height="288.0001" Text="Subtotal Anterior" OutputFormat="$#,##0.00" Style="text-align: right; font-weight: normal; " />
+      <Control Type="AR.Label" Name="lSubtotalAnterior" Visible="0" MOD="4" Left="1440" Top="5040" Width="2250" Height="270" Caption="Subtotal Pag. Anterior" Style="font-weight: bold; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="480" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="Cantidad" MOD="4" Left="0" Top="60.00001" Width="1170" Height="288" Text="Cantidad" Style="text-align: right; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Producto" MOD="4" Left="1440" Top="60.00001" Width="2430" Height="288" Text="Producto" Style="text-align: left; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtPrecio" DataField="PrecioNeto" MOD="4" Left="3960" Top="60.00001" Width="1440" Height="288" Text="PrecioNeto" OutputFormat="$#,##0.00" Style="text-align: right; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtPrecioFinal" DataField="PrecioFinal" MOD="4" Left="8820" Top="60.00001" Width="1530" Height="288" Text="PrecioFinal" OutputFormat="$#,##0.00" Style="text-align: right; vertical-align: middle; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="2529" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="lSubtotal" MOD="4" Left="100" Top="100" Width="2790" Height="288" Caption="Subtotal" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="10" Y1="10" X2="10" Y2="2620" />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="100" Top="1630" Width="2790" Height="360" Caption="Total: " Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="txtTotal" DataField="PrecioFinal" MOD="4" Left="2890" Top="1630" Width="2520" Height="360" Text="TotalParcial" OutputFormat="$#,##0.00" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="lIVA" MOD="4" Left="100" Top="388" Width="2790" Height="288" Caption="IVA" />
+      <Control Type="AR.Label" Name="lIVADIF" MOD="4" Left="100" Top="676" Width="2790" Height="288" Caption="IVADIF" />
+      <Control Type="AR.Label" Name="lIngresosBrutos" MOD="4" Left="100" Top="964.0002" Width="2790" Height="288" Caption="Ingresos Brutos" />
+      <Control Type="AR.Label" Name="lII" MOD="4" Left="100" Top="1252" Width="2790" Height="288" Caption="Impuestos Internos" />
+      <Control Type="AR.Field" Name="txtValorImp2" DataField="ValorImp2" MOD="4" Left="2890" Top="676" Width="2520" Height="288" Text="ValorImp2" OutputFormat="$#,##0.00" Style="text-align: right; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="txtValorImp1" DataField="ValorImp1" MOD="4" Left="2890" Top="388" Width="2520" Height="288" Text="ValorImp1" OutputFormat="$#,##0.00" Style="text-align: right; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="txtValorImp3" DataField="ValorImp3" MOD="4" Left="2890" Top="964.0002" Width="2520" Height="288" Text="ValorImp3" OutputFormat="$#,##0.00" Style="text-align: right; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="txtValorImp4" DataField="ValorImp4" MOD="4" Left="2890" Top="1270" Width="2520" Height="288" Text="ValorImp4" OutputFormat="$#,##0.00" Style="text-align: right; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="txtSubtotal" DataField="SubtotalNeto" MOD="4" Left="2890" Top="100" Width="2520" Height="288" Text="Subtotal" OutputFormat="$#,##0.00" Style="text-align: right; " SummaryType="2" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="9460" Top="1630" Width="540" Height="360" Caption="Hoja" />
+      <Control Type="AR.Field" Name="TextBox19" MOD="4" Left="10000" Top="1630" Width="630" Height="360" Text="Nro" SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="100" Y1="0" X2="10710" Y2="0" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="20" Y1="1550" X2="10730" Y2="1550" />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="GJCfM0gZrKNpba3KmUgXSAcA0kAYFIMR3YmUU/66wpmKICZ5/R8kFPYpPOwixaepVbaY4ait7AxkF+bjcT0eW/5KwSKpnow5e99b3OKB4p7ka4Foynvzylc15dqRglWhVHCN8LJjtbdZPEPbN9gAUw==" SQL="exec Pr_tsa_ComprobantesView &quot;1079602897&quot;" />
+  </DataSources>
+  <Script><![CDATA[string myDate = System.DateTime.Now.ToString();
+//Representa al Tipo de Comprobante, por ej, A,B o E
+string TipoDeComprobante ="";
+//represenat al a los distintos tipos de comprobantes, por ej, FAA,FAB,FAE,PREA etc..
+string Comprobante;
+decimal PrecioFinal = 0;
+decimal Total = 0;
+bool compB = false;
+decimal PrecioNeto=0;
+decimal subtotalAnterior = 0;
+decimal sub=0;
+bool visible = false;
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+if (TipoDeComprobante == "")
+{
+string IdTipoDeComp = System.Convert.ToString(rpt.Fields["IdTipoDeComprobante"].Value);
+TipoDeComprobante = IdTipoDeComp.Substring(IdTipoDeComp.Length-1);
+compB = TipoDeComprobante.Equals("B");
+}
+if(rpt.Fields["ValorImp1"].Value == System.DBNull.Value) rpt.Fields["ValorImp1"].Value = 0;	
+if(rpt.Fields["ValorImp2"].Value == System.DBNull.Value) rpt.Fields["ValorImp2"].Value = 0;
+if(rpt.Fields["ValorImp3"].Value == System.DBNull.Value) rpt.Fields["ValorImp3"].Value = 0;		
+if(rpt.Fields["ValorImp4"].Value == System.DBNull.Value) rpt.Fields["ValorImp4"].Value = 0;	
+if(rpt.Fields["BonificacionRecargoProducto"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoProducto"].Value = 0;	
+if(rpt.Fields["BonificacionRecargoCuenta"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoCuenta"].Value = 0;
+if(rpt.Fields["BonificacionRecargoFinanciero"].Value == System.DBNull.Value) rpt.Fields["BonificacionRecargoFinanciero"].Value = 0;	
+if(rpt.Fields["DescuentosAplicados"].Value == System.DBNull.Value) rpt.Fields["DescuentosAplicados"].Value = 0;		
+decimal cant = System.Convert.ToDecimal(rpt.Fields["Cantidad"].Value);
+PrecioNeto =System.Convert.ToDecimal(rpt.Fields["PrecioNeto"].Value);
+decimal valorImp1 = System.Convert.ToDecimal(rpt.Fields["ValorImp1"].Value);
+decimal valorImp2 = System.Convert.ToDecimal(rpt.Fields["ValorImp2"].Value);
+decimal valorImp3 = System.Convert.ToDecimal(rpt.Fields["ValorImp3"].Value);
+decimal valorImp4 = System.Convert.ToDecimal(rpt.Fields["ValorImp4"].Value);
+PrecioFinal = PrecioNeto + System.Convert.ToDecimal(rpt.Fields["ImpuestosDirectos"].Value);
+PrecioFinal = PrecioFinal + System.Convert.ToDecimal(rpt.Fields["ImpuestosIndirectos"].Value);
+PrecioFinal = PrecioFinal * cant;
+
+rpt.Fields["PrecioFinal"].Value = PrecioFinal;
+
+
+
+rpt.Fields["ValorImp1"].Value = valorImp1*cant;
+rpt.Fields["ValorImp2"].Value = valorImp2*cant;	
+rpt.Fields["ValorImp3"].Value = valorImp3*cant;
+rpt.Fields["ValorImp4"].Value = valorImp4*cant;
+rpt.Fields["SubtotalNeto"].Value = cant*PrecioNeto;
+
+return eof;
+}
+
+public void ActiveReport_DataInitialize()
+{
+
+rpt.Fields.Add("SubtotalNeto");
+}
+
+public void ActiveReport_ReportStart()
+{
+rpt.PageStart += new System.EventHandler(start);
+
+ rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+
+}
+
+private void start(object o, System.EventArgs e)
+{
+
+rpt.CurrentPage.PenWidth = 4;
+rpt.CurrentPage.ForeColor=System.Drawing.Color.Black;
+ //Top Line
+rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left ,  rpt.PageSettings.Margins.Top);
+      //Left Line
+rpt.CurrentPage.DrawLine( rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+        //Right Line
+
+rpt.CurrentPage.DrawLine( rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.Margins.Top, rpt.PrintWidth + rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+       //Bottom Line
+rpt.CurrentPage.DrawLine(rpt.PageSettings.Margins.Left, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom, rpt.PageSettings.Margins.Left + rpt.PrintWidth, rpt.PageSettings.PaperHeight - rpt.PageSettings.Margins.Bottom);
+sub = subtotalAnterior;
+if (sub != 0) visible = true;
+
+}
+
+public void PageHeader_BeforePrint()
+{
+((DataDynamics.ActiveReports.Picture)rpt.Sections["PageHeader"].Controls["Picture1"]).Image = System.Drawing.Image.FromFile(@"C:\Proyectos\MZ.ERP\mz.erp.ui.exe\bin\Debug\resources\mz.login.jpg");
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtFechaActual"]).Text = myDate;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtIdTipoDeComprobante"]).Text = TipoDeComprobante;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtTotalAnterior"]).Text = System.Convert.ToString(sub);
+if (visible)
+{
+((DataDynamics.ActiveReports.Label)rpt.Sections["PageHeader"].Controls["lSubtotalAnterior"]).Visible =true;
+((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageHeader"].Controls["txtTotalAnterior"]).Visible =true;
+}
+}
+
+public void Detail_BeforePrint()
+{
+if(compB) 
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecio"]).Text= ((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtPrecioFinal"]).Text;
+
+}
+
+public void PageFooter_BeforePrint()
+{
+if(compB) 
+{
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lSubtotal"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVA"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIVADIF"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lIngresosBrutos"]).Visible = false;
+( (DataDynamics.ActiveReports.Label) rpt.Sections["PageFooter"].Controls["lII"]).Visible = false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtSubtotal"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp1"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp2"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp3"]).Visible=false;
+ ((DataDynamics.ActiveReports.TextBox)rpt.Sections["PageFooter"].Controls["txtValorImp4"]).Visible=false;
+
+}
+
+}
+
+
+public void PageHeader_Format()
+{
+DataDynamics.ActiveReports.Label text = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lNombreEmpresa"];
+text.Text = Empresa;
+DataDynamics.ActiveReports.Label l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lDireccion"];
+l.Text=Param1;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCategoriaDeIva"];
+l.Text=Param2;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lTelefonos"];
+l.Text=Param3;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lCUIT"];
+l.Text=Param4;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lIB"];
+l.Text=Param5;
+l = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["lInicioDeActividades"];
+l.Text=Param6;
+
+
+}
+
+
+
+
+public void Detail_Format()
+{
+decimal cant = System.Convert.ToDecimal(((DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["txtCantidad"]).Text);
+subtotalAnterior = subtotalAnterior + cant*PrecioNeto;
+}
+]]></Script>
+  <PageSettings />
+</ActiveReportsLayout>

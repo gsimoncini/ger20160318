@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10440" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1018" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="labelTitulo" MOD="4" Left="0" Top="0" Width="6210" Height="270" Caption="Listado de Comprobantes" Style="font-weight: normal; font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBoxFecha" MOD="4" Left="8100" Top="0" Width="2340" Height="270" Text="fecha" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="6270" Top="0" Width="1710" Height="270" Caption="Fecha de Emisión" />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="0" Top="720" Width="630" Height="270" Caption="Comp." Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="1350" Top="720" Width="1170" Height="270" Caption="Numero" Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="8280" Top="720" Width="1170" Height="270" Caption="Estado" Style="font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label40" MOD="4" Left="9630" Top="720" Width="810" Height="270" Caption="Total" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="10" Y1="999.9999" X2="10720" Y2="999.9999" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="10" Y1="280" X2="10720" Y2="280" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="10" Y1="639.9999" X2="10720" Y2="639.9999" />
+      <Control Type="AR.Label" Name="Label41" MOD="4" Left="3510" Top="720" Width="630" Height="270" Caption="Fecha" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label42" MOD="4" Left="4320" Top="720" Width="3960" Height="270" Caption="Cliente" Style="font-weight: bold; font-size: 8pt; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="225" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox5" DataField="IdTipoDeComprobante" MOD="4" Left="0" Top="0" Width="1350" Height="288" Text="Tipo Comp" Style="font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox6" DataField="Numero" MOD="4" Left="1350" Top="0" Width="1440" Height="288" Text="Numero" Style="font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Estado" MOD="4" Left="8280" Top="0" Width="1350" Height="288" Text="Estado" Style="font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="Total" MOD="4" Left="9630" Top="0" Width="810" Height="288" Text="Total" OutputFormat="$#,##0.00" Style="text-align: right; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Fecha" MOD="4" Left="2790" Top="0" Width="1350" Height="288" Text="Fecha" OutputFormat="d/M/yy h:mm" Style="text-align: right; font-size: 8pt; font-family: Arial; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="Nombre" MOD="4" Left="4215" Top="0" Width="4050" Height="288" Text="Cliente" OutputFormat="" Style="font-size: 8pt; font-family: Arial; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="720" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="10080" Top="0" Width="90" Height="270" Caption="/" />
+      <Control Type="AR.Field" Name="TextBox3" MOD="4" Left="10170" Top="0" Width="270" Height="270" Text="TextBox3" SummaryType="4" />
+      <Control Type="AR.Field" Name="TextBox4" MOD="4" Left="9720" Top="0" Width="360" Height="270" Text="TextBox4" Style="text-align: right; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="8910" Top="0" Width="810" Height="270" Caption="Página:" />
+      <Control Type="AR.Field" Name="TextBoxEmpresa" MOD="4" Left="0" Top="10" Width="2070" Height="270" Text="TextBox9" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="10" Y1="10" X2="10720" Y2="10" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="0" Top="270" Width="10620" Height="450" BackStyle="1" LineColor="16777215" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="eZ1vYmziCfp//jvrFaAgkGut98FzCHi+26sP8id7f1QFqAvye4qnagG+ZEv71vF1RVQooIahu4D+phtJakcJ8MIerWsKptEHe8R19nzePqosDECtCY/Lx1W69a9kPVN0HH681xW4njKDpfRaZ/7jFVAy8Eerznllb8O9jd+3JXk=" SQL="exec Pr_tsa_ComprobantesDeVenta @verHTML = 0&#xD;&#xA;" />
+  </DataSources>
+  <Script><![CDATA[public void PageFooter_Format()
+{
+	//setea el nombre de la empresa
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["TextBoxEmpresa"];
+	text.Text = Empresa;
+}
+
+
+bool m_color = false;
+public void Detail_Format(){
+	//modifico los colores del campo de detalle
+	if(m_color)
+	{
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+		//m_color = false;
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+		//m_color = true;
+	}
+}
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["TextBoxFecha"];
+	text.Text = System.DateTime.Now.ToString();
+DataDynamics.ActiveReports.Label titulo = (DataDynamics.ActiveReports.Label) rpt.Sections["PageHeader"].Controls["labelTitulo"];
+	titulo.Text = System.Convert.ToString(Titulo);
+}
+]]></Script>
+  <PageSettings LeftMargin="720" RightMargin="720" TopMargin="720" BottomMargin="0" PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" Orientation="1" />
+</ActiveReportsLayout>

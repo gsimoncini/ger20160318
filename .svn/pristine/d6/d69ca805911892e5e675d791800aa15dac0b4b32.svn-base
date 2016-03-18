@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9750" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="765" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="10" Y1="450" X2="9910" Y2="450" />
+      <Control Type="AR.Label" Name="Label33" MOD="4" Left="10" Top="0" Width="3780" Height="360" Caption="Lista de precios" Style="text-align: left; font-weight: normal; font-size: 14pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label34" MOD="4" Left="5680" Top="0" Width="1710" Height="270" Caption="Fecha de Emisión" />
+      <Control Type="AR.Field" Name="fechaEmision" MOD="4" Left="7128" Top="0" Width="2602" Height="270" Text="TextBox34" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox37" MOD="4" Left="0" Top="450" Width="900" Height="270" Text="Código" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox38" MOD="4" Left="1440" Top="450" Width="2790" Height="270" Text="Producto" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox39" MOD="4" Left="8190" Top="450" Width="1260" Height="270" Text="Precio Final" Style="text-align: right; font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="10" Y1="729.9999" X2="9910" Y2="729.9999" />
+      <Control Type="AR.Field" Name="TextBox40" DataField="Simbolo" MOD="4" Left="9450" Top="450" Width="270" Height="216" Text="Simb" OutputFormat="#,##0.00" Style="ddo-char-set: 0; text-align: right; font-family: Microsoft Sans Serif; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="240" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox34" DataField="Codigo" MOD="4" Left="0" Top="0" Width="1350" Height="216" Text="Codigo" Style="font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox35" DataField="Descripcion" MOD="4" Left="1350" Top="0" Width="7092" Height="216" Text="Descripcion" Style="text-align: left; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox36" DataField="PrecioDeVentaFinal" MOD="4" Left="8280" Top="0" Width="1440" Height="216" Text="PrecioDeVentaFinal" OutputFormat="#,##0.00" Style="text-align: right; font-size: 8pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="10" Y1="226" X2="9910" Y2="226" LineColor="12632256" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox24" MOD="4" Left="8715" Top="0" Width="450" Height="270" Text="TextBox24" Style="text-align: right; font-weight: normal; font-family: Microsoft Sans Serif; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="8100" Top="0" Width="720" Height="270" Caption="Página" Style="font-weight: normal; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="txtNombreEmpresa" MOD="4" Left="90" Top="0" Width="2790" Height="270" Text="MZ-Informática" Style="font-weight: normal; font-size: 10pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Field" Name="TextBox33" MOD="4" Left="9270" Top="0" Width="450" Height="270" Text="TextBox33" Style="text-align: left; font-weight: normal; font-family: Microsoft Sans Serif; " SummaryType="4" />
+      <Control Type="AR.Label" Name="Label35" MOD="4" Left="9180" Top="0" Width="90" Height="270" Caption="/" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="10" Y1="10" X2="9910" Y2="10" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="teujgOqNfBotz36yQlHmmraJYvkgZn1vt1FNzVs3CPc/M/fXLSrYrGkeUG9RQQrF6R07cbUFP9ya0shvfDcchSKvIQUN50J1raFeoOQ/W50ZSz84KV8CHKT46/HO7u33njTaORWfXQF0J8fNcEJeZQ==" SQL="exec dbo.Pr_tsh_Productos_GetListaDePrecio 2, 1,1&#xD;&#xA;" />
+  </DataSources>
+  <Script><![CDATA[
+
+/*
+bool m_color = true;
+
+public void Detail_Format()
+{
+	int count = rpt.Sections["Detail"].Controls.Count;
+	for (int i = 0; i < count; i++)  
+		((TextBox)rpt.Sections["Detail"].Controls[i]).ClassName="MyStyle";	
+
+	if(m_color)
+	{
+		m_color =false;
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Gainsboro;	
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+	}	
+	else	
+	{	rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+		rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+		m_color = true;	
+	}
+}
+
+*/
+
+public void ActiveReport_ReportStart()
+{
+	/*  
+ 	rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+	rpt.PageSettings.Margins.Bottom = ActiveReport.CmToInch(2);
+    	rpt.PageSettings.Margins.Left =  ActiveReport.CmToInch(1);
+    	rpt.PageSettings.Margins.Right =  ActiveReport.CmToInch(1);
+    	rpt.PageSettings.Margins.Top = ActiveReport.CmToInch(2);
+
+	rpt.StyleSheet.Add("MyStyle");
+  
+  	rpt.StyleSheet["MyStyle"].FontName = "Arial";
+   	rpt.StyleSheet["MyStyle"].FontSize =null;
+   	rpt.StyleSheet["MyStyle"].FontStrikeThrough = false;
+    	rpt.StyleSheet["MyStyle"].FontUnderline = false;
+ 	rpt.StyleSheet["MyStyle"].ForeColor = System.Drawing.Color.Black;
+    	rpt.StyleSheet["MyStyle"].VerticalAlignment = VerticalTextAlignment.Middle;
+	*/
+}
+
+public void PageFooter_Format()
+{
+/*
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["txtNombreEmpresa"];
+	text.Text = Empresa;
+*/
+}
+
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["fechaEmision"];
+	text.Text = System.DateTime.Now.ToString();
+}
+]]></Script>
+  <PageSettings RightMargin="720" BottomMargin="720" PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" Orientation="1" />
+</ActiveReportsLayout>

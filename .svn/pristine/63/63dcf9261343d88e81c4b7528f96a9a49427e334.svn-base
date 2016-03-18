@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="7065" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1859" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="180" Top="450" Width="1080" Height="288" Caption="Cliente: " Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="lNombre" DataField="Nombre" MOD="4" Left="1260" Top="450" Width="5760" Height="288" Text="Nombre" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox15" DataField="Domicilio" MOD="4" Left="1260" Top="990" Width="5760" Height="288" Text="Domicilio" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="180" Top="1530" Width="900" Height="270" Caption="Cantidad" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="1080" Top="1530" Width="5940" Height="270" Caption="Descripcion" Style="ddo-char-set: 0; text-align: left; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox43" DataField="Telefono" MOD="4" Left="1260" Top="720" Width="5760" Height="288" Text="Telefono" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Label" Name="Label12" MOD="4" Left="180" Top="990" Width="1080" Height="288" Caption="Domicilio:" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Label" Name="Label16" MOD="4" Left="180" Top="720" Width="1080" Height="288" Caption="Telefonos:" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox40" MOD="4" Left="2970" Top="180" Width="900" Height="270" Text="Fecha:" OutputFormat="" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox41" DataField="Fecha de Emision" MOD="4" Left="3870" Top="180" Width="2610" Height="288" Text="Fecha Emision" OutputFormat="dd/MM/yyyy" Style="ddo-char-set: 0; font-weight: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Label" Name="Label23" MOD="4" Left="180" Top="1260" Width="900" Height="270" Caption="Factura:" Style="ddo-char-set: 0; text-align: right; font-weight: normal; font-style: normal; font-size: 9pt; font-family: Arial Narrow; " />
+      <Control Type="AR.Field" Name="TextBox44" DataField="ComprobanteRelacionado" MOD="4" Left="1260" Top="1260" Width="5760" Height="270" Text="Comprobante Relacionado" Style="ddo-char-set: 0; font-style: normal; font-size: 9pt; font-family: Arial Narrow; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCantidad" DataField="Cantidad" MOD="4" Left="180" Top="0" Width="810" Height="288" Text="Cantidad" Style="ddo-char-set: 0; text-align: right; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Producto" MOD="4" Left="1080" Top="0" Width="5940" Height="288" Text="Producto" Style="ddo-char-set: 0; text-align: left; font-size: 9pt; font-family: Arial Narrow; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox45" DataField="ValorImp1" Visible="0" MOD="4" Left="7740" Top="630" Width="900" Height="288" Text="ValorImp1" OutputFormat="#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox35" DataField="ValorImp2" Visible="0" MOD="4" Left="6570" Top="630" Width="990" Height="288" Text="ValorImp2" OutputFormat="#,##0.00" Style="text-align: right; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="45" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="IcGFcoXiEtMh/wV3xCWefie4f644XE3dm896xWQ5sDg5tOLeDKudxjDW9cICC+ThjEsBI2/BDiQIkZ7lVW5Due1/wPOS+/RdEM/IOTPGmhzgQeS9VTCN52yCr/J7IkT8+aeMRstpdMTJT/am1viIUseHWVvYDr1Uf2InzdlXGi8=" SQL="exec Pr_tlg_ComprobantesView @IdComprobante = '00001000010000000025', @IdTipoDeComprobanteRel = 'FAA,FAB,FAE,FAAM,FABM,AFAA,AFAB',@Orden = 'Ordinal'" />
+  </DataSources>
+  <Script><![CDATA[string myDate = System.DateTime.Now.ToString();
+//Representa al Tipo de Comprobante, por ej, A,B o E
+string TipoDeComprobante ="";
+//represenat al a los distintos tipos de comprobantes, por ej, FAA,FAB,FAE,PREA etc..
+string Comprobante;
+decimal PrecioFinal = 0;
+decimal Total = 0;
+bool compB = false;
+decimal PrecioNeto=0;
+decimal PrecioUnitario=0;
+decimal subtotalAnterior = 0;
+decimal sub=0;
+bool visible = false;
+System.DateTime Fecha = System.DateTime.Now;
+decimal PrecioNetoConImpuestos = 0;
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+
+
+System.Console.WriteLine("--------FecthData---------");
+
+Fecha = System.Convert.ToDateTime(rpt.Fields["Fecha de Emision"].Value);
+
+System.Console.WriteLine("--------FecthData1---------");
+string calle = System.Convert.ToString(rpt.Fields["Calle"].Value);
+string numero = System.Convert.ToString(rpt.Fields["NumeroCalle"].Value);
+string localidad = System.Convert.ToString(rpt.Fields["Localidad"].Value);
+
+System.Console.WriteLine("--------FecthData2---------");
+string torre = System.Convert.ToString(rpt.Fields["Torre"].Value);
+System.Console.WriteLine("Torre ");  
+System.Console.WriteLine(torre);  
+string departamento = System.Convert.ToString(rpt.Fields["Departamento"].Value);
+System.Console.WriteLine("Depto ");  
+System.Console.WriteLine(departamento);  
+string piso =  System.Convert.ToString(rpt.Fields["Piso"].Value);
+System.Console.WriteLine("Piso ");  
+System.Console.WriteLine(piso);  
+string domicilio = null;
+
+
+string provincia = System.Convert.ToString(rpt.Fields["Provincia"].Value);
+System.Console.WriteLine("Prov ");  
+System.Console.WriteLine(provincia);  
+System.Console.WriteLine("--------FecthData3---------");
+if(localidad != string.Empty)
+{
+	if(provincia != string.Empty)
+		domicilio = calle + " " +numero + " " + torre +" " + departamento +" " + piso+ ", " + localidad + ", " + provincia;
+	else
+		domicilio = calle + " " +numero + " " + torre +" " + departamento +" " + piso+ ", " + localidad;
+}
+else
+	domicilio = calle + " " +numero + " "+ torre +" " +departamento +" " + piso;
+
+System.Console.WriteLine("--------FecthData4---------");
+rpt.Fields["Domicilio"].Value = domicilio;
+
+System.Console.WriteLine("--------FecthData5---------");
+string campoAuxiliar1 =  System.Convert.ToString(rpt.Fields["CampoAux1"].Value);
+string campoAuxiliar2 =  System.Convert.ToString(rpt.Fields["CampoAux2"].Value);
+string campoAuxiliar3 =  System.Convert.ToString(rpt.Fields["CampoAux3"].Value);
+string campoAuxiliar4 =  System.Convert.ToString(rpt.Fields["CampoAux4"].Value);
+string campoAuxiliar5 =  System.Convert.ToString(rpt.Fields["CampoAux5"].Value);
+string producto =  System.Convert.ToString(rpt.Fields["Producto"].Value);
+ 
+producto = producto + " " + campoAuxiliar1 + " " + campoAuxiliar2 + " " + campoAuxiliar3 + " " +campoAuxiliar4 + " " + campoAuxiliar5;
+
+System.Console.WriteLine("--------FecthData6---------");
+
+rpt.Fields["Producto"].Value = producto;
+
+System.Console.WriteLine("--------FecthData7---------");
+
+return eof;
+}
+
+public void ActiveReport_DataInitialize()
+{
+System.Console.WriteLine("----------DataIntialize------------");
+rpt.Fields.Add("Domicilio");
+System.Console.WriteLine("----------DataIntialize------------");
+}
+
+
+
+
+
+
+
+]]></Script>
+  <PageSettings LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" PaperSize="0" PaperWidth="12960" PaperHeight="5760" PaperName="" Duplex="1" />
+</ActiveReportsLayout>

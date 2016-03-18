@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tpu_ComprobantesCompraEx" targetNamespace="http://tempuri.org/tpu_ComprobantesCompraEx.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/tpu_ComprobantesCompraEx.xsd"
+	xmlns:mstns="http://tempuri.org/tpu_ComprobantesCompraEx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tpu_ComprobantesCompraExDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tpu_ComprobantesCompra">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdComprobanteCompra" type="xs:long" />
+							<xs:element name="IdProveedor" type="xs:long" />
+							<xs:element name="Fecha" type="xs:dateTime" />
+							<xs:element name="Tipo" type="xs:string" />
+							<xs:element name="Numero" type="xs:string" />
+							<xs:element name="Comentario" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaIngreso" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PeriodoFiscal" type="xs:string" minOccurs="0" />
+							<xs:element name="NetoBruto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Descuento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SubtotalNeto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IvaInscripto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontosNoGravados" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrecepcionIB" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrecepcionGanancias" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PercepcionIva" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImpuestosInternos" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalGeneral" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DescuentoGlobal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Total" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdConexionCreacion" type="xs:long" minOccurs="0" />
+							<xs:element name="UltimaModificacion" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="IdConexionUltimaModificacion" type="xs:long" minOccurs="0" />
+							<xs:element name="IdReservado" type="xs:long" minOccurs="0" />
+							<xs:element name="RowId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IdSucursal" type="xs:long" minOccurs="0" />
+							<xs:element name="IdEmpresa" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tpu_ComprobantesCompraExKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tpu_ComprobantesCompra" />
+			<xs:field xpath="mstns:IdComprobanteCompra" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

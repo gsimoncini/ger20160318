@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="11640" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1050" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="0" Top="0" Width="5400" Height="270" Caption="Libro iva ventas totalizado" Style="font-weight: normal; font-size: 12pt; " />
+      <Control Type="AR.Field" Name="TextBoxFecha" MOD="4" Left="9300" Top="0" Width="2340" Height="270" Text="fecha" OutputFormat="M/d/yyyy h:mm" Style="text-align: right; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="7560" Top="0" Width="1710" Height="270" Caption="Fecha de Emisión" />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="0" Top="360" Width="1440" Height="270" Caption="Filtro Aplicado:" />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="3330" Top="720" Width="900" Height="270" Caption="Neto" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="10" Y1="999.9999" X2="11700" Y2="999.36" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="10" Y1="280" X2="11610" Y2="270" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="10" Y1="639.9999" X2="11700" Y2="630" />
+      <Control Type="AR.Label" Name="Label44" MOD="4" Left="5670" Top="720" Width="810" Height="270" Caption="IVA 21" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label45" MOD="4" Left="6660" Top="720" Width="900" Height="270" Caption="IVA 10.5" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label46" MOD="4" Left="8010" Top="720" Width="900" Height="270" Caption="Total IVA" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label47" MOD="4" Left="10695" Top="720" Width="900" Height="270" Caption="Total" Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Field" Name="TextBox29" DataField="Filtro" MOD="4" Left="1530" Top="360" Width="8865" Height="270" Text="Filtro" />
+      <Control Type="AR.Label" Name="Label48" MOD="4" Left="9090" Top="720" Width="1080" Height="270" Caption="Total Perc." Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+      <Control Type="AR.Label" Name="Label49" MOD="4" Left="4410" Top="720" Width="990" Height="270" Caption="Neto Grav." Style="text-align: right; font-weight: bold; font-size: 8pt; " />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupGrupo" Height="285" DataField="grupo" BackStyle="1" BackColor="12632256" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox13" DataField="grupo" MOD="4" Left="0" Top="0" Width="2970" Height="288" Text="grupo" Style="font-weight: bold; " />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupImp" Height="270" DataField="grupoimpresora" BackStyle="1" BackColor="14474460" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox12" DataField="grupoimpresora" MOD="4" Left="270" Top="0" Width="2700" Height="288" Text="grupoimpresora" />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupComprobante" Height="299" DataField="grupocomprobante" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox11" DataField="grupocomprobante" MOD="4" Left="540" Top="0" Width="2430" Height="288" Text="grupocomprobante" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox5" DataField="Neto" MOD="4" Left="2880" Top="0" Width="1260" Height="288" Text="Neto" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox6" DataField="IVA" MOD="4" Left="5400" Top="0" Width="1080" Height="288" Text="IVA" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox7" DataField="IVADIF" MOD="4" Left="6570" Top="0" Width="1026" Height="288" Text="IVADIF" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="TotalIVA" MOD="4" Left="7650" Top="0" Width="1260" Height="288" Text="TotalIVA" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Total" MOD="4" Left="10350" Top="0" Width="1245" Height="288" Text="Total" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="descripcion" MOD="4" Left="720" Top="0" Width="2070" Height="288" Text="descripcion" />
+      <Control Type="AR.Field" Name="TextBox30" DataField="Percepciones" MOD="4" Left="9000" Top="0" Width="1260" Height="288" Text="Percepciones" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox35" DataField="NetoNoGrabado" MOD="4" Left="4140" Top="0" Width="1260" Height="288" Text="NetoNoGrabado" Style="text-align: right; " />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter3" Height="450" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label41" MOD="4" Left="540" Top="180" Width="2250" Height="270" Caption="Total" />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="0" Y1="450" X2="11070" Y2="450" />
+      <Control Type="AR.Field" Name="TextBox14" DataField="Neto" MOD="4" Left="2970" Top="180" Width="1170" Height="270" Text="TextBox14" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupComprobante" />
+      <Control Type="AR.Field" Name="TextBox15" DataField="IVA" MOD="4" Left="5400" Top="180" Width="1080" Height="270" Text="TextBox15" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupComprobante" />
+      <Control Type="AR.Field" Name="TextBox16" DataField="IVADIF" MOD="4" Left="6480" Top="180" Width="1080" Height="270" Text="TextBox16" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupComprobante" />
+      <Control Type="AR.Field" Name="TextBox17" DataField="TotalIVA" MOD="4" Left="7650" Top="180" Width="1260" Height="270" Text="TextBox17" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupComprobante" />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Total" MOD="4" Left="10350" Top="180" Width="1245" Height="270" Text="TextBox18" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupComprobante" />
+      <Control Type="AR.Field" Name="TextBox31" DataField="Percepciones" MOD="4" Left="9000" Top="180" Width="1260" Height="270" Text="TextBox31" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupComprobante" />
+      <Control Type="AR.Field" Name="TextBox34" DataField="NetoNoGrabado" MOD="4" Left="4320" Top="180" Width="1080" Height="270" Text="NetoNoGrabado" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupComprobante" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter2" Height="290" BackStyle="1" BackColor="14474460" CanShrink="0">
+      <Control Type="AR.Label" Name="Label43" MOD="4" Left="270" Top="0" Width="2160" Height="270" Caption="Total" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="10" Y1="280.72" X2="11610" Y2="280" />
+      <Control Type="AR.Field" Name="TextBox19" DataField="Neto" MOD="4" Left="2970" Top="0" Width="1170" Height="270" Text="TextBox19" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupImp" />
+      <Control Type="AR.Field" Name="TextBox20" DataField="IVA" MOD="4" Left="5400" Top="0" Width="1080" Height="270" Text="TextBox20" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupImp" />
+      <Control Type="AR.Field" Name="TextBox21" DataField="IVADIF" MOD="4" Left="6480" Top="0" Width="1080" Height="270" Text="TextBox21" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupImp" />
+      <Control Type="AR.Field" Name="TextBox22" DataField="TotalIVA" MOD="4" Left="7740" Top="0" Width="1170" Height="270" Text="TextBox22" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupImp" />
+      <Control Type="AR.Field" Name="TextBox23" DataField="Total" MOD="4" Left="10260" Top="0" Width="1350" Height="270" Text="TextBox23" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupImp" />
+      <Control Type="AR.Field" Name="TextBox32" DataField="Percepciones" MOD="4" Left="9007.2" Top="0" Width="1252.8" Height="270" Text="TextBox32" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupImp" />
+      <Control Type="AR.Field" Name="TextBox36" DataField="NetoNoGrabado" MOD="4" Left="4320" Top="0" Width="1080" Height="270" Text="NetoNoGrabado" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupImp" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="270" BackStyle="1" BackColor="12632256" CanShrink="0">
+      <Control Type="AR.Label" Name="Label42" MOD="4" Left="0" Top="0" Width="2790" Height="270" Caption="Total" Style="font-weight: bold; " />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="0" Y1="270" X2="11610" Y2="270" />
+      <Control Type="AR.Field" Name="TextBox24" DataField="Neto" MOD="4" Left="2970" Top="0" Width="1170" Height="270" Text="TextBox24" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupGrupo" />
+      <Control Type="AR.Field" Name="TextBox25" DataField="IVA" MOD="4" Left="5400" Top="0" Width="1080" Height="270" Text="TextBox25" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupGrupo" />
+      <Control Type="AR.Field" Name="TextBox26" DataField="IVADIF" MOD="4" Left="6570" Top="0" Width="990" Height="270" Text="TextBox26" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupGrupo" />
+      <Control Type="AR.Field" Name="TextBox27" DataField="TotalIVA" MOD="4" Left="7650" Top="0" Width="1260" Height="270" Text="TextBox27" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupGrupo" />
+      <Control Type="AR.Field" Name="TextBox28" DataField="Total" MOD="4" Left="10440" Top="0" Width="1155" Height="270" Text="TextBox28" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupGrupo" />
+      <Control Type="AR.Field" Name="TextBox33" DataField="Percepciones" MOD="4" Left="8910" Top="0" Width="1350" Height="270" Text="TextBox33" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupGrupo" />
+      <Control Type="AR.Field" Name="TextBox37" DataField="NetoNoGrabado" MOD="4" Left="4320" Top="0" Width="1080" Height="270" Text="TextBox37" Style="text-align: right; " SummaryType="3" SummaryRunning="1" SummaryGroup="GroupGrupo" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="720" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="10980" Top="0" Width="90" Height="270" Caption="/" />
+      <Control Type="AR.Field" Name="TextBox3" MOD="4" Left="11070" Top="0" Width="450" Height="270" Text="TextBox3" SummaryType="4" />
+      <Control Type="AR.Field" Name="TextBox4" MOD="4" Left="10620" Top="0" Width="360" Height="270" Text="TextBox4" Style="text-align: right; " SummaryType="4" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="9720" Top="0" Width="810" Height="270" Caption="Página:" />
+      <Control Type="AR.Field" Name="TextBoxEmpresa" MOD="4" Left="0" Top="10" Width="2070" Height="270" Text="TextBox9" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="10" Y1="0" X2="11700" Y2="0" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="0" Top="270" Width="10890" Height="450" BackStyle="1" LineColor="16777215" />
+    </Section>
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="sMEcagZJQNqtnQUt/YPNHSKDeoGnO0Q3bNulvd7pwoZj0M5A54AAj+Ad80okYbtc8zxcooTIyQU9+FTHKhGKuh4pESnA4IxQuFQGvqMtJB09uYVyurUTzqjV3+hXcouIO6sXsDSv4igjTGJBY3l1aw==" SQL="exec Pr_tsa_ImpuestosComprobantes_GetImpuestosTotalizado null, null" />
+  </DataSources>
+  <Script><![CDATA[public void PageFooter_Format()
+{
+	//setea el nombre de la empresa
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageFooter"].Controls["TextBoxEmpresa"];
+	text.Text = Empresa;
+}
+
+public void Detail_Format(){
+	
+}
+
+public void PageHeader_Format()
+{
+	DataDynamics.ActiveReports.TextBox text = (DataDynamics.ActiveReports.TextBox) rpt.Sections["PageHeader"].Controls["TextBoxFecha"];
+	text.Text = System.DateTime.Now.ToString();
+}
+]]></Script>
+  <PageSettings LeftMargin="144" RightMargin="0" TopMargin="720" BottomMargin="0" PaperSize="9" PaperWidth="12240" PaperHeight="15840" PaperName="" Orientation="1" />
+</ActiveReportsLayout>

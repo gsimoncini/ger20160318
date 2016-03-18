@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Mz.Erp">
+</Property><Property Name="Archivo de la solución" Value="C:\Fuentes\MAIN MZ.ERP2008 - copia\Mz.Erp.sln">
+</Property><Property Name="Date" Value="martes, 05 de abril de 2011">
+</Property><Property Name="Time" Value="11:46">
+</Property></Properties><Event ErrorLevel="0" Project="mz.erp.exe" Source="mz.erp.ui.exe\mz.erp.exe.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.exe" Source="mz.erp.ui.exe\mz.erp.exe.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.dataaccess.dll" Source="mz.erp.dataaccess.dll\mz.erp.dataaccess.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.dataaccess.dll" Source="mz.erp.dataaccess.dll\mz.erp.dataaccess.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.businessrules.dll" Source="mz.erp.businessrules.dll\mz.erp.businessrules.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.businessrules.dll" Source="mz.erp.businessrules.dll\mz.erp.businessrules.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.dbhelper.dll" Source="mz.erp.dbhelper\mz.erp.dbhelper.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.dbhelper.dll" Source="mz.erp.dbhelper\mz.erp.dbhelper.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.systemframework.dll" Source="mz.erp.systemframework.dll\mz.erp.systemframework.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.systemframework.dll" Source="mz.erp.systemframework.dll\mz.erp.systemframework.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.commontypes.dll" Source="mz.erp.commontypes.dll\mz.erp.commontypes.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.commontypes.dll" Source="mz.erp.commontypes.dll\mz.erp.commontypes.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.fiscal.dll" Source="mz.erp.fiscal.dll\mz.erp.fiscal.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.fiscal.dll" Source="mz.erp.fiscal.dll\mz.erp.fiscal.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.ui.controller.dll" Source="mz.erp.ui.controller.dll\mz.erp.ui.controller.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.ui.controller.dll" Source="mz.erp.ui.controller.dll\mz.erp.ui.controller.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.io.dll" Source="mz.erp.io.dll\mz.erp.io.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.io.dll" Source="mz.erp.io.dll\mz.erp.io.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="mz.erp.ui.dll" Source="mz.erp.ui.dll\mz.erp.ui.dll.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="mz.erp.ui.dll" Source="mz.erp.ui.dll\mz.erp.ui.dll.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="2" Project="mz.erp.exe" Source="mz.erp.ui.exe\mz.erp.exe.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.exe.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.dataaccess.dll" Source="mz.erp.dataaccess.dll\mz.erp.dataaccess.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.dataaccess.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.businessrules.dll" Source="mz.erp.businessrules.dll\mz.erp.businessrules.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.businessrules.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.dbhelper.dll" Source="mz.erp.dbhelper\mz.erp.dbhelper.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.dbhelper.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.systemframework.dll" Source="mz.erp.systemframework.dll\mz.erp.systemframework.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.systemframework.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.commontypes.dll" Source="mz.erp.commontypes.dll\mz.erp.commontypes.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.commontypes.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.fiscal.dll" Source="mz.erp.fiscal.dll\mz.erp.fiscal.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.fiscal.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.ui.controller.dll" Source="mz.erp.ui.controller.dll\mz.erp.ui.controller.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.ui.controller.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.io.dll" Source="mz.erp.io.dll\mz.erp.io.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.io.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="2" Project="mz.erp.ui.dll" Source="mz.erp.ui.dll\mz.erp.ui.dll.csproj" Description="No se puede leer el archivo de proyecto 'mz.erp.ui.dll.csproj'. &#xA;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(148,13): No se reconoce el subelemento &lt;#text&gt; del elemento &lt;ReferencePath&gt;.">
+</Event><Event ErrorLevel="0" Project="" Source="Mz.Erp.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="Mz.Erp.sln" Description="Converted">
+</Event></UpgradeLog>
